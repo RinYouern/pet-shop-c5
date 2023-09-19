@@ -3,19 +3,38 @@
     font-family: $main-font;
     margin: 0;
     padding: 0;
-    outline: none;
     box-sizing: border-box;
+    border: none;
     list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
 }
+@mixin flexDirection {
+    display: flex;
+    flex-direction: column;
+}
 @mixin flexCenter {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 @mixin flexeEvenly {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+@mixin flexEnd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+} 
+@mixin inputStyle {
+    border-radius: 5px;
+    border: 1px solid $main-border;
+    outline-color: $main-border;
+    font-size: 17px;
+}
+@mixin backgroundImage {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

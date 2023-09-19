@@ -9,27 +9,47 @@ nav {
     grid-template-columns: 35% 30% 35%;
     @include gridCenter;
     color: $main-paragraph;
-    border-bottom: $main-border;
+    border-bottom: 1px solid $main-border;
     .nav-left {
-        display: flex;
-        align-items: flex-end;   
+        @include flexCenter; 
         gap: 10px;
         a {
-            font-family: $main-header;
-            font-weight: 100;
-            color: $main-paragraph;
+            h1 {
+                font-family: $main-header;
+                font-weight: 100;
+            }
         }
+    }
+    a {
+        font-family: $main-paragraph;
+        font-weight: 100;
+        font-size: 18px;
+        color: $main-paragraph;
     }
     ul {
         @include flexeEvenly;
-        li {
+        .after {
             a {
-                color: $main-paragraph;
-                font-family: $main-font;
-                font-weight: 100;
-            }
-            :active {
                 text-decoration: underline;
+                color: $main-bg-color;
+            }
+        }
+    }
+    .nav-right {
+        display: flex;
+        .search {
+            position: relative;
+            width: 90%;
+            @include flexEnd;
+            input[type = search] {
+                width: 100%;
+                padding: 10px 15px 10px 30px;
+                @include inputStyle;
+                text-align: end;
+            }
+            span {
+                position: absolute;
+                left: 10px;
             }
         }
     }

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap');
 @import "./Component/variable";
 @import "./Group-Mixin/Flex-Mixin";
+@import "./Group-Mixin/Grid-Mixin";
 * {
     @include Universal
 }

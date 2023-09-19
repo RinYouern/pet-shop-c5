@@ -3,8 +3,8 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  outline: none;
   box-sizing: border-box;
+  border: none;
   list-style-type: none;
   text-decoration: none;
   scroll-behavior: smooth;
@@ -28,12 +28,17 @@ nav {
 }
 nav .nav-left {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 10px;
 }
-nav .nav-left a {
+nav .nav-left a h1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 100;
+}
+nav a {
+  font-family: #4b4b4b;
+  font-weight: 100;
+  font-size: 18px;
   color: #4b4b4b;
 }
 nav ul {
@@ -41,11 +46,67 @@ nav ul {
   align-items: center;
   justify-content: space-evenly;
 }
-nav ul li a {
-  color: #4b4b4b;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-}
-nav ul li :active {
+nav ul .after a {
   text-decoration: underline;
+  color: #B68C3F;
+}
+nav .nav-right {
+  display: flex;
+}
+nav .nav-right .search {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav .nav-right .search input[type=search] {
+  width: 100%;
+  padding: 10px 15px 10px 30px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  outline-color: #dbdbdb;
+  font-size: 17px;
+  text-align: end;
+}
+nav .nav-right .search span {
+  position: absolute;
+  left: 10px;
+}
+
+header {
+  position: relative;
+  height: auto;
+  background-image: url(../IMAGES/background-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 150px 80px 150px 80px;
+  display: flex;
+}
+header .blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.359), rgba(172, 154, 20, 0.419));
+}
+header .content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 20px;
+}
+header .content h1 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+header .content h1 span {
+  font-family: "Ubuntu", sans-serif;
+  color: #5C9735;
+}
+header .content p {
+  color: white;
 }/*# sourceMappingURL=home.css.map */
