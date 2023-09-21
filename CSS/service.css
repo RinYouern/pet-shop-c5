@@ -8,6 +8,7 @@
   list-style-type: none;
   text-decoration: none;
   scroll-behavior: smooth;
+  line-height: 1.5em;
 }
 
 body {

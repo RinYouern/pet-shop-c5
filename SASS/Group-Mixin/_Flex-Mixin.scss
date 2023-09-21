@@ -8,6 +8,7 @@
     list-style-type: none;
     text-decoration: none;
     scroll-behavior: smooth;
+    line-height: 1.5em;
 }
 @mixin flexDirection {
     display: flex;
@@ -36,5 +37,5 @@
 @mixin backgroundImage {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
 }
