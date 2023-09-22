@@ -4,7 +4,10 @@
 nav {
     position: sticky;
     top: 0;
-    padding: 25px $standard-padding;
+    z-index: 10;
+    background-color: white;
+    padding: 0px $standard-padding;
+    height: 90px;
     display: grid;
     grid-template-columns: 35% 30% 35%;
     @include gridCenter;
@@ -21,7 +24,6 @@ nav {
         }
     }
     a {
-        font-family: $main-paragraph;
         font-weight: 100;
         font-size: 18px;
         color: $main-paragraph;

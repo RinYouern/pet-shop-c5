@@ -19,7 +19,10 @@ body {
 nav {
   position: sticky;
   top: 0;
-  padding: 25px 80px;
+  z-index: 10;
+  background-color: white;
+  padding: 0px 80px;
+  height: 90px;
   display: grid;
   grid-template-columns: 35% 30% 35%;
   display: grid;
@@ -37,7 +40,6 @@ nav .nav-left a h1 {
   font-weight: 100;
 }
 nav a {
-  font-family: #4b4b4b;
   font-weight: 100;
   font-size: 18px;
   color: #4b4b4b;
@@ -73,4 +75,42 @@ nav .nav-right .search input[type=search] {
 nav .nav-right .search span {
   position: absolute;
   left: 10px;
+}
+
+header {
+  position: relative;
+  height: auto;
+  background-image: url(../IMAGES/cat-3131.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 150px 80px 150px 80px;
+  display: flex;
+}
+header .blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.492), rgba(0, 0, 0, 0.503));
+}
+header .content {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 20px;
+}
+header .content h1 {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+header .content h1 span {
+  font-family: "Ubuntu", sans-serif;
+  color: #B68C3F;
+  text-shadow: 2px 2px 4px white;
+}
+header .content p {
+  color: white;
 }/*# sourceMappingURL=service.css.map */
