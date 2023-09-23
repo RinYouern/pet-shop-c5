@@ -19,7 +19,7 @@ body {
 nav {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   background-color: white;
   padding: 0px 80px;
   height: 90px;
@@ -28,7 +28,7 @@ nav {
   display: grid;
   align-items: center;
   color: #4b4b4b;
-  border-bottom: 1px solid #dbdbdb;
+  border-bottom: 1px solid #F0EEF0;
 }
 nav .nav-left {
   display: flex;
@@ -64,15 +64,14 @@ nav .nav-right .search {
   justify-content: flex-end;
 }
 nav .nav-right .search input[type=search] {
-  width: 100%;
-  padding: 10px 15px 10px 30px;
-  border-radius: 5px;
-  border: 1px solid #dbdbdb;
-  outline-color: #dbdbdb;
+  border-radius: 25px;
+  border: 1px solid #F0EEF0;
+  outline-color: #F0EEF0;
   font-size: 17px;
-  text-align: end;
+  width: 100%;
+  padding: 10px 15px 10px 40px;
 }
 nav .nav-right .search span {
   position: absolute;
-  left: 10px;
+  left: 15px;
 }/*# sourceMappingURL=about.css.map */
