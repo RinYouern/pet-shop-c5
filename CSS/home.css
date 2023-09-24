@@ -71,6 +71,7 @@ nav .nav-right .search span {
   left: 15px;
 }
 
+/* category */
 .card_container {
   display: flex;
   align-items: center;
@@ -92,7 +93,6 @@ button {
   display: flex;
   align-items: center;
 }
-
 header {
   position: relative;
   height: auto;
