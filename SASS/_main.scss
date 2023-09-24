@@ -3,7 +3,7 @@
 @import "./Group-Mixin/Flex-Mixin";
 @import "./Group-Mixin/Grid-Mixin";
 * {
-    @include Universal
+    @include Universal;
 }
 
 @import "./Component/nav";
