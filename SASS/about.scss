@@ -1,1 +1,38 @@
 @import "./main";
+@import "./Component/header";
+@import "./Group-Mixin/Grid-Mixin";
+@import "./Component/variable";
+#header{
+    background-image: url(/IMAGES/Aboutpage/Header\ section.png);
+    height: 500px;
+}
+#ceo{
+    margin: 80px 0 80px 100px;
+    @include gridCenter;
+    grid-template-columns: repeat(2, 1fr);
+
+    .ceo-text{
+        @include gridCenter;
+        grid-template-rows: repeat(3, 0.5fr);
+        p{
+            margin: 0 50px 0 0;
+            font-size: 20px;
+        }
+    }
+
+
+    .member-img{
+        @include gridCenter;
+        justify-content: center;
+    }
+}
+#our-team{
+    @include gridCenter;
+    grid-template-rows: 0.4fr 1fr;
+    justify-content: center;
+    .group-member{
+        @include gridCenter;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;       
+    }
+}
