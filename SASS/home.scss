@@ -2,6 +2,9 @@
 @import "./Component/header";
 @import "./Component/variable";
 
+header {
+    background-image: url(../IMAGES/cat-3131.gif);
+}
 .category {
     text-align: center;
     padding: 30px $standard-padding;
