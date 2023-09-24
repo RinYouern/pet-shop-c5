@@ -84,7 +84,7 @@ nav .nav-right .search span {
 }
 
 button {
-  padding: 5px 30px;
+  padding: 5px 20px;
   border-radius: 10px;
   background-color: #0D99FF;
   font-size: 16px;
@@ -96,7 +96,6 @@ button {
 header {
   position: relative;
   height: auto;
-  background-image: url(../IMAGES/cat-3131.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -130,3 +129,14 @@ header .content h1 span {
 header .content p {
   color: white;
 }
+
+header {
+  z-index: 1;
+  flex-direction: column;
+  background-image: url(../IMAGES/service_page/background_service.jpg);
+  background-position: center top;
+  align-items: center;
+}
+header .content {
+  width: 70%;
+}/*# sourceMappingURL=service.css.map */

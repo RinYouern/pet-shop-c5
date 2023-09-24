@@ -84,7 +84,7 @@ nav .nav-right .search span {
 }
 
 button {
-  padding: 5px 30px;
+  padding: 5px 20px;
   border-radius: 10px;
   background-color: #0D99FF;
   font-size: 16px;
@@ -96,7 +96,6 @@ button {
 header {
   position: relative;
   height: auto;
-  background-image: url(../IMAGES/cat-3131.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -168,4 +167,4 @@ header .content p {
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-}
+}/*# sourceMappingURL=about.css.map */
