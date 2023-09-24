@@ -5,8 +5,8 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
-    list-style-type: none;
     text-decoration: none;
+    list-style-type: none;
     scroll-behavior: smooth;
     line-height: 1.5em;
 }
@@ -19,8 +19,7 @@
     align-items: center;
 }
 @mixin flexeEvenly {
-    display: flex;
-    align-items: center;
+    @include flexCenter;
     justify-content: space-evenly;
 }
 @mixin flexEnd {
@@ -30,8 +29,8 @@
 } 
 @mixin inputStyle {
     border-radius: 25px;
-    border: 1px solid $main-border;
-    outline-color: $main-border;
+    border: 1px solid $main-card-border;
+    outline-color: $main-background;
     font-size: 17px;
     width: 100%;
     padding: 10px 15px 10px 40px;
@@ -44,7 +43,7 @@
 
 @mixin btnStyle {
     padding: 5px 30px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 @mixin absolutePosition {

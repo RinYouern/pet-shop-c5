@@ -5,15 +5,10 @@
   padding: 0;
   box-sizing: border-box;
   border: none;
-  list-style-type: none;
   text-decoration: none;
+  list-style-type: none;
   scroll-behavior: smooth;
   line-height: 1.5em;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 1fr;
 }
 
 nav {
@@ -22,13 +17,13 @@ nav {
   z-index: 100;
   background-color: white;
   padding: 0px 80px;
-  height: 90px;
+  height: 80px;
   display: grid;
   grid-template-columns: 35% 30% 35%;
   display: grid;
   align-items: center;
   color: #4b4b4b;
-  border-bottom: 1px solid #F0EEF0;
+  border-bottom: 1px solid #919092;
 }
 nav .nav-left {
   display: flex;
@@ -65,7 +60,7 @@ nav .nav-right .search {
 }
 nav .nav-right .search input[type=search] {
   border-radius: 25px;
-  border: 1px solid #F0EEF0;
+  border: 1px solid #919092;
   outline-color: #F0EEF0;
   font-size: 17px;
   width: 100%;
@@ -74,6 +69,28 @@ nav .nav-right .search input[type=search] {
 nav .nav-right .search span {
   position: absolute;
   left: 15px;
+}
+
+.card_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card_container .card {
+  display: flex;
+  flex-direction: column;
+  height: 460px;
+  border: 1px solid #000;
+}
+
+button {
+  padding: 5px 30px;
+  border-radius: 10px;
+  background-color: #0D99FF;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
 }
 
 header {
@@ -112,4 +129,12 @@ header .content h1 span {
 }
 header .content p {
   color: white;
+}
+
+.category {
+  text-align: center;
+  padding: 30px 80px;
+}
+.category h3, .category h2 {
+  font-family: "Ubuntu", sans-serif;
 }/*# sourceMappingURL=home.css.map */

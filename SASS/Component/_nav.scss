@@ -7,18 +7,18 @@ nav {
     z-index: 100;
     background-color: white;
     padding: 0px $standard-padding;
-    height: 90px;
+    height: 80px;
     display: grid;
     grid-template-columns: 35% 30% 35%;
     @include gridCenter;
     color: $main-paragraph;
-    border-bottom: 1px solid $main-border;
+    border-bottom: 1px solid $main-card-border;
     .nav-left {
         @include flexCenter; 
         gap: 10px;
         a {
             h1 {
-                font-family: $main-header;
+                font-family: $main-font-header;
                 font-weight: 100;
             }
         }

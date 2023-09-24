@@ -5,8 +5,7 @@
 * {
     @include Universal
 }
-body {
-    display: grid;
-    grid-template-columns: 1fr;
-}
+
 @import "./Component/nav";
+@import "./Component/card";
+@import "./Component/button";

@@ -1,0 +1,10 @@
+@import "../Group-Mixin/Flex-Mixin";
+@import "./variable";
+.card_container {
+    @include flexeEvenly;
+    .card {
+        @include flexDirection;
+        height: 460px;
+        border: 1px solid #000;
+    }
+}
