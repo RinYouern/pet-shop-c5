@@ -1,9 +1,10 @@
 @import "./main";
 @import "./Component/header";
 @import "./Group-Mixin/Flex-Mixin";
+@import "./Group-Mixin/Grid-Mixin";
 
 header {
-    padding: 80px 0px 120px 0px;
+    padding: 80px 0px 90px 0px;
     position: relative;
     background-image: url(../IMAGES/service_page//background.jpg);
     @include flexCenter;
@@ -11,24 +12,30 @@ header {
     background-position: center;
     flex-direction: column;
     gap: 15px;
+
     .background {
-        background: linear-gradient(rgba(12, 3, 51, 0.3),rgba(12, 3, 51, 0.3));
+        background: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0;right: 0;
+        top: 0;
+        right: 0;
     }
+
     .search {
         position: relative;
         @include flexCenter;
         width: 50%;
-        input[type = search] {
+
+        input[type=search] {
             @include inputStyle;
 
         }
+
         span {
             position: absolute;
             left: 15px;
+            color: $main-card-border;
         }
     }
     .group_btn {
@@ -38,43 +45,53 @@ header {
         margin-top: 30px;
         justify-content: center;
         gap: 20px;
-        button {
-            font-family: $main-font-header;
-            background-color: #ffffff00;
-            border: 1px solid #fff;
-            transition: 0.3s;
-            &:active {
-                background-color: #fff;
-                color: black;
-            }
-        }
     }
 }
-#service,#pets {
-    background-color: $main-background;
+
+p {
+    font-weight: 300;
+}
+
+#service,
+#pets {
+    // background-color: $main-background;
     padding: 30px $standard-padding;
     text-align: center;
     gap: 25px;
 }
-#service,.card{
+
+#service,
+.card {
     @include flexDirection;
-    h2,h3 {
+
+    h3 {
+        text-decoration: underline;
+    }
+
+    h2,
+    h3 {
         font-family: $main-font-header;
         font-weight: normal;
         color: $main-bg-color;
     }
+
     p {
         color: white;
     }
-    h3,p,a {
+
+    h3,
+    p,
+    a {
         z-index: 1;
     }
 
 }
+
 #service {
     .group_card {
         @include flexBtween;
         gap: 20px;
+
         .card {
             position: relative;
             text-align: start;
@@ -85,43 +102,141 @@ header {
             gap: 10px;
             border: none;
             background-image: url(../IMAGES/service_page/Veterinarian.jpg);
+
             .blur {
                 border-radius: 10px;
                 width: 100%;
                 height: 100%;
                 position: absolute;
-                top: 0;right: 0;
-                background: linear-gradient(rgba(12, 3, 51, 0.5),rgba(12, 3, 51, 0.5));
+                top: 0;
+                right: 0;
+                background: linear-gradient(rgba(12, 3, 51, 0.5), rgba(12, 3, 51, 0.5));
             }
+
             @include backgroundImage;
+
             a {
                 @include flexCenter;
                 color: $main-text-color;
             }
         }
+
         .card:nth-child(2) {
             background-image: url(../IMAGES/service_page/Pet\ care\ professional.jpg);
         }
+
         .card:nth-child(3) {
             background-image: url(../IMAGES/service_page/Pet\ adoption.jpg);
         }
+
         .card:nth-child(4) {
             background-image: url(../IMAGES/service_page/Delivery.jpg);
         }
     }
 }
 
+#pets,
+.group-card {
+    display: grid;
+}
+
 #pets {
-    .group-card {
-        @include flexBtween;
-        flex-wrap: wrap;
-        .card {
-            width: 45%;
-        }
-    }
+    grid-template-rows: 10% 80% 10%;
+    gap: 20px;
+
     h2 {
         color: $main-bg-color;
         font-family: $main-font-header;
         font-weight: normal;
+    }
+
+    a {
+        #view-all {
+            margin: auto;
+            width: 130px;
+            @include flexCenter;
+            justify-content: center;
+            background-color: #fff;
+            border: 1px solid $main-card-border;
+            border-radius: 5px;
+            transition: 0.3s;
+
+            &:hover {
+                color: white;
+                background-color: #000;
+            }
+        }
+    }
+
+    .group-card {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .card {
+            position: relative;
+            background-image: url(../IMAGES/service_page/pet_cat.jpg);
+            @include backgroundImage;
+            background-position: center;
+            height: 400px;
+            background-color: $main-bg-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 70% 20px 30px 20px;
+            border: none;
+
+            .blur {
+                width: 100%;
+                height: 100%;
+                @include absolutePosition;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black 70%);
+                border-radius: 10px;
+            }
+
+            .content {
+                z-index: 1;
+            }
+
+            p,
+            h3 {
+                text-align: start;
+            }
+        }
+
+        .card:nth-child(2) {
+            background-image: url(../IMAGES/service_page/pet_dog.jpg);
+        }
+
+        .card:nth-child(3) {
+            background-image: url(../IMAGES/service_page/pet_parrot.jpg);
+        }
+
+        .card:nth-child(4) {
+            background-image: url(../IMAGES/service_page/pet_rabbit.jpg);
+        }
+    }
+}
+
+// the same style 
+header .group_btn button,
+#pets .group-card .card button {
+    gap: 5px;
+    background-color: #ffffff00;
+    border: 1px solid #fff;
+    color: white;
+    font-weight: 400;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: #0d9affa4 0px 10px 90px;
+    }
+
+    &:active {
+        color: black;
+        background-color: white;
+    }
+
+    span {
+        font-size: 16px;
     }
 }

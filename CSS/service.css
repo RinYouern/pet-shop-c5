@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap");
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,7 +24,7 @@ nav {
   display: grid;
   align-items: center;
   color: #4b4b4b;
-  border-bottom: 1px solid #919092;
+  border-bottom: 1px solid #F0EEF0;
 }
 nav .nav-left {
   display: flex;
@@ -55,7 +56,6 @@ nav .nav-right .search {
   position: relative;
   width: 90%;
   display: flex;
-  justify-content: flex-end;
 }
 nav .nav-right .search input[type=search] {
   border-radius: 25px;
@@ -68,6 +68,12 @@ nav .nav-right .search input[type=search] {
 nav .nav-right .search span {
   position: absolute;
   left: 15px;
+  top: 11px;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid #919092;
 }
 
 button {
@@ -109,14 +115,14 @@ header .content h1 {
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
   color: #0D99FF;
-  text-shadow: 2px 2px 4px white;
+  text-shadow: rgba(13, 154, 255, 0.4549019608) 0px 1px 20px;
 }
 header .content p {
   color: white;
 }
 
 header {
-  padding: 80px 0px 120px 0px;
+  padding: 80px 0px 90px 0px;
   position: relative;
   background-image: url(../IMAGES/service_page//background.jpg);
   display: flex;
@@ -151,6 +157,7 @@ header .search input[type=search] {
 header .search span {
   position: absolute;
   left: 15px;
+  color: #919092;
 }
 header .group_btn {
   width: 100%;
@@ -160,37 +167,45 @@ header .group_btn {
   justify-content: center;
   gap: 20px;
 }
-header .group_btn button {
-  font-family: "Ubuntu", sans-serif;
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid #fff;
-  transition: 0.3s;
-}
-header .group_btn button:active {
-  background-color: #fff;
-  color: black;
+
+p {
+  font-weight: 300;
 }
 
-#service, #pets {
-  background-color: #F0EEF0;
+#service,
+#pets {
   padding: 30px 80px;
   text-align: center;
   gap: 25px;
 }
 
-#service, .card {
+#service,
+.card {
   display: flex;
   flex-direction: column;
 }
-#service h2, #service h3, .card h2, .card h3 {
+#service h3,
+.card h3 {
+  text-decoration: underline;
+}
+#service h2,
+#service h3,
+.card h2,
+.card h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
   color: #B68C3F;
 }
-#service p, .card p {
+#service p,
+.card p {
   color: white;
 }
-#service h3, #service p, #service a, .card h3, .card p, .card a {
+#service h3,
+#service p,
+#service a,
+.card h3,
+.card p,
+.card a {
   z-index: 1;
 }
 
@@ -239,17 +254,99 @@ header .group_btn button:active {
   background-image: url(../IMAGES/service_page/Delivery.jpg);
 }
 
-#pets .group-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+#pets,
+.group-card {
+  display: grid;
 }
-#pets .group-card .card {
-  width: 45%;
+
+#pets {
+  grid-template-rows: 10% 80% 10%;
+  gap: 20px;
 }
 #pets h2 {
   color: #B68C3F;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
+}
+#pets a #view-all {
+  margin: auto;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid #919092;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+#pets a #view-all:hover {
+  color: white;
+  background-color: #000;
+}
+#pets .group-card {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+#pets .group-card .card {
+  position: relative;
+  background-image: url(../IMAGES/service_page/pet_cat.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-position: center;
+  height: 400px;
+  background-color: #B68C3F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 70% 20px 30px 20px;
+  border: none;
+}
+#pets .group-card .card .blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black 70%);
+  border-radius: 10px;
+}
+#pets .group-card .card .content {
+  z-index: 1;
+}
+#pets .group-card .card p,
+#pets .group-card .card h3 {
+  text-align: start;
+}
+#pets .group-card .card:nth-child(2) {
+  background-image: url(../IMAGES/service_page/pet_dog.jpg);
+}
+#pets .group-card .card:nth-child(3) {
+  background-image: url(../IMAGES/service_page/pet_parrot.jpg);
+}
+#pets .group-card .card:nth-child(4) {
+  background-image: url(../IMAGES/service_page/pet_rabbit.jpg);
+}
+
+header .group_btn button,
+#pets .group-card .card button {
+  gap: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  color: white;
+  font-weight: 400;
+  transition: 0.3s;
+}
+header .group_btn button:hover,
+#pets .group-card .card button:hover {
+  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 10px 90px;
+}
+header .group_btn button:active,
+#pets .group-card .card button:active {
+  color: black;
+  background-color: white;
+}
+header .group_btn button span,
+#pets .group-card .card button span {
+  font-size: 16px;
 }/*# sourceMappingURL=service.css.map */

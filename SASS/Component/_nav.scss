@@ -12,7 +12,7 @@ nav {
     grid-template-columns: 35% 30% 35%;
     @include gridCenter;
     color: $main-paragraph;
-    border-bottom: 1px solid $main-card-border;
+    border-bottom: 1px solid $main-background;
     .nav-left {
         @include flexCenter; 
         gap: 10px;
@@ -42,13 +42,14 @@ nav {
         .search {
             position: relative;
             width: 90%;
-            @include flexEnd;
+            display: flex;
             input[type = search] {
                 @include inputStyle;
             }
             span {
                 position: absolute;
                 left: 15px;
+                top: 11px;
             }
         }
     }

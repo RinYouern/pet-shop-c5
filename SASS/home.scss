@@ -41,6 +41,7 @@ header {
             @include flexDirection;
             .Btn {
                 button{
+                    @include flexCenter;
                     color: white;
                     background-color: $main-text-color;
                 }
@@ -100,6 +101,7 @@ header {
 }
 // new-product
 .our-new-product{
+    padding: 30px $standard-padding;
     .title{
         display: flex;
         justify-content: center;
@@ -108,10 +110,41 @@ header {
             align-items: center
         }
     }
-}
-.class-card {
-    display: grid;
-    grid-template-columns:repeat(4/1fr);
-    grid-template-rows: repeat(2/1fr);
+    .class-card {
+        display: grid; 
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15px;
+        .card {
+            padding: 30px;
+            height: 420px;
+            @include flexDirection;
+            .new-img{
+                flex: 1;
+                display: flex;
+                img {
+                    width: 100%;
+                }
+            }
+            .new-content {
+                flex: 1;
+                p{
+                    padding: 10px;
+                }
+                .more{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-top: 20px;
+                    .price{
+                        color: $main-bg-color;
+                    }
+                    .tag{
+                        color: $main-text-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
 }
 
