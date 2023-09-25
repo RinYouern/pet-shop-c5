@@ -55,43 +55,48 @@
         border-radius: 20px;
         text-align: left;
         color: $main-background;
-        p{
+
+        p {
             font-size: 10px;
         }
-        span{
+
+        span {
             color: $main-bg-color;
         }
 
     }
-    .position{
+
+    .position {
         margin-top: 20px;
-        display:flex;
+        display: flex;
         align-items: center;
         gap: 30px;
     }
 }
 
-#values{
-    h1{
+#values {
+    h1 {
         margin-top: 10px;
         text-align: center;
     }
+
     @include gridCenter;
     grid-template-rows: 0.1fr 1fr;
-    justify-content: center;
-    padding: 20px 80px;
-    gap: 50px;
-    .group-values{
+    padding:30px 50px;
+
+    .group-values {
         @include gridCenter;
         gap: 40px;
         grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
-        .value{
+        justify-content: space-evenly;
+
+        .value {
             @include gridCenter;
-            gap: 30px;
+            gap: 20px;
+            grid-template-columns: 0.1fr 0.8fr;
             justify-content: center;
-            grid-template-columns: 0.1fr 1fr;
-            span{
+
+            span {
                 border-radius: 50%;
                 font-size: 50px;
                 padding: 30px;
@@ -99,5 +104,40 @@
                 color: $main-text-color;
             }
         }
+    }
+}
+
+#mission {
+    background-image: url(/IMAGES/Aboutpage/Mission.png);
+    height: 400px;
+    h1{
+        color: $main-bg-color;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+#community{
+    padding: 80px;
+    .group-community{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        .meaning{
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                color: $main-text-color;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+        img {
+            width: 520px;
+        }
+
     }
 }

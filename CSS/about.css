@@ -109,7 +109,7 @@ header .content {
   gap: 20px;
 }
 header .content h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
 header .content h1 span {
@@ -189,9 +189,7 @@ header .content p {
   display: grid;
   align-items: center;
   grid-template-rows: 0.1fr 1fr;
-  justify-content: center;
-  padding: 20px 80px;
-  gap: 50px;
+  padding: 30px 50px;
 }
 #values h1 {
   margin-top: 10px;
@@ -202,14 +200,14 @@ header .content p {
   align-items: center;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #values .group-values .value {
   display: grid;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
+  grid-template-columns: 0.1fr 0.8fr;
   justify-content: center;
-  grid-template-columns: 0.1fr 1fr;
 }
 #values .group-values .value span {
   border-radius: 50%;
@@ -217,4 +215,37 @@ header .content p {
   padding: 30px;
   background: #F0EEF0;
   color: #0D99FF;
-}/*# sourceMappingURL=about.css.map */
+}
+
+#mission {
+  background-image: url(/IMAGES/Aboutpage/Mission.png);
+  height: 400px;
+}
+#mission h1 {
+  color: #B68C3F;
+}
+#mission p {
+  font-size: 20px;
+}
+
+#community {
+  padding: 80px;
+}
+#community .group-community {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#community .group-community .meaning {
+  display: flex;
+  flex-direction: column;
+}
+#community .group-community .meaning h1 {
+  color: #0D99FF;
+}
+#community .group-community .meaning p {
+  font-size: 25px;
+}
+#community .group-community img {
+  width: 520px;
+}
