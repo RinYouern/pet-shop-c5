@@ -70,17 +70,6 @@ nav .nav-right .search span {
   left: 15px;
 }
 
-<<<<<<< HEAD
-=======
-.card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 30px 20px;
-  border: 1px solid #919092;
-}
-
->>>>>>> 1bebaf50133e4f72f6ec67a91efed41aa0dcd7f3
 button {
   padding: 5px 20px;
   border-radius: 10px;
@@ -191,9 +180,6 @@ header .content p {
   display: flex;
   align-items: center;
   gap: 30px;
-<<<<<<< HEAD
-}/*# sourceMappingURL=about.css.map */
-=======
 }
 
 #values {
@@ -228,5 +214,4 @@ header .content p {
   padding: 30px;
   background: #F0EEF0;
   color: #0D99FF;
-}
->>>>>>> d6627f1cc919872ca217b0e5c2ce7b5a31f21bd1
+}/*# sourceMappingURL=about.css.map */
