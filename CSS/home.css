@@ -71,11 +71,14 @@ nav .nav-right .search span {
   top: 11px;
 }
 
+<<<<<<< HEAD
+=======
 .card {
   border-radius: 10px;
   border: 1px solid #919092;
 }
 
+>>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
 button {
   padding: 5px 20px;
   border-radius: 10px;
@@ -212,6 +215,7 @@ header {
 .group-card .card .product-content .more .tag {
   color: #0D99FF;
   text-decoration: underline;
+<<<<<<< HEAD
 }
 
 .our-new-product {
@@ -262,3 +266,10 @@ header {
   color: #0D99FF;
   text-decoration: underline;
 }/*# sourceMappingURL=home.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=home.css.map */
+=======
+}/*# sourceMappingURL=home.css.map */
+>>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
+>>>>>>> e0eb870a6cf2cb65ce328a3f99784234477d1f84
