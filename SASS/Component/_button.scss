@@ -1,9 +1,6 @@
 @import "../Group-Mixin/Flex-Mixin";
 button {
     @include btnStyle;
-    background-color: $main-text-color;
     font-size: 16px;
-    color: white;
     @include flexCenter;
-    margin: auto;
 }
