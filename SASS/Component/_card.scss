@@ -1,40 +1,9 @@
 @import "../Group-Mixin/Flex-Mixin";
 @import "./variable";
-.card_container {
-    @include flexeEvenly;
-    gap: 15px;
-    .card {
-        @include flexDirection;
-        height: 420px;
-        border: 1px solid #000;
-        margin-top: 10px;
-        .pet-content{
-            ul {
-                display: flex;
-                width: 100%;
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                li {
-                    width: 33%;
-                }
-            }
-        }
-    }
-}
-.group-card{
-    @include flexeEvenly;
-    gap: 15px;
-    .card {
-        @include flexDirection;
-        margin-top: 10px;
-        height: 520px;
-        border: 1px solid #000;
-        .product-content {
-            .more {
-                display: flex;
-                justify-content: space-around;
-            }
-        }
-    }
+
+.card {
+    @include flexDirection;
+    border-radius: 10px;
+    padding: 30px 20px;
+    border: 1px solid $main-card-border;
 }

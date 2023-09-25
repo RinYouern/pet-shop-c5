@@ -24,9 +24,12 @@
 }
 @mixin flexEnd {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
 } 
+@mixin flexBtween {
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
 @mixin inputStyle {
     border-radius: 25px;
     border: 1px solid $main-card-border;
