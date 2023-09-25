@@ -1,2 +1,12 @@
 @import "../Group-Mixin/Flex-Mixin";
 @import "./variable";
+<<<<<<< HEAD
+=======
+
+.card {
+    @include flexDirection;
+    border-radius: 10px;
+    padding: 30px 20px;
+    border: 1px solid $main-card-border;
+}
+>>>>>>> 1bebaf50133e4f72f6ec67a91efed41aa0dcd7f3

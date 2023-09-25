@@ -55,7 +55,6 @@ nav .nav-right .search {
   position: relative;
   width: 90%;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 nav .nav-right .search input[type=search] {
@@ -71,6 +70,17 @@ nav .nav-right .search span {
   left: 15px;
 }
 
+<<<<<<< HEAD
+=======
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px 20px;
+  border: 1px solid #919092;
+}
+
+>>>>>>> 1bebaf50133e4f72f6ec67a91efed41aa0dcd7f3
 button {
   padding: 5px 20px;
   border-radius: 10px;
@@ -122,7 +132,7 @@ header .content p {
 header {
   padding: 80px 0px 120px 0px;
   position: relative;
-  background-image: url(../IMAGES/service_page/pexels-karenna-ramirez-1034888.jpg);
+  background-image: url(../IMAGES/service_page//background.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,5 +188,92 @@ header .group_btn button {
 header .group_btn button:active {
   background-color: #fff;
   color: black;
+<<<<<<< HEAD
+}
+
+#service, #pets {
+  background-color: #F0EEF0;
+  padding: 30px 80px;
+  text-align: center;
+  gap: 25px;
+}
+
+#service, .card {
+  display: flex;
+  flex-direction: column;
+}
+#service h2, #service h3, .card h2, .card h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  color: #B68C3F;
+}
+#service p, .card p {
+  color: white;
+}
+#service h3, #service p, #service a, .card h3, .card p, .card a {
+  z-index: 1;
+}
+
+#service .group_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+#service .group_card .card {
+  position: relative;
+  text-align: start;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  height: 350px;
+  width: 400px;
+  gap: 10px;
+  border: none;
+  background-image: url(../IMAGES/service_page/Veterinarian.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#service .group_card .card .blur {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(rgba(12, 3, 51, 0.5), rgba(12, 3, 51, 0.5));
+}
+#service .group_card .card a {
+  display: flex;
+  align-items: center;
+  color: #0D99FF;
+}
+#service .group_card .card:nth-child(2) {
+  background-image: url(../IMAGES/service_page/Pet\ care\ professional.jpg);
+}
+#service .group_card .card:nth-child(3) {
+  background-image: url(../IMAGES/service_page/Pet\ adoption.jpg);
+}
+#service .group_card .card:nth-child(4) {
+  background-image: url(../IMAGES/service_page/Delivery.jpg);
+}
+
+#pets .group-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#pets .group-card .card {
+  width: 45%;
+}
+#pets h2 {
+  color: #B68C3F;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+}/*# sourceMappingURL=service.css.map */
+=======
 }/*# sourceMappingURL=service.css.map */
 >>>>>>> 25b35b4ddf69a4f0fd4ca135e4af0556d15e756f
+>>>>>>> d6627f1cc919872ca217b0e5c2ce7b5a31f21bd1

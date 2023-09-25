@@ -55,7 +55,6 @@ nav .nav-right .search {
   position: relative;
   width: 90%;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 nav .nav-right .search input[type=search] {
@@ -71,6 +70,17 @@ nav .nav-right .search span {
   left: 15px;
 }
 
+<<<<<<< HEAD
+=======
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px 20px;
+  border: 1px solid #919092;
+}
+
+>>>>>>> 1bebaf50133e4f72f6ec67a91efed41aa0dcd7f3
 button {
   padding: 5px 20px;
   border-radius: 10px;
