@@ -181,4 +181,42 @@ header .content p {
   display: flex;
   align-items: center;
   gap: 30px;
+<<<<<<< HEAD
 }/*# sourceMappingURL=about.css.map */
+=======
+}
+
+#values {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 0.1fr 1fr;
+  justify-content: center;
+  padding: 20px 80px;
+  gap: 50px;
+}
+#values h1 {
+  margin-top: 10px;
+  text-align: center;
+}
+#values .group-values {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+#values .group-values .value {
+  display: grid;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  grid-template-columns: 0.1fr 1fr;
+}
+#values .group-values .value span {
+  border-radius: 50%;
+  font-size: 50px;
+  padding: 30px;
+  background: #F0EEF0;
+  color: #0D99FF;
+}
+>>>>>>> d6627f1cc919872ca217b0e5c2ce7b5a31f21bd1

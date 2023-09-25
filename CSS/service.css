@@ -130,6 +130,11 @@ header {
   flex-direction: column;
   gap: 15px;
 }
+<<<<<<< HEAD
+header .content {
+  width: 70%;
+}
+=======
 header .background {
   background: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
   width: 100%;
@@ -174,3 +179,4 @@ header .group_btn button:active {
   background-color: #fff;
   color: black;
 }/*# sourceMappingURL=service.css.map */
+>>>>>>> 25b35b4ddf69a4f0fd4ca135e4af0556d15e756f

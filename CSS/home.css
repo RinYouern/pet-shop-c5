@@ -129,6 +129,7 @@ header {
 }
 .category h3, .category h2 {
   font-family: "Ubuntu", sans-serif;
+<<<<<<< HEAD
 }
 .category .pet .title h2 {
   color: #0D99FF;
@@ -203,3 +204,6 @@ header {
   color: #0D99FF;
   text-decoration: underline;
 }/*# sourceMappingURL=home.css.map */
+=======
+}
+>>>>>>> d6627f1cc919872ca217b0e5c2ce7b5a31f21bd1
