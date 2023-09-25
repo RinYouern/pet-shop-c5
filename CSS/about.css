@@ -171,7 +171,6 @@ header .content p {
 #our-team .group-member {
   display: grid;
   align-items: center;
-<<<<<<< HEAD
   grid-template-columns: repeat(3, 0.5fr);
   gap: 30px;
 }
@@ -194,8 +193,37 @@ header .content p {
   align-items: center;
   gap: 30px;
 }
-=======
-  grid-template-columns: repeat(3, 1fr);
+
+#values {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 0.1fr 1fr;
+  justify-content: center;
+  padding: 20px 80px;
   gap: 50px;
-}/*# sourceMappingURL=about.css.map */
->>>>>>> c7d3916d2102cdac7d5d19e30b489ab6c5e4340b
+}
+#values h1 {
+  margin-top: 10px;
+  text-align: center;
+}
+#values .group-values {
+  display: grid;
+  align-items: center;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+#values .group-values .value {
+  display: grid;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  grid-template-columns: 0.1fr 1fr;
+}
+#values .group-values .value span {
+  border-radius: 50%;
+  font-size: 50px;
+  padding: 30px;
+  background: #F0EEF0;
+  color: #0D99FF;
+}
