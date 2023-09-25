@@ -70,17 +70,6 @@ nav .nav-right .search span {
   left: 15px;
 }
 
-<<<<<<< HEAD
-=======
-.card {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 30px 20px;
-  border: 1px solid #919092;
-}
-
->>>>>>> 1bebaf50133e4f72f6ec67a91efed41aa0dcd7f3
 button {
   padding: 5px 20px;
   border-radius: 10px;
@@ -140,11 +129,6 @@ header {
   flex-direction: column;
   gap: 15px;
 }
-<<<<<<< HEAD
-header .content {
-  width: 70%;
-}
-=======
 header .background {
   background: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
   width: 100%;
@@ -188,7 +172,6 @@ header .group_btn button {
 header .group_btn button:active {
   background-color: #fff;
   color: black;
-<<<<<<< HEAD
 }
 
 #service, #pets {
@@ -272,8 +255,4 @@ header .group_btn button:active {
   color: #B68C3F;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-}/*# sourceMappingURL=service.css.map */
-=======
-}/*# sourceMappingURL=service.css.map */
->>>>>>> 25b35b4ddf69a4f0fd4ca135e4af0556d15e756f
->>>>>>> d6627f1cc919872ca217b0e5c2ce7b5a31f21bd1
+}
