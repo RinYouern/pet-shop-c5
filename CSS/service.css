@@ -103,7 +103,7 @@ header .content {
   gap: 20px;
 }
 header .content h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
 header .content h1 span {
@@ -252,8 +252,4 @@ header .group_btn button:active {
   color: #B68C3F;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-<<<<<<< HEAD
 }
-=======
-}/*# sourceMappingURL=service.css.map */
->>>>>>> 9192d58e6d526db82b513cfea390773b4c143fd5
