@@ -1,2 +1,7 @@
 @import "../Group-Mixin/Flex-Mixin";
 @import "./variable";
+
+.card {
+    border-radius: 10px;
+    border: 1px solid $main-card-border;
+}
