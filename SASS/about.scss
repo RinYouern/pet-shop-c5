@@ -2,37 +2,71 @@
 @import "./Component/header";
 @import "./Group-Mixin/Grid-Mixin";
 @import "./Component/variable";
-#header{
+
+#header {
     background-image: url(/IMAGES/Aboutpage/Header\ section.png);
     height: 500px;
 }
-#ceo{
+
+#ceo {
     margin: 80px 0 80px 100px;
     @include gridCenter;
     grid-template-columns: repeat(2, 1fr);
 
-    .ceo-text{
+    .ceo-text {
         @include gridCenter;
         grid-template-rows: repeat(3, 0.5fr);
-        p{
+
+        p {
             margin: 0 50px 0 0;
             font-size: 20px;
         }
     }
 
 
-    .member-img{
+    .member-img {
         @include gridCenter;
         justify-content: center;
     }
 }
-#our-team{
+
+#our-team {
+
     @include gridCenter;
-    grid-template-rows: 0.4fr 1fr;
     justify-content: center;
-    .group-member{
+    grid-template-rows: 0.2fr 1fr;
+    padding-bottom: 10px;
+    background: $main-card-border;
+
+    h1 {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .group-member {
         @include gridCenter;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;       
+        grid-template-columns: repeat(3, 0.5fr);
+        gap: 30px;
+    }
+
+    .card-member {
+        background: black;
+        padding: 30px;
+        border-radius: 20px;
+        text-align: left;
+        color: $main-background;
+        p{
+            font-size: 10px;
+        }
+        span{
+            color: $main-bg-color;
+        }
+
+    }
+    .position{
+        margin-top: 20px;
+        display:flex;
+        align-items: center;
+        gap: 30px;
     }
 }
