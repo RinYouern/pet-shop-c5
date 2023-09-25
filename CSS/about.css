@@ -190,12 +190,43 @@ header .content p {
 #our-team {
   display: grid;
   align-items: center;
-  grid-template-rows: 0.4fr 1fr;
   justify-content: center;
+  grid-template-rows: 0.2fr 1fr;
+  padding-bottom: 10px;
+  background: #919092;
+}
+#our-team h1 {
+  margin-top: 10px;
+  text-align: center;
 }
 #our-team .group-member {
   display: grid;
   align-items: center;
+<<<<<<< HEAD
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 30px;
+}
+#our-team .card-member {
+  background: black;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: left;
+  color: #F0EEF0;
+}
+#our-team .card-member p {
+  font-size: 10px;
+}
+#our-team .card-member span {
+  color: #B68C3F;
+}
+#our-team .position {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+=======
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
 }/*# sourceMappingURL=about.css.map */
+>>>>>>> c7d3916d2102cdac7d5d19e30b489ab6c5e4340b
