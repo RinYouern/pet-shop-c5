@@ -71,48 +71,6 @@ nav .nav-right .search span {
   left: 15px;
 }
 
-.card_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 15px;
-}
-.card_container .card {
-  display: flex;
-  flex-direction: column;
-  height: 420px;
-  border: 1px solid #000;
-  margin-top: 10px;
-}
-.card_container .card .pet-content ul {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.card_container .card .pet-content ul li {
-  width: 33%;
-}
-
-.group-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 15px;
-}
-.group-card .card {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  height: 520px;
-  border: 1px solid #000;
-}
-.group-card .card .product-content .more {
-  display: flex;
-  justify-content: space-around;
-}
-
 button {
   padding: 5px 20px;
   border-radius: 10px;

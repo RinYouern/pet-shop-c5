@@ -11,4 +11,82 @@ header {
     h3,h2 {
         font-family: $main-font-header;
     }
+    .pet {
+        .title {
+            h2 {
+                color: $main-text-color;
+            }
+        }
+    }
 }
+// pet
+.card_container {
+    @include flexeEvenly;
+    gap: 15px;
+    .card {
+        @include flexDirection;
+        height: 420px;
+        border: 1px solid $main-card-border;
+        border-radius: 15px;
+        margin-top: 10px;
+        .pet-img {
+            img {
+                width: 90%;
+            }
+        }
+        .pet-content{
+            ul {
+                display: flex;
+                width: 100%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                li {
+                    width: 33%;
+                }
+            }
+        }
+    }
+// product
+.product {
+    padding-top: 30px;
+    .title {
+        h2 {
+            color:$main-text-color;
+        }
+    }
+}
+.group-card{
+    @include flexeEvenly;
+    gap: 15px;
+    .card {
+        @include flexDirection;
+        margin-top: 10px;
+        height: 420px;
+        width: 100%;
+        border: 1px solid $main-card-border;
+        border-radius: 15px;
+        .product-img {
+            img {
+                width: 80%;
+                padding-top: 30px;
+            }
+        }
+        .product-content {
+            padding-top: 20px;
+            .more {
+                display: flex;
+                justify-content: space-around;
+                padding-top: 20px;
+                .price{
+                    color: $main-bg-color;
+                }
+                .tag {
+                    color:$main-text-color ;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+// new-product

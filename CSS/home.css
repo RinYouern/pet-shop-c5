@@ -71,48 +71,6 @@ nav .nav-right .search span {
   left: 15px;
 }
 
-.card_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 15px;
-}
-.card_container .card {
-  display: flex;
-  flex-direction: column;
-  height: 420px;
-  border: 1px solid #000;
-  margin-top: 10px;
-}
-.card_container .card .pet-content ul {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.card_container .card .pet-content ul li {
-  width: 33%;
-}
-
-.group-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 15px;
-}
-.group-card .card {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  height: 520px;
-  border: 1px solid #000;
-}
-.group-card .card .product-content .more {
-  display: flex;
-  justify-content: space-around;
-}
-
 button {
   padding: 5px 20px;
   border-radius: 10px;
@@ -171,4 +129,77 @@ header {
 }
 .category h3, .category h2 {
   font-family: "Ubuntu", sans-serif;
+}
+.category .pet .title h2 {
+  color: #0D99FF;
+}
+
+.card_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.card_container .card {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  border: 1px solid #919092;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+.card_container .card .pet-img img {
+  width: 90%;
+}
+.card_container .card .pet-content ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card_container .card .pet-content ul li {
+  width: 33%;
+}
+
+.product {
+  padding-top: 30px;
+}
+.product .title h2 {
+  color: #0D99FF;
+}
+
+.group-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.group-card .card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 420px;
+  width: 100%;
+  border: 1px solid #919092;
+  border-radius: 15px;
+}
+.group-card .card .product-img img {
+  width: 80%;
+  padding-top: 30px;
+}
+.group-card .card .product-content {
+  padding-top: 20px;
+}
+.group-card .card .product-content .more {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.group-card .card .product-content .more .price {
+  color: #B68C3F;
+}
+.group-card .card .product-content .more .tag {
+  color: #0D99FF;
+  text-decoration: underline;
 }/*# sourceMappingURL=home.css.map */
