@@ -174,7 +174,6 @@ p {
 
 #service,
 #pets {
-  padding: 30px 80px;
   text-align: center;
   gap: 25px;
 }
@@ -328,6 +327,34 @@ p {
   background-image: url(../IMAGES/service_page/pet_rabbit.jpg);
 }
 
+#products {
+  background-color: #F0EEF0;
+}
+
+#accessories {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#accessories .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#accessories .content p {
+  font-size: 18px;
+}
+#accessories .accessories-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+#accessories .accessories-img img {
+  width: 100%;
+}
+
 header .group_btn button,
 #pets .group-card .card button {
   gap: 5px;
@@ -349,4 +376,19 @@ header .group_btn button:active,
 header .group_btn button span,
 #pets .group-card .card button span {
   font-size: 16px;
+<<<<<<< HEAD
 }
+=======
+<<<<<<< HEAD
+}
+
+#service,
+#pets,
+#products {
+  padding: 30px 80px 50px 80px;
+}/*# sourceMappingURL=service.css.map */
+=======
+}/*# sourceMappingURL=service.css.map */
+>>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
+>>>>>>> f8bf3e9b6e3463bd66ec3f5123d116dfc48fdde6
+>>>>>>> 4b18e7ac531227bacea9c0cc1d23a82ec8c995ad

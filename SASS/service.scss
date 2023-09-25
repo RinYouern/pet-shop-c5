@@ -38,6 +38,7 @@ header {
             color: $main-card-border;
         }
     }
+
     .group_btn {
         width: 100%;
         display: flex;
@@ -54,8 +55,6 @@ p {
 
 #service,
 #pets {
-    // background-color: $main-background;
-    padding: 30px $standard-padding;
     text-align: center;
     gap: 25px;
 }
@@ -217,6 +216,37 @@ p {
     }
 }
 
+#products {
+    background-color: $main-background;
+}
+
+#accessories {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .content {
+        width: 40%;
+        @include flexDirection;
+        gap: 15px;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .accessories-img {
+        width: 40%;
+        @include flexCenter;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
 // the same style 
 header .group_btn button,
 #pets .group-card .card button {
@@ -239,4 +269,10 @@ header .group_btn button,
     span {
         font-size: 16px;
     }
+}
+
+#service,
+#pets,
+#products {
+    padding: 30px $standard-padding 50px $standard-padding;
 }
