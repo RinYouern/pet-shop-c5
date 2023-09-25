@@ -15,7 +15,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: white;
+  background-color: #fff;
   padding: 0px 80px;
   height: 80px;
   display: grid;
@@ -75,12 +75,42 @@ nav .nav-right .search span {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 15px;
 }
 .card_container .card {
   display: flex;
   flex-direction: column;
-  height: 460px;
+  height: 420px;
   border: 1px solid #000;
+  margin-top: 10px;
+}
+.card_container .card .pet-content ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card_container .card .pet-content ul li {
+  width: 33%;
+}
+
+.group-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.group-card .card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 520px;
+  border: 1px solid #000;
+}
+.group-card .card .product-content .more {
+  display: flex;
+  justify-content: space-around;
 }
 
 button {
@@ -91,6 +121,7 @@ button {
   color: white;
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 header {
@@ -114,7 +145,7 @@ header .content {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
   gap: 20px;
 }
 header .content h1 {
@@ -123,7 +154,7 @@ header .content h1 {
 }
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
-  color: #B68C3F;
+  color: #0D99FF;
   text-shadow: 2px 2px 4px white;
 }
 header .content p {
@@ -131,12 +162,63 @@ header .content p {
 }
 
 header {
-  z-index: 1;
-  flex-direction: column;
-  background-image: url(../IMAGES/service_page/background_service.jpg);
-  background-position: center top;
+  padding: 80px 0px 120px 0px;
+  position: relative;
+  background-image: url(../IMAGES/service_page/pexels-karenna-ramirez-1034888.jpg);
+  display: flex;
   align-items: center;
+  justify-content: center;
+  background-position: center;
+  flex-direction: column;
+  gap: 15px;
 }
+<<<<<<< HEAD
 header .content {
   width: 70%;
 }
+=======
+header .background {
+  background: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+header .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+header .search input[type=search] {
+  border-radius: 25px;
+  border: 1px solid #919092;
+  outline-color: #F0EEF0;
+  font-size: 17px;
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+}
+header .search span {
+  position: absolute;
+  left: 15px;
+}
+header .group_btn {
+  width: 100%;
+  display: flex;
+  z-index: 1;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 20px;
+}
+header .group_btn button {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+header .group_btn button:active {
+  background-color: #fff;
+  color: black;
+}/*# sourceMappingURL=service.css.map */
+>>>>>>> 25b35b4ddf69a4f0fd4ca135e4af0556d15e756f

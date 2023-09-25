@@ -15,7 +15,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: white;
+  background-color: #fff;
   padding: 0px 80px;
   height: 80px;
   display: grid;
@@ -75,12 +75,42 @@ nav .nav-right .search span {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  gap: 15px;
 }
 .card_container .card {
   display: flex;
   flex-direction: column;
-  height: 460px;
+  height: 420px;
   border: 1px solid #000;
+  margin-top: 10px;
+}
+.card_container .card .pet-content ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card_container .card .pet-content ul li {
+  width: 33%;
+}
+
+.group-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.group-card .card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  height: 520px;
+  border: 1px solid #000;
+}
+.group-card .card .product-content .more {
+  display: flex;
+  justify-content: space-around;
 }
 
 button {
@@ -91,6 +121,7 @@ button {
   color: white;
   display: flex;
   align-items: center;
+  margin: auto;
 }
 
 header {
@@ -114,7 +145,7 @@ header .content {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 50%;
   gap: 20px;
 }
 header .content h1 {
@@ -123,7 +154,7 @@ header .content h1 {
 }
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
-  color: #B68C3F;
+  color: #0D99FF;
   text-shadow: 2px 2px 4px white;
 }
 header .content p {
@@ -131,7 +162,7 @@ header .content p {
 }
 
 header {
-  background-image: url(../IMAGES/cat-3131.gif);
+  background-image: url(../IMAGES/home-page/dog-header.jpg);
 }
 
 .category {

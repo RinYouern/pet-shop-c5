@@ -16,14 +16,14 @@ header {
     .content {
         z-index: 1;
         @include flexDirection;
-        width: 45%;
+        width: 50%;
         gap: 20px;
         h1 {
             color: white;
             font-family: $main-font-header;
             span {
                 font-family: $main-font-header;
-                color: $main-bg-color;
+                color: $main-text-color;
                 text-shadow: 2px 2px 4px white;
             }
         }
