@@ -71,14 +71,11 @@ nav .nav-right .search span {
   top: 11px;
 }
 
-<<<<<<< HEAD
-=======
 .card {
   border-radius: 10px;
   border: 1px solid #919092;
 }
 
->>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
 button {
   padding: 5px 20px;
   border-radius: 10px;
@@ -112,7 +109,7 @@ header .content {
   gap: 20px;
 }
 header .content h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
 header .content h1 span {
@@ -207,8 +204,4 @@ header {
 .group-card .card .product-content .more .tag {
   color: #0D99FF;
   text-decoration: underline;
-<<<<<<< HEAD
-}/*# sourceMappingURL=home.css.map */
-=======
-}/*# sourceMappingURL=home.css.map */
->>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
+}

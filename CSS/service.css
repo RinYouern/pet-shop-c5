@@ -267,9 +267,6 @@ p {
   color: #B68C3F;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-<<<<<<< HEAD
-}
-=======
 }
 #pets a #view-all {
   margin: auto;
@@ -352,5 +349,4 @@ header .group_btn button:active,
 header .group_btn button span,
 #pets .group-card .card button span {
   font-size: 16px;
-}/*# sourceMappingURL=service.css.map */
->>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
+}

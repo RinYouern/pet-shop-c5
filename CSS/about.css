@@ -231,6 +231,12 @@ header .content p {
 #community {
   padding: 80px;
 }
+#community h1 {
+  margin-top: -50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #B68C3F;
+}
 #community .group-community {
   display: flex;
   align-items: center;
@@ -240,12 +246,42 @@ header .content p {
   display: flex;
   flex-direction: column;
 }
-#community .group-community .meaning h1 {
+#community .group-community .meaning h2 {
   color: #0D99FF;
+  font-size: 35px;
 }
 #community .group-community .meaning p {
   font-size: 25px;
 }
 #community .group-community img {
   width: 520px;
+}
+
+#customer {
+  padding: 80px;
+}
+#customer h1 {
+  margin-top: -50px;
+  margin-bottom: 30px;
+  color: #B68C3F;
+}
+#customer .group-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+#customer .group-comment .comment {
+  display: flex;
+  flex-direction: column;
+}
+#customer .group-comment .comment .feedback {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#customer .group-comment .comment .feedback img {
+  width: 50px;
+}
+#customer .group-comment .comment p {
+  margin-left: 70px;
 }
