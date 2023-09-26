@@ -376,19 +376,10 @@ header .group_btn button:active,
 header .group_btn button span,
 #pets .group-card .card button span {
   font-size: 16px;
-<<<<<<< HEAD
-}
-=======
-<<<<<<< HEAD
 }
 
 #service,
 #pets,
 #products {
   padding: 30px 80px 50px 80px;
-}/*# sourceMappingURL=service.css.map */
-=======
-}/*# sourceMappingURL=service.css.map */
->>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
->>>>>>> f8bf3e9b6e3463bd66ec3f5123d116dfc48fdde6
->>>>>>> 4b18e7ac531227bacea9c0cc1d23a82ec8c995ad
+}
