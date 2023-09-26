@@ -528,26 +528,19 @@ header .group_btn button span,
 #products a #view-all:active,
 #feed .feed-content .content a button:active {
   background-color: #252525;
-<<<<<<< HEAD
 }
 
 #pets a #view-all,
 #products a #view-all {
   margin: auto;
-=======
->>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02
 }
 
 #service,
 #pets,
 #products {
   padding: 30px 80px 50px 80px;
-<<<<<<< HEAD
 }
 
 h2 {
   text-decoration: underline;
-}/*# sourceMappingURL=service.css.map */
-=======
 }
->>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02

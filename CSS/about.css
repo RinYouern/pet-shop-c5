@@ -367,47 +367,59 @@ header .content p {
 
 @media (max-width: 820px) {
   #ceo {
-    margin: 80px 0 80px 75px;
+    margin: 50px -20px 50px 50px;
   }
   #ceo .ceo-text p {
-    margin: 0 50px 0 0;
     font-size: 15px;
   }
   #ceo .member-img img {
     width: 250px;
   }
-  #our-team {
-    padding: 20px;
+  #our-team .group-member {
+    margin: 20px 0;
+    gap: 50px;
   }
-  #our-team .card-member h3 {
+  #our-team .group-member .card-member h3 {
     font-size: 15px;
   }
-  #our-team .card-member p {
+  #our-team .group-member .card-member p {
     font-size: 10px;
   }
-  #our-team .card-member span {
+  #our-team .group-member .card-member span {
     color: #B68C3F;
   }
-  #our-team .card-member img {
+  #our-team .group-member .card-member img {
     width: 150px;
   }
-  #our-team .position img {
+  #our-team .group-member .position img {
     width: 40px;
   }
+  #values {
+    margin-bottom: 20px;
+  }
+  #values h1 {
+    margin-bottom: 30px;
+  }
   #values .group-values {
-    gap: 20px;
+    gap: 50px;
   }
   #values .group-values .value span {
-    font-size: 30px;
-    padding: 20px;
+    font-size: 40px;
+    padding: 25px;
   }
   #values .group-values .value h3 {
-    font-size: 17px;
+    font-size: 20px;
   }
   #values .group-values .value p {
     font-size: 13px;
+    width: 230px;
+  }
+  #mission {
+    padding: 50px;
+    align-items: center;
   }
   #community {
+    margin-top: 40px;
     padding: 50px;
   }
   #community .group-community .meaning h2 {
@@ -419,26 +431,136 @@ header .content p {
   #community .group-community img {
     width: 320px;
   }
-<<<<<<< HEAD
+  #customer {
+    padding: 50px;
+  }
 }
-@media (max-width: 360px) {
+@media (max-width: 390px) {
+  #header {
+    height: 300px;
+    align-items: center;
+  }
+  #header .content {
+    width: 300px;
+  }
+  #header .content h1 {
+    font-size: 20px;
+  }
+  #header .content p {
+    font-size: 16px;
+  }
   #ceo {
+    padding: 30px;
     margin: auto;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
+    grid-template-columns: 1fr 0.2fr;
+  }
+  #ceo h1 {
+    font-size: 15px;
   }
   #ceo .ceo-text p {
     font-size: 15px;
   }
   #ceo .member-img img {
-    width: 250px;
+    width: 170px;
+  }
+  #our-team {
+    padding: 30px;
+  }
+  #our-team h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  #our-team .group-member {
+    gap: 30px;
+  }
+  #our-team .card-member {
+    margin: auto;
+  }
+  #our-team .card-member h3 {
+    font-size: 9px;
+  }
+  #our-team .card-member p {
+    font-size: 8px;
+  }
+  #our-team .card-member span {
+    color: #B68C3F;
+  }
+  #our-team .card-member img {
+    margin-left: 3px;
+    width: 90px;
+  }
+  #our-team .position {
+    gap: 10px;
+  }
+  #our-team .position img {
+    width: 30px;
+  }
+  #our-team .position h5 {
+    font-size: 7px;
+  }
+  #values {
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  #values h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  #values .group-values {
+    gap: 20px;
+  }
+  #values .group-values .value span {
+    font-size: 30px;
+    padding: 10px;
+  }
+  #values .group-values .value h3 {
+    font-size: 14px;
+  }
+  #values .group-values .value p {
+    font-size: 10px;
+  }
+  #mission {
+    padding: 30px;
+    align-items: center;
+    height: 200px;
+  }
+  #mission .content {
+    width: 300px;
+  }
+  #mission .content h1 {
+    font-size: 25px;
+  }
+  #mission .content p {
+    font-size: 15px;
+  }
+  #community {
+    margin-top: 40px;
+    padding: 30px;
+  }
+  #community h1 {
+    font-size: 25px;
+  }
+  #community .group-community .meaning h2 {
+    font-size: 17px;
+    width: 200px;
+  }
+  #community .group-community .meaning p {
+    font-size: 12px;
+  }
+  #community .group-community img {
+    width: 220px;
+  }
+  #customer {
+    margin-top: 20px;
+    padding: 30px;
+  }
+  #customer h1 {
+    font-size: 25px;
+  }
+  #customer .comment h1 {
+    font-size: 25px;
+  }
+  #customer .comment p {
+    font-size: 11px;
   }
 }
-=======
-<<<<<<< HEAD
-}/*# sourceMappingURL=about.css.map */
-=======
-}
->>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02
->>>>>>> dd669b0ad1b900c5a73392bb04d206400491dfd5
