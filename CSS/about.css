@@ -341,3 +341,17 @@ header .content p {
     width: 320px;
   }
 }
+@media (max-width: 360px) {
+  #ceo {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  #ceo .ceo-text p {
+    font-size: 15px;
+  }
+  #ceo .member-img img {
+    width: 250px;
+  }
+}
