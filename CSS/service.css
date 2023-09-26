@@ -266,9 +266,6 @@ p {
   color: #B68C3F;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-<<<<<<< HEAD
-}
-=======
 }
 #pets a #view-all {
   margin: auto;
@@ -379,7 +376,6 @@ header .group_btn button:active,
 header .group_btn button span,
 #pets .group-card .card button span {
   font-size: 16px;
-<<<<<<< HEAD
 }
 
 #service,
@@ -387,7 +383,3 @@ header .group_btn button span,
 #products {
   padding: 30px 80px 50px 80px;
 }/*# sourceMappingURL=service.css.map */
-=======
-}/*# sourceMappingURL=service.css.map */
->>>>>>> 66feefc9bbf12fdacc7d5c0fc1b6f285ceda5f97
->>>>>>> f8bf3e9b6e3463bd66ec3f5123d116dfc48fdde6

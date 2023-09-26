@@ -119,6 +119,8 @@ header {
             padding: 30px;
             height: 420px;
             @include flexDirection;
+            border: 1px solid $main-card-border;
+            border-radius: 15px;
             .new-img{
                 flex: 1;
                 display: flex;
@@ -147,4 +149,56 @@ header {
         }
     }
 }
-
+// selling-product
+.top-sell-product{
+    h2{
+        padding-top: 120px;
+        text-align: center;
+        color: $main-text-color;
+    }
+    .selling-product{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 15px;
+        .card{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            border: none;
+            background: #000;
+            .sell-img{
+                position: absolute;
+                top: -30%;
+                flex: 1;
+                display: flex;
+                img{
+                    width: 70%;
+                    margin: auto;
+                }
+            }
+            .more{
+                border-radius: 15px;
+                padding-top: 30px;
+                margin-top: auto;
+                p{
+                    color: white;
+                    padding: 20px;
+                }
+                .check{
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px;
+                    .price{
+                        color: white;
+                    }
+                    button{
+                        background: $main-text-color;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}

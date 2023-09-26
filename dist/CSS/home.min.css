@@ -109,7 +109,7 @@ header .content {
   gap: 20px;
 }
 header .content h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
 header .content h1 span {
@@ -236,6 +236,8 @@ header {
   height: 420px;
   display: flex;
   flex-direction: column;
+  border: 1px solid #919092;
+  border-radius: 15px;
 }
 .our-new-product .class-card .card .new-img {
   flex: 1;
@@ -261,4 +263,55 @@ header {
 .our-new-product .class-card .card .new-content .more .tag {
   color: #0D99FF;
   text-decoration: underline;
+}
+
+.top-sell-product h2 {
+  padding-top: 120px;
+  text-align: center;
+  color: #0D99FF;
+}
+.top-sell-product .selling-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 15px;
+}
+.top-sell-product .selling-product .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  border: none;
+  background: #000;
+}
+.top-sell-product .selling-product .card .sell-img {
+  position: absolute;
+  top: -30%;
+  flex: 1;
+  display: flex;
+}
+.top-sell-product .selling-product .card .sell-img img {
+  width: 70%;
+  margin: auto;
+}
+.top-sell-product .selling-product .card .more {
+  border-radius: 15px;
+  padding-top: 30px;
+  margin-top: auto;
+}
+.top-sell-product .selling-product .card .more p {
+  color: white;
+  padding: 20px;
+}
+.top-sell-product .selling-product .card .more .check {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.top-sell-product .selling-product .card .more .check .price {
+  color: white;
+}
+.top-sell-product .selling-product .card .more .check button {
+  background: #0D99FF;
+  color: white;
 }/*# sourceMappingURL=home.min.css.map */
