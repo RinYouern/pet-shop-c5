@@ -326,6 +326,9 @@ header {
   width: 100%;
 }
 .our-new-product .class-card .card .new-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1;
 }
 .our-new-product .class-card .card .new-content p {
@@ -393,4 +396,8 @@ header {
 .top-sell-product .selling-product .card .more .check button {
   background: #0D99FF;
   color: white;
+<<<<<<< HEAD
 }/*# sourceMappingURL=home.css.map */
+=======
+}
+>>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02
