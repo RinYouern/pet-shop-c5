@@ -49,6 +49,13 @@ nav ul .after a {
   text-decoration: underline;
   color: #B68C3F;
 }
+nav ul li a {
+  transition: ease 0.4s;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #B68C3F;
+}
 nav .nav-right {
   display: flex;
 }
@@ -82,6 +89,78 @@ button {
   font-size: 16px;
   display: flex;
   align-items: center;
+}
+
+footer {
+  padding: 30px 80px;
+  display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  background: #000;
+  gap: 5%;
+}
+footer .logo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-column: 1/3;
+}
+footer .logo-content .foot-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+footer .our-product, footer .our-service {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+footer .our-product {
+  grid-column: 3/4;
+}
+footer .our-service {
+  grid-column: 4/5;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-column: 5/7;
+}
+footer .contact .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .contact .info a {
+  color: white;
+}
+footer .contact .info a:hover {
+  color: #0D99FF;
+}
+footer .contact .info p {
+  display: flex;
+  gap: 5px;
+}
+footer .contact .media {
+  display: flex;
+  gap: 10%;
+}
+footer .contact .media a i {
+  color: white;
+  font-size: 30px;
+}
+footer .contact .media a i:hover {
+  color: #0D99FF;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer ul li {
+  font-weight: 300;
+  list-style-type: disc;
+  cursor: pointer;
 }
 
 header {
@@ -311,9 +390,6 @@ p {
 #pets .group-card .card:nth-child(4) {
   background-image: url(../IMAGES/service_page/pet_rabbit.jpg);
 }
-#pets a button {
-  margin: auto;
-}
 
 #products {
   display: flex;
@@ -374,13 +450,38 @@ p {
   justify-content: space-between;
 }
 #products #our-product .group-card .card .content .price span {
-  color: white;
+  color: black;
   font-size: 18px;
   text-decoration: underline;
   cursor: pointer;
 }
 #products #our-product .group-card .card .content .price .original {
   text-decoration: line-through;
+}
+#products #feed {
+  background-color: #B68C3F;
+}
+#products #feed .feed-content {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#products #feed .feed-content .image {
+  width: 40%;
+}
+#products #feed .feed-content .image img {
+  width: 90%;
+}
+#products #feed .feed-content .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#products #feed .feed-content .content p {
+  font-size: 18px;
+  color: white;
 }
 
 header .group_btn button,
@@ -394,7 +495,7 @@ header .group_btn button,
 }
 header .group_btn button:hover,
 #pets .group-card .card button:hover {
-  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 10px 90px;
+  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 20px 80px;
 }
 header .group_btn button:active,
 #pets .group-card .card button:active {
@@ -406,25 +507,51 @@ header .group_btn button span,
   font-size: 16px;
 }
 
-#pets a button,
-#accessories .content button {
+#pets a #view-all,
+#accessories .content button,
+#products a #view-all,
+#feed .feed-content .content a button {
   transition: ease 0.3s;
   background: black;
   border: 1px solid #000;
   color: white;
 }
-#pets a button:hover,
-#accessories .content button:hover {
+#pets a #view-all:hover,
+#accessories .content button:hover,
+#products a #view-all:hover,
+#feed .feed-content .content a button:hover {
   color: white;
   background-color: #000;
 }
-#pets a button:active,
-#accessories .content button:active {
+#pets a #view-all:active,
+#accessories .content button:active,
+#products a #view-all:active,
+#feed .feed-content .content a button:active {
   background-color: #252525;
+<<<<<<< HEAD
+}
+
+#pets a #view-all,
+#products a #view-all {
+  margin: auto;
+=======
+>>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02
 }
 
 #service,
 #pets,
 #products {
   padding: 30px 80px 50px 80px;
+<<<<<<< HEAD
 }/*# sourceMappingURL=service.css.map */
+=======
+<<<<<<< HEAD
+}
+
+h2 {
+  text-decoration: underline;
+}/*# sourceMappingURL=service.css.map */
+=======
+}
+>>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02
+>>>>>>> 8ee2b00ba14e426dc13832c78bd5a0bc00a50e50
