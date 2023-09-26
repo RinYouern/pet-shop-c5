@@ -78,7 +78,7 @@ nav .nav-right .search span {
 
 button {
   padding: 5px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -248,4 +248,4 @@ header .content p {
 }
 #community .group-community img {
   width: 520px;
-}
+}/*# sourceMappingURL=about.css.map */
