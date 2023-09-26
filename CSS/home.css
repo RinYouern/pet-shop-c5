@@ -247,6 +247,9 @@ header {
   width: 100%;
 }
 .our-new-product .class-card .card .new-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex: 1;
 }
 .our-new-product .class-card .card .new-content p {
@@ -263,7 +266,6 @@ header {
 .our-new-product .class-card .card .new-content .more .tag {
   color: #0D99FF;
   text-decoration: underline;
-<<<<<<< HEAD
 }
 
 .top-sell-product h2 {
@@ -316,10 +318,3 @@ header {
   background: #0D99FF;
   color: white;
 }/*# sourceMappingURL=home.css.map */
-=======
-<<<<<<< HEAD
-}/*# sourceMappingURL=home.css.map */
-=======
-}
->>>>>>> 6cf39c11ce6e87ceaf5af37d9788bcad061ca548
->>>>>>> 544f70d7ba5ff18d727f2fca1fc8d96638cb33f1

@@ -266,27 +266,6 @@ p {
   color: #B68C3F;
   font-family: "Ubuntu", sans-serif;
   font-weight: normal;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 544f70d7ba5ff18d727f2fca1fc8d96638cb33f1
-}
-#pets a #view-all {
-  margin: auto;
-  width: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #fff;
-  border: 1px solid #919092;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-#pets a #view-all:hover {
-  color: white;
-  background-color: #000;
->>>>>>> 6cf39c11ce6e87ceaf5af37d9788bcad061ca548
 }
 #pets .group-card {
   grid-template-columns: repeat(4, 1fr);
@@ -442,20 +421,10 @@ header .group_btn button span,
 #pets a button:active,
 #accessories .content button:active {
   background-color: #252525;
-=======
->>>>>>> 6cf39c11ce6e87ceaf5af37d9788bcad061ca548
 }
 
 #service,
 #pets,
 #products {
   padding: 30px 80px 50px 80px;
-<<<<<<< HEAD
 }/*# sourceMappingURL=service.css.map */
-=======
-<<<<<<< HEAD
-}/*# sourceMappingURL=service.css.map */
-=======
-}
->>>>>>> 6cf39c11ce6e87ceaf5af37d9788bcad061ca548
->>>>>>> 544f70d7ba5ff18d727f2fca1fc8d96638cb33f1

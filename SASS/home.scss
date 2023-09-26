@@ -129,6 +129,8 @@ header {
                 }
             }
             .new-content {
+                @include flexDirection;
+                justify-content: space-between;
                 flex: 1;
                 p{
                     padding: 10px;
