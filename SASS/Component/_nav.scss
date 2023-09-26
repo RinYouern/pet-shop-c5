@@ -36,6 +36,15 @@ nav {
                 color: $main-bg-color;
             }
         }
+        li {
+            a {
+                transition: ease 0.4s;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: $main-bg-color;
+            }
+        }
     }
     .nav-right {
         display: flex;
