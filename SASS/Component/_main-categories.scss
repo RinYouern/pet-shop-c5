@@ -1,0 +1,9 @@
+@import "../Group-Mixin/Flex-Mixin";
+@import "../Group-Mixin/Grid-Mixin";
+@import "../Component/variable";
+* {
+    @include Universal;
+}
+@import "./nav";
+@import "./card";
+@import "./footer";

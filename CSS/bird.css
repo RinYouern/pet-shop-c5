@@ -1,0 +1,154 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  line-height: 1.5em;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #fff;
+  padding: 0px 80px;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  display: grid;
+  align-items: center;
+  color: #4b4b4b;
+  border-bottom: 1px solid #F0EEF0;
+}
+nav .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .nav-left a h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 100;
+}
+nav a {
+  font-weight: 100;
+  font-size: 18px;
+  color: #4b4b4b;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav ul .after a {
+  text-decoration: underline;
+  color: #B68C3F;
+}
+nav ul li a {
+  transition: ease 0.4s;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #B68C3F;
+}
+nav .nav-right {
+  display: flex;
+}
+nav .nav-right .search {
+  position: relative;
+  width: 90%;
+  display: flex;
+}
+nav .nav-right .search input[type=search] {
+  border-radius: 25px;
+  border: 1px solid #919092;
+  outline-color: #F0EEF0;
+  font-size: 17px;
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+}
+nav .nav-right .search span {
+  position: absolute;
+  left: 15px;
+  top: 11px;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid #919092;
+}
+
+footer {
+  padding: 30px 80px;
+  display: grid;
+  grid-template: 1fr/repeat(6, 1fr);
+  background: #000;
+  gap: 5%;
+}
+footer .logo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-column: 1/3;
+}
+footer .logo-content .foot-content {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+footer .our-product, footer .our-service {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+footer .our-product {
+  grid-column: 3/4;
+}
+footer .our-service {
+  grid-column: 4/5;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  grid-column: 5/7;
+}
+footer .contact .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .contact .info a {
+  color: white;
+}
+footer .contact .info a:hover {
+  color: #0D99FF;
+}
+footer .contact .info p {
+  display: flex;
+  gap: 5px;
+}
+footer .contact .media {
+  display: flex;
+  gap: 10%;
+}
+footer .contact .media a i {
+  color: white;
+  font-size: 30px;
+}
+footer .contact .media a i:hover {
+  color: #0D99FF;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer ul li {
+  font-weight: 300;
+  list-style-type: disc;
+  cursor: pointer;
+}/*# sourceMappingURL=bird.css.map */

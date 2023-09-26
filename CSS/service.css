@@ -377,6 +377,9 @@ p {
 #pets .group-card .card .content {
   z-index: 1;
 }
+#pets .group-card .card h3 {
+  color: #0D99FF;
+}
 #pets .group-card .card p,
 #pets .group-card .card h3 {
   text-align: start;
@@ -435,6 +438,9 @@ p {
 #products #our-product .group-card .card .image {
   flex: 2;
   background-image: url(../IMAGES/service_page/Summer-Cactus-Sisal-Climbing-FrameJumping-Platform-Cat-Claw-Grinding-min-450x450.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 #products #our-product .group-card .card .content {
   flex: 1;
@@ -458,14 +464,39 @@ p {
 #products #our-product .group-card .card .content .price .original {
   text-decoration: line-through;
 }
+#products #our-product .group-card .card:nth-child(2) .image {
+  background-image: url(../IMAGES/service_page/Stuffed-Animal-Squeaker-Plush-Chewing-Toy-Supports-Active-Biting-2-min-450x450.jpg);
+}
+#products #our-product .group-card .card:nth-child(3) .image {
+  background-image: url(../IMAGES/service_page/Squishy-Marshmallow-Ultra-Soft-Plush-Pet-Bed-40cm-4-min-450x450.jpg);
+}
+#products #our-product .group-card .card:nth-child(4) .image {
+  background-image: url(../IMAGES/service_page/Upgrade-Detachable-Pet-Hammock-Lounge-Bed-3-min-450x450.jpg);
+}
+#products #our-product .group-card .card:nth-child(5) .image {
+  background-image: url(../IMAGES/service_page/Male-Dog-Physiological-Pants-Belly-Wrap-Band-Cotton-Diaper-for-Pet-Washable-main-min-450x450.jpg);
+}
+#products #our-product .group-card .card:nth-child(6) .image {
+  background-image: url(../IMAGES/service_page/Bohemian-Ceramic-Extra-Wide-Raised-Cat-Dog-Food-Bowl-12-min-450x450.jpg);
+  background-position: center;
+}
+#products #our-product .group-card .card:nth-child(7) .image {
+  background-image: url(../IMAGES/service_page/Green-Cloud-Meow-Style-Cat-Dog-Soft-Bed-House-RemovableWashable-min-450x450.jpg);
+}
+#products #our-product .group-card .card:nth-child(8) .image {
+  background-image: url(../IMAGES/service_page/Cloudy-Bunny-Cozy-Pet-House-Kennel-Bed-Removable-and-Washable-2-450x450.jpg);
+}
 #products #feed {
-  background-color: #B68C3F;
+  display: flex;
+  flex-direction: column;
 }
 #products #feed .feed-content {
+  background-color: #B68C3F;
   padding: 50px 0px;
   display: flex;
   justify-content: center;
   gap: 50px;
+  border-radius: 0px 25px 0px 25px;
 }
 #products #feed .feed-content .image {
   width: 40%;
@@ -482,6 +513,85 @@ p {
 #products #feed .feed-content .content p {
   font-size: 18px;
   color: white;
+}
+#products #feed .group-feed {
+  background-color: #F0EEF0;
+  display: grid;
+  grid-template: 90% 10%/repeat(4, 1fr);
+  gap: 20px;
+  padding: 50px 0px;
+}
+#products #feed .group-feed .card {
+  position: relative;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  align-items: center;
+  background-color: #000;
+  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 20px 80px;
+}
+#products #feed .group-feed .card .card-image {
+  border-radius: 10px;
+  z-index: 1;
+  position: absolute;
+  top: -20px;
+  border: 1px solid #F0EEF0;
+  background-image: url(../IMAGES/service_page/dog\ feed.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-position: center top;
+  height: 45%;
+  width: 90%;
+}
+#products #feed .group-feed .card .card-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#products #feed .group-feed .card .card-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#products #feed .group-feed .card .card-content .content p {
+  font-weight: 300;
+}
+#products #feed .group-feed .card .card-content .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#products #feed .group-feed .card .card-content .price button {
+  background-color: #000;
+  border: 1px solid #fff;
+  transition: ease 0.3s;
+  color: white;
+}
+#products #feed .group-feed .card .card-content .price button:hover {
+  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 20px 80px;
+}
+#products #feed .group-feed .card .card-content .price button:active {
+  background: #252525;
+}
+#products #feed .group-feed .card:nth-child(2) .card-image {
+  background-image: url(../IMAGES/service_page/cat\ feed.jpg);
+}
+#products #feed .group-feed .card:nth-child(3) .card-image {
+  background-image: url(../IMAGES/service_page/dogs\ feed.jpg);
+}
+#products #feed .group-feed .card:nth-child(4) .card-image {
+  background-image: url(../IMAGES/service_page/cat\ feeds.jpg);
+}
+#products #feed .group-feed a {
+  grid-column: 1/5;
 }
 
 header .group_btn button,
@@ -528,26 +638,20 @@ header .group_btn button span,
 #products a #view-all:active,
 #feed .feed-content .content a button:active {
   background-color: #252525;
-<<<<<<< HEAD
 }
 
 #pets a #view-all,
-#products a #view-all {
+#products a #view-all,
+#feed a #view-all {
   margin: auto;
-=======
->>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02
 }
 
 #service,
 #pets,
 #products {
   padding: 30px 80px 50px 80px;
-<<<<<<< HEAD
 }
 
 h2 {
   text-decoration: underline;
 }/*# sourceMappingURL=service.css.map */
-=======
-}
->>>>>>> 7f2cd560ff1877b64919e4ab12ea53fbe8e1ec02
