@@ -394,9 +394,6 @@ header {
 .top-sell-product .selling-product .card .more .check button {
   background: #0D99FF;
   color: white;
-<<<<<<< HEAD
-}/*# sourceMappingURL=home.css.map */
-=======
 }
 
 @media (max-width: 820px) {
@@ -455,7 +452,6 @@ header {
   .top-sell-product .selling-product .card .more .check button {
     font-size: 10px;
   }
-<<<<<<< HEAD
 }
 @media (max-width: 390px) {
   header .content {
@@ -495,8 +491,4 @@ header {
   .our-new-product .class-card .card .new-content .more .tag {
     font-size: 6px;
   }
-}/*# sourceMappingURL=home.css.map */
-=======
 }
->>>>>>> 70f773d1ee1116edcef61fd3f16423d5f8fc6c31
->>>>>>> 99efef728f6686f628c51ffaf1969ed4963feb3f
