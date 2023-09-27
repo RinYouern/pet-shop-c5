@@ -583,7 +583,7 @@ p {
   background: #252525;
 }
 #products #feed .group-feed .card:hover {
-  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 20px 80px;
+  box-shadow: #616161 0px 2px 4px 0px, #616161 0px 2px 16px 0px;
 }
 #products #feed .group-feed .card:nth-child(2) .card-image {
   background-image: url(../IMAGES/service_page/cat\ feed.jpg);
@@ -658,4 +658,8 @@ header .group_btn button span,
 
 h2 {
   text-decoration: underline;
+<<<<<<< HEAD
+}
+=======
 }/*# sourceMappingURL=service.css.map */
+>>>>>>> 9767423d591ef1a1b8c7af3c7842d3c9ef820403
