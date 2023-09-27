@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap");
 * {
   font-family: "Noto Sans", sans-serif;
   margin: 0;
@@ -8,6 +10,16 @@
   list-style-type: none;
   scroll-behavior: smooth;
   line-height: 1.5em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+p {
+  font-weight: 300;
 }
 
 nav {
@@ -76,9 +88,132 @@ nav .nav-right .search span {
   top: 11px;
 }
 
+menu ul {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+}
+menu ul a {
+  flex: 1;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #F0EEF0;
+  padding: 20px;
+  font-weight: 600;
+  color: black;
+}
+menu ul a p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #B68C3F;
+}
+menu ul a .image i, menu ul a .image span {
+  font-size: 3rem;
+  color: rgb(13, 167, 194);
+  transition: color 0.3s;
+}
+menu ul a .image:hover i, menu ul a .image:hover span {
+  color: #B68C3F;
+}
+menu ul a:nth-child(1) {
+  border-radius: 20px 0px 0px 20px;
+}
+menu ul a:nth-child(6) {
+  border-radius: 0px 20px 20px 0px;
+}
+menu ul .active {
+  background-color: #D9D9D9;
+  color: #B68C3F;
+}
+menu ul .active .image i, menu ul .active .image span {
+  color: #B68C3F;
+}
+
+.container {
+  padding: 50px 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 50px;
+}
+.container .categories {
+  display: grid;
+  grid: template 50px auto/repeat(4, 1fr);
+  gap: 25px;
+}
+.container .categories .group-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.container .categories .group-card .card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 15px 30px 15px;
+  height: 400px;
+  background: linear-gradient(135deg, #000 40%, rgba(13, 154, 255, 0.7921568627));
+  gap: 20px;
+  border: none;
+}
+.container .categories .group-card .card .image {
+  display: flex;
+  height: 50%;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-position: center;
+}
+.container .categories .group-card .card .image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container .categories .group-card .card .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .categories .group-card .card .content p {
+  color: white;
+}
+.container .categories .group-card .card .content .Btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.container .categories .group-card .card .content .Btn button {
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  color: white;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+.container .categories .group-card .card .content .Btn button:hover {
+  box-shadow: 0px 54px 55px, #0D99FF 0px -12px 30px, #0D99FF 0px 4px 6px, #0D99FF 0px 12px 13px, #0D99FF 0px -3px 5px;
+}
+.container .categories .group-card .card .content .Btn button:active {
+  background: rgba(0, 0, 0, 0.4980392157);
+}
+
 .card {
   border-radius: 10px;
   border: 1px solid #919092;
+}
+
+button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
 footer {
@@ -151,4 +286,51 @@ footer ul li {
   font-weight: 300;
   list-style-type: disc;
   cursor: pointer;
+<<<<<<< HEAD
 }
+
+.container {
+  padding: 50px 80px;
+}
+.container .categories:nth-child(1) {
+  grid-template-columns: repeat(3, 1fr)/repeat(4, 1fr);
+}
+.container .categories:nth-child(1) .group-card:nth-child(1) .card:nth-child(1) .image {
+  background-image: url(/PAGES/Service_page/Images/little-dog.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(1) .card:nth-child(2) .image {
+  background-image: url(/PAGES/Service_page/Images/bulldog-1047518_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(1) .card:nth-child(3) .image {
+  background-image: url(/PAGES/Service_page/Images/dog-3277416_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(1) .card:nth-child(4) .image {
+  background-image: url(/PAGES/Service_page/Images/puppy-2785074_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(2) .card:nth-child(1) .image {
+  background-image: url(/PAGES/Service_page/Images/dog-2286773_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(2) .card:nth-child(2) .image {
+  background-image: url(/PAGES/Service_page/Images/rottweiler-869013_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(2) .card:nth-child(3) .image {
+  background-image: url(/PAGES/Service_page/Images/dog-3355192_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(2) .card:nth-child(4) .image {
+  background-image: url(/PAGES/Service_page/Images/puppy-1187267_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(3) .card:nth-child(1) .image {
+  background-image: url(/PAGES/Service_page/Images/dachshund-1519374_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(3) .card:nth-child(2) .image {
+  background-image: url(/PAGES/Service_page/Images/husky-3380548_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(3) .card:nth-child(3) .image {
+  background-image: url(/PAGES/Service_page/Images/maltese-1123016_1280.jpg);
+}
+.container .categories:nth-child(1) .group-card:nth-child(3) .card:nth-child(4) .image {
+  background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
+}/*# sourceMappingURL=dog.css.map */
+=======
+}
+>>>>>>> 9fd42a6d5968a8f587ce55e9875c763b9c7488c5

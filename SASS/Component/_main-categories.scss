@@ -1,9 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap');
 @import "../Group-Mixin/Flex-Mixin";
 @import "../Group-Mixin/Grid-Mixin";
-@import "../Component/variable";
+@import "./variable";
 * {
     @include Universal;
 }
+body {
+    @include flexDirection;
+    gap: 25px;
+}
+p {
+    font-weight: 300;
+}
 @import "./nav";
+menu {
+    ul{
+        width: 75%;
+        @include flexCenter;
+        margin: auto;
+        justify-content: space-between;
+        background-color: #fff;
+        border-radius: 20px;
+        a {
+            flex: 1;
+            height: 130px;
+            @include flexDirection;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $main-background;
+            padding: 20px;
+            font-weight: 600;
+            color: black;
+            p {
+                font-size: 18px;
+                font-weight: 600;
+                color: $main-bg-color;
+            }
+            .image {
+                i,span {
+                    font-size: 3rem;
+                    color: rgb(13, 167, 194);
+                    transition: color 0.3s;
+                }
+                &:hover {
+                    i, span{
+                    color: $main-bg-color;
+                    }
+                }
+            }
+            &:nth-child(1) {
+                border-radius: 20px 0px 0px 20px;
+            }
+            &:nth-child(6) {
+                border-radius: 0px 20px 20px 0px;
+            }
+        }
+        .active {
+            background-color: #D9D9D9;
+            color: $main-bg-color;
+            .image {
+                i, span{
+                    color: $main-bg-color;
+                }
+            }
+        }
+    }
+}
+.container {
+    padding: 50px $standard-padding;
+    @include flexDirection;
+    background-color: #fff;
+    gap: 50px;
+    .categories {
+        display: grid;
+        grid: template 50px auto / repeat(4, 1fr);
+        gap: 25px;
+        .group-card {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            .card {
+                @include flexDirection;
+                padding: 15px 15px 30px 15px;
+                height: 400px;
+                background: linear-gradient(135deg, #000 40%, #0d9affca);
+                gap: 20px;
+                border: none;
+                .image{
+                    display: flex;
+                    height: 50%;
+                    border-radius: 10px;
+                    @include backgroundImage;
+                    background-position: center;
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                    }
+                }
+                .content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p {
+                        color: white;
+                    }
+                    .Btn {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        button {
+                            background-color: rgba(255, 255, 255, 0);
+                            cursor: pointer;
+                            color: white;
+                            border: 1px solid #fff;
+                            transition: 0.3s;
+                            &:hover {
+                                box-shadow:  0px 54px 55px, #0D99FF 0px -12px 30px, #0D99FF 0px 4px 6px, #0D99FF 0px 12px 13px, #0D99FF 0px -3px 5px;
+                            }
+                            &:active {
+                                background: #0000007f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @import "./card";
+@import "./button";
 @import "./footer";

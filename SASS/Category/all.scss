@@ -1,1 +1,57 @@
 @import "../Component/main-categories";
+
+.container {
+    padding: 50px $standard-padding;
+    .categories {
+        grid-template-columns: repeat(3, 1fr) / repeat(4, 1fr);
+        .group-card:nth-child(1) {
+            .card:nth-child(1){
+                .image {
+                    background-image: url(/PAGES/Service_page/Images/little-dog.jpg);
+                }
+            }
+            .card:nth-child(2) .image {
+                background-image: url(/PAGES/Service_page/Images/bulldog-1047518_1280.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(/PAGES/Service_page/Images/dog-3277416_1280.jpg);
+            }
+            .card:nth-child(4) .image {
+                background-image: url(/PAGES/Service_page/Images/puppy-2785074_1280.jpg);
+            }
+        }
+        .group-card:nth-child(2) {
+            .card:nth-child(1){
+                .image {
+                    background-image: url(/PAGES/Service_page/Images/dog-2286773_1280.jpg);
+                }
+            }
+            .card:nth-child(2) .image {
+                background-image: url(/PAGES/Service_page/Images/rottweiler-869013_1280.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(/PAGES/Service_page/Images/dog-3355192_1280.jpg);
+            }
+            .card:nth-child(4) .image {
+                background-image: url(/PAGES/Service_page/Images/puppy-1187267_1280.jpg);
+            }
+        }
+
+        .group-card:nth-child(3) {
+            .card:nth-child(1){
+                .image {
+                    background-image: url(/PAGES/Service_page/Images/dachshund-1519374_1280.jpg);
+                }
+            }
+            .card:nth-child(2) .image {
+                background-image: url(/PAGES/Service_page/Images/husky-3380548_1280.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(/PAGES/Service_page/Images/maltese-1123016_1280.jpg);
+            }
+            .card:nth-child(4) .image {
+                background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
+            }
+        }
+    }
+}
