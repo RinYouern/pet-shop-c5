@@ -431,12 +431,9 @@ header .content p {
   #community .group-community img {
     width: 320px;
   }
-<<<<<<< HEAD
-=======
   #customer {
     padding: 50px;
   }
->>>>>>> 70f773d1ee1116edcef61fd3f16423d5f8fc6c31
 }
 @media (max-width: 390px) {
   #header {
@@ -466,9 +463,6 @@ header .content p {
   #ceo .member-img img {
     width: 170px;
   }
-<<<<<<< HEAD
-}/*# sourceMappingURL=about.css.map */
-=======
   #our-team {
     padding: 30px;
   }
@@ -569,5 +563,4 @@ header .content p {
   #customer .comment p {
     font-size: 11px;
   }
-}
->>>>>>> 70f773d1ee1116edcef61fd3f16423d5f8fc6c31
+}/*# sourceMappingURL=about.css.map */
