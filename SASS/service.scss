@@ -321,7 +321,8 @@ p {
                 border: none;
                 align-items: center;
                 background-color: #000;
-                box-shadow: #0d9affa4 0px 20px 80px;
+                cursor: pointer;
+                transition: ease 0.3s;
                 .card-image {
                     border-radius: 10px;
                     z-index: 1;
@@ -365,6 +366,9 @@ p {
                             }
                         }
                     }
+                }
+                &:hover {
+                    box-shadow: #0d9affa4 0px 20px 80px;
                 }
             }
             .card:nth-child(2) .card-image {

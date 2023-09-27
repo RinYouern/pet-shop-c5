@@ -529,7 +529,8 @@ p {
   border: none;
   align-items: center;
   background-color: #000;
-  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 20px 80px;
+  cursor: pointer;
+  transition: ease 0.3s;
 }
 #products #feed .group-feed .card .card-image {
   border-radius: 10px;
@@ -580,6 +581,9 @@ p {
 }
 #products #feed .group-feed .card .card-content .price button:active {
   background: #252525;
+}
+#products #feed .group-feed .card:hover {
+  box-shadow: rgba(13, 154, 255, 0.6431372549) 0px 20px 80px;
 }
 #products #feed .group-feed .card:nth-child(2) .card-image {
   background-image: url(../IMAGES/service_page/cat\ feed.jpg);
@@ -654,12 +658,4 @@ header .group_btn button span,
 
 h2 {
   text-decoration: underline;
-<<<<<<< HEAD
 }/*# sourceMappingURL=service.css.map */
-=======
-<<<<<<< HEAD
-}/*# sourceMappingURL=service.css.map */
-=======
-}
->>>>>>> 70f773d1ee1116edcef61fd3f16423d5f8fc6c31
->>>>>>> 99efef728f6686f628c51ffaf1969ed4963feb3f
