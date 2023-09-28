@@ -71,3 +71,36 @@ footer {
         }
     }
 }
+@media (min-width: $Tablet) and (max-width: $Desktop) {
+    footer {
+        padding: 30px 50px;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        gap: 0;
+        .logo-content {
+            grid-row: 1/2;
+            grid-column: 1/4;
+            text-align: center;
+            display: flex;
+            .foot-content {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .our-product {
+            grid-column: 1/2;
+        }
+        .our-service {
+            grid-column: 2/3;
+        }
+        .contact {
+            grid-column: 3/4;
+        }
+        .our-product,
+        .our-service,
+        .contact {
+            grid-row: 2/3;
+        }
+
+    }
+}

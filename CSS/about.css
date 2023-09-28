@@ -163,6 +163,38 @@ footer ul li {
   cursor: pointer;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  footer {
+    padding: 30px 50px;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    gap: 0;
+  }
+  footer .logo-content {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    text-align: center;
+    display: flex;
+  }
+  footer .logo-content .foot-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .our-product {
+    grid-column: 1/2;
+  }
+  footer .our-service {
+    grid-column: 2/3;
+  }
+  footer .contact {
+    grid-column: 3/4;
+  }
+  footer .our-product,
+  footer .our-service,
+  footer .contact {
+    grid-row: 2/3;
+  }
+}
 header {
   position: relative;
   height: auto;
@@ -243,19 +275,19 @@ header .content p {
   background: #919092;
   padding: 0 80px 20px 80px;
 }
-#our-team h1 {
-  margin-top: 10px;
+#our-team h2 {
+  margin: 20px;
   text-align: center;
 }
 #our-team .gruop-team {
   display: flex;
-  gap: 45px;
+  gap: 65px;
   /*-- Tooltip Social Media --*/
 }
 #our-team .gruop-team .card-client {
   background: black;
   width: 20rem;
-  height: 22rem;
+  height: 20rem;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 20px;
@@ -268,6 +300,9 @@ header .content p {
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
+#our-team .gruop-team .card-client p {
+  color: #0D99FF;
+}
 #our-team .gruop-team .card-client:hover {
   transform: translateY(-10px);
 }
@@ -277,7 +312,7 @@ header .content p {
      object-fit: cover;
   width: 5rem;
   height: 5rem;
-  border: 2px solid #7cdacc;
+  border: 2px solid #0D99FF;
   border-radius: 999px;
   display: flex;
   justify-content: center;
@@ -286,7 +321,6 @@ header .content p {
 }
 #our-team .gruop-team .user-picture img {
   width: 5rem;
-  fill: currentColor;
 }
 #our-team .gruop-team .name-client {
   margin: 0;
@@ -303,15 +337,18 @@ header .content p {
   content: " ";
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1px;
   margin: 20px 0;
-  background: #7cdacc;
+  background: #0D99FF;
 }
 #our-team .gruop-team .social-media a {
   position: relative;
   margin-right: 15px;
   text-decoration: none;
   color: inherit;
+}
+#our-team .gruop-team .social-media a :hover {
+  color: #0D99FF;
 }
 #our-team .gruop-team .social-media a:last-child {
   margin-right: 0;
@@ -360,7 +397,7 @@ header .content p {
   grid-template-rows: 0.1fr 1fr;
   padding: 30px 50px;
 }
-#values h1 {
+#values h2 {
   margin-top: 10px;
   text-align: center;
 }
@@ -398,64 +435,41 @@ header .content p {
 }
 
 #community {
-  padding: 80px;
+  background: #F0EEF0;
 }
-#community h1 {
-  margin-top: -50px;
-  margin-bottom: 50px;
+#community h2 {
+  margin-bottom: 30px;
   text-align: center;
   color: #B68C3F;
+  padding-top: 20px;
 }
-#community .card {
-  width: 300px;
-  height: 200px;
-  perspective: 1000px;
-}
-#community .card-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.999s;
-}
-#community .card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-#community .card-front,
-#community .card-back {
-  background-image: url(/IMAGES/Aboutpage/Adoption\ Events.png);
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-#community .card-front {
-  background-color: #6A2C70;
-  color: #fff;
+#community .group .card-community {
+  margin: 0 80px;
   display: flex;
+  gap: 80px;
   align-items: center;
-  border: 2px solid #6A2C70;
-  border-radius: 10px;
-  justify-content: center;
-  font-size: 24px;
-  transform: rotateY(0deg);
 }
-#community .card-back {
-  background-color: #F08A5D;
-  color: #fff;
+#community .group .card-community img {
+  width: 400px;
+}
+#community .group .card-community .meaning h3 {
+  font-size: 25px;
+  margin: 0;
+  color: #0D99FF;
+}
+#community .group .card-community .meaning p {
+  font-size: 20px;
+}
+#community .group #revers {
   display: flex;
-  align-items: center;
-  border: 2px solid #F08A5D;
-  border-radius: 10px;
-  justify-content: center;
-  font-size: 24px;
-  transform: rotateY(180deg);
+  flex-direction: row-reverse;
+  text-align: right;
 }
 
 #customer {
   padding: 80px;
 }
-#customer h1 {
+#customer h2 {
   margin-top: -50px;
   margin-bottom: 30px;
   color: #B68C3F;
@@ -479,4 +493,285 @@ header .content p {
 }
 #customer .group-comment .comment p {
   margin-left: 70px;
+<<<<<<< HEAD
 }/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
+}
+=======
+}
+
+@media (max-width: 820px) {
+  #header {
+    height: 100px;
+  }
+  #header h1 {
+    font-size: 25px;
+  }
+  #ceo {
+    height: 300px;
+    margin: 50px -10px 50px 50px;
+  }
+  #ceo h1 {
+    font-size: 25px;
+  }
+  #ceo .ceo-text {
+    width: 400px;
+  }
+  #ceo .ceo-text p {
+    font-size: 15px;
+  }
+  #ceo .member-img img {
+    width: 250px;
+  }
+  #our-team h1 {
+    font-size: 25px;
+  }
+  #our-team .group-member {
+    margin: 20px 0;
+    gap: 40px;
+  }
+  #our-team .group-member .card-member h3 {
+    font-size: 15px;
+  }
+  #our-team .group-member .card-member p {
+    font-size: 10px;
+  }
+  #our-team .group-member .card-member span {
+    color: #B68C3F;
+  }
+  #our-team .group-member .card-member img {
+    width: 150px;
+  }
+  #our-team .group-member .position img {
+    width: 40px;
+  }
+  #values {
+    margin-bottom: 20px;
+  }
+  #values h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  #values .group-values {
+    gap: 50px;
+  }
+  #values .group-values .value span {
+    font-size: 40px;
+    padding: 20px;
+  }
+  #values .group-values .value h3 {
+    font-size: 20px;
+  }
+  #values .group-values .value p {
+    font-size: 13px;
+    width: 230px;
+  }
+  #mission {
+    padding: 50px;
+    align-items: center;
+  }
+  #mission h1 {
+    font-size: 25px;
+  }
+  #mission p {
+    font-size: 15px;
+  }
+  #community {
+    margin-top: 40px;
+    padding: 50px;
+  }
+  #community .group-community .meaning h2 {
+    font-size: 20px;
+  }
+  #community .group-community .meaning p {
+    font-size: 15px;
+  }
+  #community .group-community img {
+    width: 320px;
+  }
+  #customer {
+    padding: 50px;
+  }
+}
+@media (max-width: 370px) {
+  #header {
+    height: 150px;
+    padding: 30px 10px;
+  }
+  #header .content {
+    gap: 10px;
+  }
+  #header .content h1 {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  #header .content p {
+    font-size: 6px;
+    margin-top: 10px;
+  }
+  #ceo {
+    height: 100px;
+    margin: 10px -10px 5px 10px;
+    gap: 1px;
+  }
+  #ceo h1 {
+    font-size: 10px;
+  }
+  #ceo .ceo-text {
+    width: 200px;
+  }
+  #ceo .ceo-text p {
+    font-size: 5px;
+  }
+  #ceo .member-img img {
+    width: 50px;
+    margin-left: -100px;
+  }
+  .media h4 {
+    font-size: 10px;
+  }
+  .media i {
+    font-size: 10px;
+  }
+  #our-team {
+    width: 250px;
+  }
+  #our-team h1 {
+    margin-bottom: -10px;
+    font-size: 10px;
+  }
+  #our-team .group-member {
+    height: 90px;
+    grid-template-columns: repeat(3, 0.2fr);
+    gap: 10px;
+  }
+  #our-team .group-member .card-member {
+    height: 100px;
+    width: 70px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #our-team .group-member .card-member img {
+    width: 50px;
+  }
+  #our-team .group-member .card-member h3 {
+    font-size: 5px;
+  }
+  #our-team .group-member .card-member p {
+    font-size: 3px;
+  }
+  #our-team .group-member .card-member span {
+    color: #B68C3F;
+  }
+  #our-team .group-member .card-member .position {
+    margin-top: 10px;
+    gap: 3px;
+  }
+  #our-team .group-member .card-member .position img {
+    width: 10px;
+  }
+  #our-team .group-member .card-member .position h5 {
+    font-size: 3px;
+  }
+  #values {
+    width: 250px;
+    height: 80px;
+    padding: 10px;
+  }
+  #values h1 {
+    margin-bottom: -2px;
+    margin-top: -5px;
+    font-size: 10px;
+  }
+  #values .group-values {
+    gap: 2px;
+  }
+  #values .group-values .value {
+    gap: 4px;
+  }
+  #values .group-values .value span {
+    font-size: 10px;
+    padding: 5px;
+  }
+  #values .group-values .value h3 {
+    font-size: 5px;
+  }
+  #values .group-values .value p {
+    font-size: 4px;
+    width: 80px;
+  }
+  #mission {
+    width: 250px;
+    padding: 15px;
+    height: 150px;
+  }
+  #mission .content {
+    width: 200px;
+  }
+  #mission .content h1 {
+    font-size: 10px;
+  }
+  #mission .content p {
+    font-size: 8px;
+    margin-top: -10px;
+  }
+  #community {
+    width: 250px;
+    padding: 10px;
+  }
+  #community h1 {
+    font-size: 10px;
+  }
+  #community .group {
+    margin-top: -40px;
+  }
+  #community .group-community {
+    margin-left: 5px;
+    gap: 20px;
+  }
+  #community .group-community .meaning h2 {
+    font-size: 6px;
+  }
+  #community .group-community .meaning p {
+    font-size: 5px;
+    width: 100px;
+  }
+  #community .group-community img {
+    width: 100px;
+  }
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+}
+>>>>>>> 91135859f865e83630ffc7108d8095b34a55c611
+>>>>>>> e18a0a064679ce1cd34a0985afbd51de6f0e3321
+>>>>>>> 9fd42a6d5968a8f587ce55e9875c763b9c7488c5
+>>>>>>> 64ce05123d4ae607ff0a73e4c679482d5b604bbd
+>>>>>>> 4d30d042a9fa574580d48a177732a93a5ad4ff97
+>>>>>>> 01ccdb98248b5d5f3e51dd1ab0e4256deb037c40
+>>>>>>> 4856e888ad62fcede9e503401ae84e73c72698ec
+>>>>>>> e9b413330bd96b513702571ee98c8b620f0dfa95
+>>>>>>> 76080326590098b652328aad00ecb9d6a98b5a61
+>>>>>>> 4674e598208c818e6e43596354bd877bd0db626a
