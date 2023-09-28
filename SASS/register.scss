@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Permanent+Marker&family=Roboto+Flex:opsz,wght@8..144,500&family=Ubuntu:wght@500&display=swap');
+@import "./Component/variable";
+@import "./Group-Mixin/Flex-Mixin";
+@import "./Component/button";
+* {
+    @include Universal;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $main-font-header;
+    color: white;
+    form {
+        width: 30%;
+        padding: 25px;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        animation: gradient 15s ease infinite;
+        border-radius: 15px;
+        @include flexDirection;
+        justify-content: space-between;
+        gap: 40px;
+        h2 {
+            text-align: center
+        }
+        .complete  {
+            @include flexDirection;
+            gap: 30px;
+            input{
+                outline: none;
+                @include inputStyle;
+                border-radius: 5px;
+                padding: 9px;
+            }
+        }
+        button {
+            padding: 9px;
+            display: flex;
+            justify-content: center;
+            background: #ffffff00;
+            border: 1px solid #fff;
+            color: white;
+            cursor: pointer;
+        }
+        @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+        }
+        
+    }
+}
