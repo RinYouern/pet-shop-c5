@@ -18,10 +18,6 @@ body {
   gap: 25px;
 }
 
-p {
-  font-weight: 300;
-}
-
 nav {
   position: sticky;
   top: 0;
@@ -86,6 +82,10 @@ nav .nav-right .search span {
   position: absolute;
   left: 15px;
   top: 11px;
+}
+
+p {
+  font-weight: 300;
 }
 
 menu ul {
@@ -158,7 +158,7 @@ menu ul .active .image i, menu ul .active .image span {
   flex-direction: column;
   padding: 15px 15px 30px 15px;
   height: 400px;
-  background: linear-gradient(135deg, #000 40%, rgba(13, 154, 255, 0.7921568627));
+  background: linear-gradient(135deg, teal, #000, rgba(13, 154, 255, 0.7921568627));
   gap: 20px;
   border: none;
 }
@@ -286,7 +286,6 @@ footer ul li {
   font-weight: 300;
   list-style-type: disc;
   cursor: pointer;
-<<<<<<< HEAD
 }
 
 .container {
@@ -331,6 +330,3 @@ footer ul li {
 .container .categories:nth-child(1) .group-card:nth-child(3) .card:nth-child(4) .image {
   background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
 }/*# sourceMappingURL=dog.css.map */
-=======
-}
->>>>>>> 9fd42a6d5968a8f587ce55e9875c763b9c7488c5

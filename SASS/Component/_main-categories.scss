@@ -10,10 +10,10 @@ body {
     @include flexDirection;
     gap: 25px;
 }
+@import "./nav";
 p {
     font-weight: 300;
 }
-@import "./nav";
 menu {
     ul{
         width: 75%;
@@ -84,7 +84,7 @@ menu {
                 @include flexDirection;
                 padding: 15px 15px 30px 15px;
                 height: 400px;
-                background: linear-gradient(135deg, #000 40%, #0d9affca);
+                background: linear-gradient(135deg, teal, #000, #0d9affca);
                 gap: 20px;
                 border: none;
                 .image{
