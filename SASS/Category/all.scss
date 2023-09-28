@@ -4,11 +4,11 @@
     padding: 50px $standard-padding;
     .categories {
         grid-template-columns: repeat(3, 1fr) / repeat(4, 1fr);
-        .group-card:nth-child(1) {
-            .card:nth-child(1){
-                .image {
+    }
+    .categories:nth-child(1) {
+        .group-card {
+            .card:nth-child(1) .image {
                     background-image: url(/PAGES/Service_page/Images/little-dog.jpg);
-                }
             }
             .card:nth-child(2) .image {
                 background-image: url(/PAGES/Service_page/Images/bulldog-1047518_1280.jpg);
@@ -20,37 +20,70 @@
                 background-image: url(/PAGES/Service_page/Images/puppy-2785074_1280.jpg);
             }
         }
-        .group-card:nth-child(2) {
-            .card:nth-child(1){
-                .image {
-                    background-image: url(/PAGES/Service_page/Images/dog-2286773_1280.jpg);
-                }
+    }
+    .categories:nth-child(2) {
+        .group-card {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2016/02/10/16/37/cat-1192026_1280.jpg);
             }
             .card:nth-child(2) .image {
-                background-image: url(/PAGES/Service_page/Images/rottweiler-869013_1280.jpg);
+                background-image: url(https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_640.jpg);
             }
             .card:nth-child(3) .image {
-                background-image: url(/PAGES/Service_page/Images/dog-3355192_1280.jpg);
+                background-image: url(https://cdn.pixabay.com/photo/2017/02/15/12/12/cat-2068462_640.jpg);
             }
             .card:nth-child(4) .image {
-                background-image: url(/PAGES/Service_page/Images/puppy-1187267_1280.jpg);
+                background-image: url(https://cdn.pixabay.com/photo/2017/03/14/14/49/cat-2143332_640.jpg);
             }
         }
-
-        .group-card:nth-child(3) {
-            .card:nth-child(1){
-                .image {
-                    background-image: url(/PAGES/Service_page/Images/dachshund-1519374_1280.jpg);
-                }
+    }
+    .categories:nth-child(3) {
+        .group-card {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2020/06/29/00/03/parrots-5350976_640.jpg);
             }
             .card:nth-child(2) .image {
-                background-image: url(/PAGES/Service_page/Images/husky-3380548_1280.jpg);
+                background-image: url(https://cdn.pixabay.com/photo/2019/02/07/21/08/animals-3982182_640.jpg);
             }
             .card:nth-child(3) .image {
-                background-image: url(/PAGES/Service_page/Images/maltese-1123016_1280.jpg);
+                background-image: url(https://cdn.pixabay.com/photo/2016/02/21/15/39/cockatiel-1213758_640.jpg);
             }
             .card:nth-child(4) .image {
-                background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
+                background-image: url(https://cdn.pixabay.com/photo/2014/12/30/13/41/cockatoo-583921_640.jpg);
+            }
+        }
+    }
+    .categories:nth-child(4) {
+        .group-card {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2014/06/21/08/43/rabbit-373691_1280.jpg);
+            }
+            .card:nth-child(2) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2017/03/26/00/56/rabbit-2174679_640.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2018/08/01/22/50/rabbit-3578422_640.jpg);
+            }
+            .card:nth-child(4) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2016/06/06/21/19/rabbit-1440432_640.jpg);
+            }
+        }
+    }
+    .categories:nth-child(5) {
+        .group-card {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2016/02/22/10/06/hedgehog-1215140_640.jpg);
+            }
+            .card:nth-child(2) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052_640.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_640.jpg);
+                
+            }
+            .card:nth-child(4) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
+                
             }
         }
     }

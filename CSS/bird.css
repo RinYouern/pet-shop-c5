@@ -18,10 +18,6 @@ body {
   gap: 25px;
 }
 
-p {
-  font-weight: 300;
-}
-
 nav {
   position: sticky;
   top: 0;
@@ -86,6 +82,10 @@ nav .nav-right .search span {
   position: absolute;
   left: 15px;
   top: 11px;
+}
+
+p {
+  font-weight: 300;
 }
 
 menu ul {
@@ -158,7 +158,8 @@ menu ul .active .image i, menu ul .active .image span {
   flex-direction: column;
   padding: 15px 15px 30px 15px;
   height: 400px;
-  background: linear-gradient(135deg, #000 40%, rgba(13, 154, 255, 0.7921568627));
+  background: linear-gradient(155deg, black, gray);
+  animation: mymove 5s infinite;
   gap: 20px;
   border: none;
 }
@@ -201,6 +202,14 @@ menu ul .active .image i, menu ul .active .image span {
 }
 .container .categories .group-card .card .content .Btn button:active {
   background: rgba(0, 0, 0, 0.4980392157);
+}
+@keyframes mymove {
+  from {
+    background: linear-gradient(155deg, black 30%, rgb(0, 61, 99));
+  }
+  to {
+    background: linear-gradient(155deg, rgb(0, 61, 99)), black;
+  }
 }
 
 .card {
@@ -286,4 +295,4 @@ footer ul li {
   font-weight: 300;
   list-style-type: disc;
   cursor: pointer;
-}
+}/*# sourceMappingURL=bird.css.map */

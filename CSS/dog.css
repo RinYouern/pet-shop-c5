@@ -18,10 +18,6 @@ body {
   gap: 25px;
 }
 
-p {
-  font-weight: 300;
-}
-
 nav {
   position: sticky;
   top: 0;
@@ -86,6 +82,10 @@ nav .nav-right .search span {
   position: absolute;
   left: 15px;
   top: 11px;
+}
+
+p {
+  font-weight: 300;
 }
 
 menu ul {
@@ -158,7 +158,8 @@ menu ul .active .image i, menu ul .active .image span {
   flex-direction: column;
   padding: 15px 15px 30px 15px;
   height: 400px;
-  background: linear-gradient(135deg, #000 40%, rgba(13, 154, 255, 0.7921568627));
+  background: linear-gradient(155deg, black, gray);
+  animation: mymove 5s infinite;
   gap: 20px;
   border: none;
 }
@@ -201,6 +202,14 @@ menu ul .active .image i, menu ul .active .image span {
 }
 .container .categories .group-card .card .content .Btn button:active {
   background: rgba(0, 0, 0, 0.4980392157);
+}
+@keyframes mymove {
+  from {
+    background: linear-gradient(155deg, black 30%, rgb(0, 61, 99));
+  }
+  to {
+    background: linear-gradient(155deg, rgb(0, 61, 99)), black;
+  }
 }
 
 .card {
@@ -329,4 +338,8 @@ footer ul li {
 }
 .container .categories:nth-child(1) .group-card:nth-child(3) .card:nth-child(4) .image {
   background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
+<<<<<<< HEAD
 }
+=======
+}/*# sourceMappingURL=dog.css.map */
+>>>>>>> 01ccdb98248b5d5f3e51dd1ab0e4256deb037c40
