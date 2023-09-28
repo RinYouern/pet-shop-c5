@@ -204,7 +204,8 @@ body {
   background: #F0EEF0;
 }
 body header {
-  background-image: url(../IMAGES/home-page/dog-header.jpg);
+  background-image: url(https://animalmedicinesaustralia.org.au/wp-content/uploads/2022/11/Pet-report-2022-website-image-cropped-2-1120x630.jpg);
+  background-position: center;
 }
 body .category {
   text-align: center;
@@ -232,7 +233,7 @@ body .category .card_container .card {
   padding: 25px;
   border: 1px solid #919092;
   border-radius: 15px;
-  background: white;
+  background-color: #fff;
 }
 body .category .card_container .card:nth-child(2) .pet-img {
   background-image: url(../IMAGES/home-page/cat.jpg);
@@ -252,6 +253,7 @@ body .category .card_container .card .pet-img {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-position: center;
+  border-radius: 15px;
 }
 body .category .card_container .card .pet-content {
   padding-top: 20px;
@@ -283,6 +285,26 @@ body .category .card_container .card .pet-content ul {
   flex-wrap: wrap;
   gap: 15%;
 }
+@keyframes mymove {
+  0% {
+    background: #000000;
+  }
+  20% {
+    background: #190031;
+  }
+  40% {
+    background: #00253f;
+  }
+  60% {
+    background: #00323f;
+  }
+  80% {
+    background: #011e33;
+  }
+  100% {
+    background: #000000;
+  }
+}
 body .category .product {
   padding-bottom: 30px;
 }
@@ -299,35 +321,46 @@ body .category .group-card {
 body .category .group-card .card {
   display: flex;
   flex-direction: column;
-  height: 40px;
+  height: 400px;
   width: 100%;
   border: 1px solid #919092;
   border-radius: 15px;
-  background: white;
+  background: #000000;
+  animation: mymove 6s infinite linear;
+  padding: 30px;
+  gap: 25px;
 }
-body .category .group-card .card .product-img img {
-  width: 80%;
-  padding-top: 30px;
+body .category .group-card .card:nth-child(2) .product-img {
+  background-image: url(/IMAGES/home-page/feed-pro.jpg);
+}
+body .category .group-card .card:nth-child(1) .product-img {
+  background-image: url(/IMAGES/home-page/compjpg.jpg);
+}
+body .category .group-card .card:nth-child(3) .product-img {
+  background-image: url(/IMAGES/home-page/sarang-pro.jpg);
+}
+body .category .group-card .card .product-img {
+  flex: 1;
+  background-image: url(/IMAGES/home-page/pro-cat.jpg);
+  background-size: cover;
+  border-radius: 15px;
 }
 body .category .group-card .card .product-content {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 body .category .group-card .card .product-content p {
-  padding: 20px;
+  text-align: start;
+  color: white;
 }
 body .category .group-card .card .product-content .more {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
 }
 body .category .group-card .card .product-content .more .price {
   color: #B68C3F;
-}
-body .category .group-card .card .product-content .more .tag {
-  color: #0D99FF;
-  text-decoration: underline;
 }
 body .our-new-product {
   padding: 30px 80px;
@@ -350,18 +383,40 @@ body .our-new-product .class-card {
 body .our-new-product .class-card .card {
   padding: 30px;
   height: 380px;
+  gap: 25px;
   display: flex;
   flex-direction: column;
   border: 1px solid #919092;
   border-radius: 15px;
-  background: white;
+  background-color: #fff;
+}
+body .our-new-product .class-card .card:nth-child(2) .new-img {
+  background-image: url(/IMAGES/home-page/cat-new.jpg);
+}
+body .our-new-product .class-card .card:nth-child(3) .new-img {
+  background-image: url(/IMAGES/home-page/new-pro.png);
+}
+body .our-new-product .class-card .card:nth-child(4) .new-img {
+  background-image: url(/IMAGES/home-page/sukina.jpg);
+}
+body .our-new-product .class-card .card:nth-child(5) .new-img {
+  background-image: url(/IMAGES/home-page/little-dog.png);
+}
+body .our-new-product .class-card .card:nth-child(6) .new-img {
+  background-image: url(/IMAGES/home-page/big\ cat.png);
+}
+body .our-new-product .class-card .card:nth-child(7) .new-img {
+  background-image: url(/IMAGES/home-page/big-rabbit.jpg);
+}
+body .our-new-product .class-card .card:nth-child(8) .new-img {
+  background-image: url(/IMAGES/home-page/red-bird.jpg);
 }
 body .our-new-product .class-card .card .new-img {
   flex: 1;
   display: flex;
-}
-body .our-new-product .class-card .card .new-img img {
-  width: 100%;
+  background-image: url(/IMAGES/home-page/doll.jpg);
+  background-size: cover;
+  border-radius: 15px;
 }
 body .our-new-product .class-card .card .new-content {
   display: flex;

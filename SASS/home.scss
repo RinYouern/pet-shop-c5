@@ -4,7 +4,8 @@
 body{
     background: #F0EEF0;
     header {
-        background-image: url(../IMAGES/home-page/dog-header.jpg);
+        background-image: url(https://animalmedicinesaustralia.org.au/wp-content/uploads/2022/11/Pet-report-2022-website-image-cropped-2-1120x630.jpg);
+        background-position: center;
     }
     
     .category {
@@ -34,7 +35,7 @@ body{
                 padding: 25px;
                 border: 1px solid $main-card-border;
                 border-radius: 15px;
-                background: white;
+                background-color: #fff;
                 &:nth-child(2) .pet-img {
                     background-image: url(../IMAGES/home-page/cat.jpg);
                 }
@@ -51,6 +52,7 @@ body{
                     background-image: url(../IMAGES/home-page/dog.png);
                     @include backgroundImage;
                     background-position: center;
+                    border-radius: 15px;
                 }
                 .pet-content {
                     padding-top: 20px;
@@ -83,6 +85,14 @@ body{
                 }
             }
         }
+        @keyframes mymove {
+            0%   { background: #000000; }
+            20%  { background: #190031; }
+            40%  { background: #00253f; }
+            60%  { background: #00323f; }
+            80%  { background: #011e33; }
+            100% { background: #000000; }
+        }
         .product {
             padding-bottom: 30px;
             .title {
@@ -90,8 +100,7 @@ body{
                     color: $main-text-color;
                 }
             }
-        }
-        
+        } 
         .group-card {
             @include flexeEvenly;
             gap: 20px;
@@ -102,32 +111,38 @@ body{
                 width: 100%;
                 border: 1px solid $main-card-border;
                 border-radius: 15px;
-                background: white;
-                .product-img {
-                    img {
-                        width: 80%;
-                        padding-top: 30px;
-                    }
+                background: #000000;
+                animation: mymove 6s infinite linear;
+                padding: 30px;
+                gap: 25px;
+                &:nth-child(2) .product-img{
+                    background-image: url(/IMAGES/home-page/feed-pro.jpg);
                 }
-        
+                &:nth-child(1) .product-img{
+                    background-image: url(/IMAGES/home-page/compjpg.jpg);
+                }
+                &:nth-child(3) .product-img{
+                    background-image: url(/IMAGES/home-page/sarang-pro.jpg);
+                }
+                .product-img {
+                    flex: 1;
+                    background-image: url(/IMAGES/home-page/pro-cat.jpg);
+                    background-size: cover;
+                    border-radius: 15px;
+                }
                 .product-content {
+                    flex: 1;
                     @include flexDirection;
                     justify-content: space-between;
-                    p{
-                        padding: 20px;
+                    p {
+                        text-align: start;
+                        color: white;
                     }
                     .more {
                         display: flex;
                         justify-content: space-between;
-                        padding: 20px;
-        
                         .price {
                             color: $main-bg-color;
-                        }
-        
-                        .tag {
-                            color: $main-text-color ;
-                            text-decoration: underline;
                         }
                     }
                 }
@@ -141,7 +156,6 @@ body{
         .title {
             display: flex;
             justify-content: center;
-    
             h2 {
                 color: $main-text-color;
                 align-items: center
@@ -156,24 +170,43 @@ body{
             .card {
                 padding: 30px;
                 height: 380px;
+                gap: 25px;
                 @include flexDirection;
                 border: 1px solid $main-card-border;
                 border-radius: 15px;
-                background:white;
+                background-color: #fff;
+                &:nth-child(2) .new-img{
+                    background-image: url(/IMAGES/home-page/cat-new.jpg);
+                }
+                &:nth-child(3) .new-img{
+                    background-image: url(/IMAGES/home-page/new-pro.png);
+                }
+                &:nth-child(4) .new-img{
+                    background-image: url(/IMAGES/home-page/sukina.jpg);
+                }
+                &:nth-child(5) .new-img{
+                    background-image: url(/IMAGES/home-page/little-dog.png);
+                }
+                &:nth-child(6) .new-img{
+                    background-image: url(/IMAGES/home-page/big\ cat.png);
+                }
+                &:nth-child(7) .new-img{
+                    background-image: url(/IMAGES/home-page/big-rabbit.jpg);
+                }
+                &:nth-child(8) .new-img{
+                    background-image: url(/IMAGES/home-page/red-bird.jpg);
+                }
                 .new-img {
                     flex: 1;
                     display: flex;
-    
-                    img {
-                        width: 100%;
-                    }
+                    background-image: url(/IMAGES/home-page/doll.jpg);
+                    background-size: cover;
+                    border-radius: 15px;
                 }
-    
                 .new-content {
                     @include flexDirection;
                     justify-content: space-between;
                     flex: 1;
-    
                     .more {
                         display: flex;
                         justify-content: space-between;
