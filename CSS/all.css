@@ -379,6 +379,14 @@ footer ul li {
 .container .categories:nth-child(3) .group-card .card:nth-child(3) .image {
   background-image: url(https://cdn.pixabay.com/photo/2016/02/21/15/39/cockatiel-1213758_640.jpg);
 }
+<<<<<<< HEAD
+.container .categories .group-card:nth-child(3) .card:nth-child(4) .image {
+  background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 4856e888ad62fcede9e503401ae84e73c72698ec
+=======
 .container .categories:nth-child(3) .group-card .card:nth-child(4) .image {
   background-image: url(https://cdn.pixabay.com/photo/2014/12/30/13/41/cockatoo-583921_640.jpg);
 }
@@ -405,4 +413,10 @@ footer ul li {
 }
 .container .categories:nth-child(5) .group-card .card:nth-child(4) .image {
   background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
+<<<<<<< HEAD
+>>>>>>> 01ccdb98248b5d5f3e51dd1ab0e4256deb037c40
 }/*# sourceMappingURL=all.css.map */
+=======
+}/*# sourceMappingURL=all.css.map */
+>>>>>>> 01ccdb98248b5d5f3e51dd1ab0e4256deb037c40
+>>>>>>> 4856e888ad62fcede9e503401ae84e73c72698ec
