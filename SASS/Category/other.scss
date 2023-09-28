@@ -1,1 +1,68 @@
 @import "../Component/main-categories";
+
+.container {
+    .categories {
+        .group-card:nth-child(1) {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2016/02/22/10/06/hedgehog-1215140_640.jpg);
+            }
+            .card:nth-child(2) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052_640.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_640.jpg);
+                
+            }
+            .card:nth-child(4) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
+                
+            }
+        }
+        .group-card:nth-child(2) {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2017/05/31/18/38/sea-2361247_640.jpg);
+            }
+            .card:nth-child(2) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2020/07/25/18/20/frog-5437468_640.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2012/02/19/17/36/duck-15026_640.jpg);
+            }
+            .card:nth-child(4) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2015/04/07/21/12/lionfish-711799_1280.jpg);
+            }
+        }
+        .group-card:nth-child(3) {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2018/03/01/16/26/pig-3191071_640.jpg);
+            }
+            .card:nth-child(2) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2016/03/05/19/01/animal-1238239_640.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2011/07/26/06/34/nature-8366_640.jpg);
+                background-position: center top;
+            }
+            .card:nth-child(4) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
+                
+            }
+        }
+        .group-card:nth-child(4) {
+            .card:nth-child(1) .image {
+                    background-image: url(https://cdn.pixabay.com/photo/2016/02/22/10/06/hedgehog-1215140_640.jpg);
+            }
+            .card:nth-child(2) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052_640.jpg);
+            }
+            .card:nth-child(3) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_640.jpg);
+                
+            }
+            .card:nth-child(4) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
+                
+            }
+        }
+    }
+}

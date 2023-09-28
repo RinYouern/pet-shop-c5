@@ -339,4 +339,31 @@ footer ul li {
   footer .contact {
     grid-row: 2/3;
   }
+}
+.container .categories {
+  grid-template-rows: repeat(2, 1fr);
+}
+.container .categories .group-card:nth-child(1) .card:nth-child(1) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2020/02/29/18/59/rabbit-4890861_640.jpg);
+}
+.container .categories .group-card:nth-child(1) .card:nth-child(2) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/21/16/59/animal-1846462_640.jpg);
+}
+.container .categories .group-card:nth-child(1) .card:nth-child(3) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2017/07/13/16/10/cute-2500929_640.jpg);
+}
+.container .categories .group-card:nth-child(1) .card:nth-child(4) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2014/04/05/11/10/lop-eared-314881_640.jpg);
+}
+.container .categories .group-card:nth-child(2) .card:nth-child(1) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2014/06/21/08/43/rabbit-373691_1280.jpg);
+}
+.container .categories .group-card:nth-child(2) .card:nth-child(2) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2017/03/26/00/56/rabbit-2174679_640.jpg);
+}
+.container .categories .group-card:nth-child(2) .card:nth-child(3) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/01/22/50/rabbit-3578422_640.jpg);
+}
+.container .categories .group-card:nth-child(2) .card:nth-child(4) .image {
+  background-image: url(https://cdn.pixabay.com/photo/2016/06/06/21/19/rabbit-1440432_640.jpg);
 }/*# sourceMappingURL=rabbit.css.map */
