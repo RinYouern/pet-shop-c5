@@ -84,7 +84,8 @@ menu {
                 @include flexDirection;
                 padding: 15px 15px 30px 15px;
                 height: 400px;
-                background: linear-gradient(135deg, teal, #000, #0d9affca);
+                background: linear-gradient(155deg, black, gray);
+                animation: mymove 5s infinite;
                 gap: 20px;
                 border: none;
                 .image{
@@ -125,6 +126,10 @@ menu {
                         }
                     }
                 }
+            }
+            @keyframes mymove {
+                from {background: linear-gradient(155deg, black 30%, rgb(0, 61, 99));}
+                to {background: linear-gradient(155deg, black, black ;}
             }
         }
     }
