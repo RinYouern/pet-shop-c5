@@ -220,6 +220,14 @@ header .content p {
   margin: 0 50px 0 0;
   font-size: 20px;
 }
+#ceo .ceo-text .media .group-icon i {
+  color: #0D99FF;
+  margin-left: 10px;
+  font-size: 20px;
+}
+#ceo .ceo-text .media .group-icon i:hover {
+  color: black;
+}
 #ceo .member-img {
   display: grid;
   align-items: center;
@@ -230,38 +238,120 @@ header .content p {
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-rows: 0.2fr 1fr;
+  grid-template-rows: 0.2fr 1.4fr;
   padding-bottom: 10px;
   background: #919092;
+  padding: 0 80px 20px 80px;
 }
 #our-team h1 {
   margin-top: 10px;
   text-align: center;
 }
-#our-team .group-member {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-}
-#our-team .card-member {
-  background: black;
-  padding: 30px;
-  border-radius: 20px;
-  text-align: left;
-  color: #F0EEF0;
-}
-#our-team .card-member p {
-  font-size: 10px;
-}
-#our-team .card-member span {
-  color: #B68C3F;
-}
-#our-team .position {
-  margin-top: 20px;
+#our-team .gruop-team {
   display: flex;
+  gap: 45px;
+  /*-- Tooltip Social Media --*/
+}
+#our-team .gruop-team .card-client {
+  background: black;
+  width: 20rem;
+  height: 22rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #0D99FF;
+  box-shadow: 0 6px 10px rgb(207, 212, 222);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+#our-team .gruop-team .card-client:hover {
+  transform: translateY(-10px);
+}
+#our-team .gruop-team .user-picture {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid #7cdacc;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  margin: auto;
+}
+#our-team .gruop-team .user-picture img {
+  width: 5rem;
+  fill: currentColor;
+}
+#our-team .gruop-team .name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+#our-team .gruop-team .name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+#our-team .gruop-team .social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #7cdacc;
+}
+#our-team .gruop-team .social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+#our-team .gruop-team .social-media a:last-child {
+  margin-right: 0;
+}
+#our-team .gruop-team .social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+#our-team .gruop-team .tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+#our-team .gruop-team .tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+#our-team .gruop-team .social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+#our-team .gruop-team .social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
 }
 
 #values {
@@ -316,24 +406,50 @@ header .content p {
   text-align: center;
   color: #B68C3F;
 }
-#community .group-community {
+#community .card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+#community .card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
+#community .card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+#community .card-front,
+#community .card-back {
+  background-image: url(/IMAGES/Aboutpage/Adoption\ Events.png);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+#community .card-front {
+  background-color: #6A2C70;
+  color: #fff;
   display: flex;
   align-items: center;
-  gap: 60px;
+  border: 2px solid #6A2C70;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(0deg);
 }
-#community .group-community .meaning {
+#community .card-back {
+  background-color: #F08A5D;
+  color: #fff;
   display: flex;
-  flex-direction: column;
-}
-#community .group-community .meaning h2 {
-  color: #0D99FF;
-  font-size: 35px;
-}
-#community .group-community .meaning p {
-  font-size: 25px;
-}
-#community .group-community img {
-  width: 520px;
+  align-items: center;
+  border: 2px solid #F08A5D;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+  transform: rotateY(180deg);
 }
 
 #customer {
@@ -363,6 +479,9 @@ header .content p {
 }
 #customer .group-comment .comment p {
   margin-left: 70px;
+<<<<<<< HEAD
+}
+=======
 }
 
 @media (max-width: 820px) {
@@ -604,4 +723,29 @@ header .content p {
   #community .group-community img {
     width: 100px;
   }
+<<<<<<< HEAD
 }/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+<<<<<<< HEAD
+}/*# sourceMappingURL=about.css.map */
+=======
+}
+>>>>>>> 91135859f865e83630ffc7108d8095b34a55c611
+>>>>>>> e18a0a064679ce1cd34a0985afbd51de6f0e3321
+>>>>>>> 9fd42a6d5968a8f587ce55e9875c763b9c7488c5
+>>>>>>> 64ce05123d4ae607ff0a73e4c679482d5b604bbd
+>>>>>>> 4d30d042a9fa574580d48a177732a93a5ad4ff97
+>>>>>>> 01ccdb98248b5d5f3e51dd1ab0e4256deb037c40
+>>>>>>> 4856e888ad62fcede9e503401ae84e73c72698ec
