@@ -48,7 +48,6 @@
 }
 
 #our-team {
-
     @include gridCenter;
     justify-content: center;
     grid-template-rows: 0.2fr 1.4fr;
@@ -56,18 +55,20 @@
     background: $main-card-border;
     padding: 0 80px 20px 80px;
 
-    h1 {
-        margin-top: 10px;
+    h2{
+        margin: 20px;
         text-align: center;
+
     }
 
     .gruop-team {
         display: flex;
-        gap: 45px;
+        gap: 65px;
+
         .card-client {
             background: black;
             width: 20rem;
-            height: 22rem;
+            height: 20rem;
             padding-top: 25px;
             padding-bottom: 25px;
             padding-left: 20px;
@@ -79,6 +80,9 @@
             color: #fff;
             font-family: "Poppins", sans-serif;
             transition: all 0.3s ease;
+            p{
+                color: $main-text-color;
+            }
         }
 
         .card-client:hover {
@@ -90,7 +94,7 @@
             object-fit: cover;
             width: 5rem;
             height: 5rem;
-            border: 2px solid #7cdacc;
+            border: 2px solid $main-text-color;
             border-radius: 999px;
             display: flex;
             justify-content: center;
@@ -100,7 +104,6 @@
 
         .user-picture img {
             width: 5rem;
-            fill: currentColor;
         }
 
         .name-client {
@@ -120,9 +123,9 @@
             content: " ";
             display: block;
             width: 100%;
-            height: 2px;
+            height: 1px;
             margin: 20px 0;
-            background: #7cdacc;
+            background: $main-text-color;
         }
 
         .social-media a {
@@ -130,6 +133,9 @@
             margin-right: 15px;
             text-decoration: none;
             color: inherit;
+        }
+        .social-media a :hover{
+            color:$main-text-color ;
         }
 
         .social-media a:last-child {
@@ -185,7 +191,7 @@
 }
 
 #values {
-    h1 {
+    h2 {
         margin-top: 10px;
         text-align: center;
     }
@@ -231,95 +237,53 @@
 }
 
 #community {
-    h1 {
-        margin-top: -50px;
-        margin-bottom: 50px;
+    background: $main-background;
+    h2 {
+        margin-bottom: 30px;
         text-align: center;
         color: $main-bg-color;
+        padding-top: 20px;
     }
 
-    padding: 80px;
-    .card {
-        
-        width: 300px;
-        height: 200px;
-        perspective: 1000px;
-      }
-      
-      .card-inner {
 
-        width: 100%;
-        height: 100%;
-        position: relative;
-        transform-style: preserve-3d;
-        transition: transform 0.999s;
-      }
-      
-      .card:hover .card-inner {
-        transform: rotateY(180deg);
-      }
-      
-      .card-front,
-      .card-back {
-        background-image: url(/IMAGES/Aboutpage/Adoption\ Events.png);
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-      }
-      
-      .card-front {
-        background-color: #6A2C70;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        border: 2px solid #6A2C70;
-        border-radius: 10px;
-        justify-content: center;
-        font-size: 24px;
-        transform: rotateY(0deg);
-      }
-      
-      .card-back {
-        background-color: #F08A5D;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        border: 2px solid #F08A5D;
-        border-radius: 10px;
-        justify-content: center;
-        font-size: 24px;
-        transform: rotateY(180deg);
-      }
-      
-    // .group-community {
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 60px;
+    .group {
+        .card-community {
+            margin: 0 80px;
+            display: flex;
+            gap: 80px;
+            align-items: center;
 
-    //     .meaning {
-    //         display: flex;
-    //         flex-direction: column;
+            img {
+                width: 400px;
+            }
 
-    //         h2 {
-    //             color: $main-text-color;
-    //             font-size: 35px;
-    //         }
+            .meaning {
+                h3 {
+                    font-size: 25px;
+                    margin: 0;
+                    color: $main-text-color;
+                }
 
-    //         p {
-    //             font-size: 25px;
-    //         }
-    //     }
+                p {
+                    font-size: 20px;
+                }
+            }
+   
 
-    //     img {
-    //         width: 520px;
-    //     }
+        }
+         #revers{
+                display: flex;
+                flex-direction: row-reverse;
+                text-align: right;
+            }
 
-    // }
+    }
+
+
 }
 
 #customer {
-    h1 {
+    h2 {
         margin-top: -50px;
         margin-bottom: 30px;
         color: $main-bg-color;
