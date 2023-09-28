@@ -286,7 +286,6 @@ footer ul li {
   font-weight: 300;
   list-style-type: disc;
   cursor: pointer;
-<<<<<<< HEAD
 }
 
 .container {
@@ -331,6 +330,3 @@ footer ul li {
 .container .categories .group-card:nth-child(3) .card:nth-child(4) .image {
   background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
 }/*# sourceMappingURL=all.css.map */
-=======
-}
->>>>>>> 9fd42a6d5968a8f587ce55e9875c763b9c7488c5

@@ -98,7 +98,7 @@ body{
             padding-top: 30px;
             .card {
                 @include flexDirection;
-                height: 380px;
+                height: 400px;
                 width: 100%;
                 border: 1px solid $main-card-border;
                 border-radius: 15px;
@@ -113,7 +113,9 @@ body{
                 .product-content {
                     @include flexDirection;
                     justify-content: space-between;
-        
+                    p{
+                        padding: 20px;
+                    }
                     .more {
                         display: flex;
                         justify-content: space-between;
