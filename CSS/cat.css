@@ -140,7 +140,6 @@ menu ul .active .image i, menu ul .active .image span {
   padding: 50px 80px;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
   gap: 50px;
 }
 .container .categories {
@@ -158,8 +157,8 @@ menu ul .active .image i, menu ul .active .image span {
   flex-direction: column;
   padding: 15px 15px 30px 15px;
   height: 400px;
-  background: linear-gradient(155deg, black, gray);
-  animation: mymove 5s infinite;
+  background: #000000;
+  animation: mymove 6s infinite linear;
   gap: 20px;
   border: none;
 }
@@ -204,11 +203,23 @@ menu ul .active .image i, menu ul .active .image span {
   background: rgba(0, 0, 0, 0.4980392157);
 }
 @keyframes mymove {
-  from {
-    background: linear-gradient(155deg, black 30%, rgb(0, 61, 99));
+  0% {
+    background: #000000;
   }
-  to {
-    background: linear-gradient(155deg, rgb(0, 61, 99)), black;
+  20% {
+    background: #190031;
+  }
+  40% {
+    background: #00253f;
+  }
+  60% {
+    background: #00323f;
+  }
+  80% {
+    background: #011e33;
+  }
+  100% {
+    background: #000000;
   }
 }
 
@@ -297,6 +308,38 @@ footer ul li {
   cursor: pointer;
 }
 
+@media (min-width: 767px) and (max-width: 1024px) {
+  footer {
+    padding: 30px 50px;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    gap: 0;
+  }
+  footer .logo-content {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    text-align: center;
+    display: flex;
+  }
+  footer .logo-content .foot-content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer .our-product {
+    grid-column: 1/2;
+  }
+  footer .our-service {
+    grid-column: 2/3;
+  }
+  footer .contact {
+    grid-column: 3/4;
+  }
+  footer .our-product,
+  footer .our-service,
+  footer .contact {
+    grid-row: 2/3;
+  }
+}
 .categories {
   grid-template-rows: repeat(2, 1fr);
 }

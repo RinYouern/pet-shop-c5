@@ -1,1 +1,33 @@
 @import "../Component/main-categories";
+
+.categories {
+    grid-template-rows: repeat(2, 1fr);
+    .group-card:nth-child(1) {
+        .card:nth-child(1) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2023/09/10/00/49/lovebird-8244066_640.jpg);
+        }
+        .card:nth-child(2) .image {
+            background-image: url(https://cdn.pixabay.com/photo/2017/03/13/10/25/hummingbird-2139279_640.jpg);
+        }
+        .card:nth-child(3) .image {
+            background-image: url(https://cdn.pixabay.com/photo/2017/11/30/11/57/barn-owl-2988291_640.jpg);
+        }
+        .card:nth-child(4) .image {
+            background-image: url(https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052_640.jpg);
+        }
+    }
+    .group-card:nth-child(2) {
+        .card:nth-child(1) .image {
+                background-image: url(https://cdn.pixabay.com/photo/2020/06/29/00/03/parrots-5350976_640.jpg);
+        }
+        .card:nth-child(2) .image {
+            background-image: url(https://cdn.pixabay.com/photo/2019/02/07/21/08/animals-3982182_640.jpg);
+        }
+        .card:nth-child(3) .image {
+            background-image: url(https://cdn.pixabay.com/photo/2016/02/21/15/39/cockatiel-1213758_640.jpg);
+        }
+        .card:nth-child(4) .image {
+            background-image: url(https://cdn.pixabay.com/photo/2014/12/30/13/41/cockatoo-583921_640.jpg);
+        }
+    }
+}
