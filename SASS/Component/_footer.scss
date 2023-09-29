@@ -53,7 +53,6 @@ footer {
 
             @include flexDirection;
             gap: 10px;
-
             p {
                 display: flex;
                 gap: 5px;
@@ -80,7 +79,6 @@ footer {
     ul {
         @include flexDirection;
         gap: 7px;
-
         li {
             font-weight: 300;
             list-style-type: disc;
@@ -118,6 +116,35 @@ footer {
         .our-service,
         .contact {
             grid-row: 2/3;
+        }
+    }
+    @include responsive("tablet") {
+        padding: 10px 20px;
+        grid-template-rows: repeat(4, 1fr);
+        text-align: center;
+        .our-product {
+            grid-row: 2/3;
+            margin-top: 20px;
+        }
+        .our-service {
+            grid-row: 3/4;
+        }
+        .contact {
+            grid-row: 4/5;
+        }
+        .our-product,
+        .our-service,
+        .contact {
+            gap: 5px;
+            grid-column: 1/7;
+            .info, .media {
+                margin: auto;
+            }
+        }
+        .our-product, .our-service {
+            li {
+                list-style-type: none;
+            }
         }
     }
 }
