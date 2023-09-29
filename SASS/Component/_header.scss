@@ -63,6 +63,20 @@ header {
 
         }
     }
+<<<<<<< HEAD
+=======
+    @include responsive("laptop") {
+        padding: 120px 80px;
+        .content {
+            width: 80%;
+            gap: 10px;
+        }
+    }
+    @include responsive("tablet") {
+        padding: 100px 50px;
+    }
+}
+>>>>>>> e73ad1a324556e9c08632ab2f84caed28dc0d761
 
 
 

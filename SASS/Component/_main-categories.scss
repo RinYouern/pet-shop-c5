@@ -8,39 +8,41 @@
 }
 body {
     @include flexDirection;
-    gap: 25px;
+    background-color: $main-background;
 }
 @import "./nav";
 p {
     font-weight: 300;
 }
 menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+    border-bottom: 1px solid $main-background;
     ul{
         width: 75%;
         @include flexCenter;
         margin: auto;
         justify-content: space-between;
-        background-color: #fff;
         border-radius: 20px;
         a {
             flex: 1;
-            height: 130px;
+            height: 100px;
             @include flexDirection;
             align-items: center;
             justify-content: space-between;
-            border: 1px solid $main-background;
-            padding: 20px;
-            font-weight: 600;
-            color: black;
+            padding: 10px;
             p {
                 font-size: 18px;
                 font-weight: 600;
-                color: $main-bg-color;
+                color: $main-text-color;
             }
             .image {
                 i,span {
-                    font-size: 3rem;
-                    color: rgb(13, 167, 194);
+                    font-size: 2.5rem;
+                    color: #024e6a;
                     transition: color 0.3s;
                 }
                 &:hover {
@@ -49,16 +51,13 @@ menu {
                     }
                 }
             }
-            &:nth-child(1) {
-                border-radius: 20px 0px 0px 20px;
-            }
-            &:nth-child(6) {
-                border-radius: 0px 20px 20px 0px;
-            }
         }
         .active {
             background-color: #D9D9D9;
             color: $main-bg-color;
+            p {
+                color: $main-bg-color;
+            }
             .image {
                 i, span{
                     color: $main-bg-color;
@@ -83,10 +82,22 @@ menu {
                 @include flexDirection;
                 padding: 15px 15px 30px 15px;
                 height: 400px;
-                background: #000000;
-                animation: mymove 6s infinite linear;
                 gap: 20px;
                 border: none;
+                background: linear-gradient(-45deg, #B68C3F, #20010d, #013244, #003a2c);
+                background-size: 400% 400%;
+                animation: gradient 15s ease infinite; // Main Animation
+                @keyframes gradient {
+                    0% {
+                        background-position: 0% 50%;
+                    }
+                    50% {
+                        background-position: 100% 50%;
+                    }
+                    100% {
+                        background-position: 0% 50%;
+                    }
+                }
                 .image{
                     display: flex;
                     height: 50%;
@@ -125,14 +136,6 @@ menu {
                         }
                     }
                 }
-            }
-            @keyframes mymove {
-                0%   { background: #000000; }
-                20%  { background: #190031; }
-                40%  { background: #00253f; }
-                60%  { background: #00323f; }
-                80%  { background: #011e33; }
-                100% { background: #000000; }
             }
         }
     }
