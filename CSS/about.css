@@ -234,7 +234,7 @@ header .content p {
 
 #header {
   background-image: url(/IMAGES/Aboutpage/Header\ section.png);
-  height: 500px;
+  height: 430px;
 }
 
 #ceo {
@@ -493,4 +493,4 @@ header .content p {
 }
 #customer .group-comment .comment p {
   margin-left: 70px;
-}/*# sourceMappingURL=about.css.map */
+}
