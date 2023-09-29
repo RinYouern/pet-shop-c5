@@ -342,7 +342,7 @@ header .content p {
     height: 20rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #ceo .card-client {
     width: 20rem;
     height: 12rem;
@@ -357,7 +357,7 @@ header .content p {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #ceo .card-client p {
     font-size: 10px;
   }
@@ -370,7 +370,7 @@ header .content p {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #ceo .card-client p span {
     font-size: 10px;
   }
@@ -383,7 +383,7 @@ header .content p {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #ceo .card-client h5 {
     font-size: 6px;
   }
@@ -413,7 +413,7 @@ header .content p {
     height: 5rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #ceo .user-picture {
     width: 2rem;
     height: 2rem;
@@ -432,7 +432,7 @@ header .content p {
     width: 5rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #ceo .user-picture img {
     width: 2rem;
   }
@@ -482,7 +482,7 @@ header .content p {
   width: 1.1rem;
   fill: currentColor;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #ceo .social-media a svg {
     width: 0.7rem;
   }
@@ -571,7 +571,7 @@ header .content p {
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .card-client {
     padding-top: 20px;
     padding-left: 7px;
@@ -581,7 +581,7 @@ header .content p {
 #our-team .gruop-team .card-client p {
   color: #0D99FF;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .card-client p {
     font-size: 10px;
   }
@@ -599,7 +599,7 @@ header .content p {
     height: 15rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .card-client {
     width: 6.2rem;
     height: 10rem;
@@ -636,7 +636,7 @@ header .content p {
     height: 3rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .user-picture {
     width: 1.5rem;
     height: 1.5rem;
@@ -650,7 +650,7 @@ header .content p {
     width: 4rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .user-picture img {
     width: 1.5rem;
   }
@@ -661,7 +661,7 @@ header .content p {
   font-weight: 600;
   font-size: 18px;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .name-client {
     margin-top: 10px;
   }
@@ -676,7 +676,7 @@ header .content p {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .name-client span {
     font-size: 10px;
   }
@@ -700,7 +700,7 @@ header .content p {
   text-decoration: none;
   color: inherit;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .social-media a {
     margin-right: 5px;
   }
@@ -715,7 +715,7 @@ header .content p {
   width: 1.1rem;
   fill: currentColor;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 620px) {
   #our-team .gruop-team .social-media a svg {
     width: 0.5rem;
   }
