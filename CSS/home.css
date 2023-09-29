@@ -251,7 +251,7 @@ body .category h2 {
 body .category .pet .title h2 {
   color: #0D99FF;
 }
-body .category .card_container {
+body .category .pet .card_container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -259,7 +259,7 @@ body .category .card_container {
   padding-bottom: 30px;
   padding-top: 30px;
 }
-body .category .card_container .card {
+body .category .pet .card_container .card {
   display: flex;
   flex-direction: column;
   height: 380px;
@@ -268,16 +268,16 @@ body .category .card_container .card {
   border-radius: 15px;
   background-color: #fff;
 }
-body .category .card_container .card:nth-child(2) .pet-img {
+body .category .pet .card_container .card:nth-child(2) .pet-img {
   background-image: url(../IMAGES/home-page/cat.jpg);
 }
-body .category .card_container .card:nth-child(3) .pet-img {
+body .category .pet .card_container .card:nth-child(3) .pet-img {
   background-image: url(../IMAGES/home-page/bird.jpg);
 }
-body .category .card_container .card:nth-child(4) .pet-img {
+body .category .pet .card_container .card:nth-child(4) .pet-img {
   background-image: url(../IMAGES/home-page/rabbit.png);
 }
-body .category .card_container .card .pet-img {
+body .category .pet .card_container .card .pet-img {
   display: flex;
   height: 45%;
   width: 100%;
@@ -288,7 +288,7 @@ body .category .card_container .card .pet-img {
   background-position: center;
   border-radius: 15px;
 }
-body .category .card_container .card .pet-content {
+body .category .pet .card_container .card .pet-content {
   padding-top: 20px;
   height: 55%;
   font-size: 15px;
@@ -296,10 +296,10 @@ body .category .card_container .card .pet-content {
   display: flex;
   flex-direction: column;
 }
-body .category .card_container .card .pet-content .Btn {
+body .category .pet .card_container .card .pet-content .Btn {
   padding-top: 20px;
 }
-body .category .card_container .card .pet-content .Btn button {
+body .category .pet .card_container .card .pet-content .Btn button {
   display: flex;
   align-items: center;
   color: white;
@@ -307,11 +307,11 @@ body .category .card_container .card .pet-content .Btn button {
   cursor: pointer;
   transition: 0.3s;
 }
-body .category .card_container .card .pet-content .Btn button:hover {
+body .category .pet .card_container .card .pet-content .Btn button:hover {
   background: black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-body .category .card_container .card .pet-content ul {
+body .category .pet .card_container .card .pet-content ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
