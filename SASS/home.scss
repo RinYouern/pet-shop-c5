@@ -22,65 +22,67 @@ body{
                     color: $main-text-color;
                 }
             }
-        }
-    
-        .card_container {
-            @include flexeEvenly;
-            gap: 20px;
-            padding-bottom: 30px;
-            padding-top: 30px;
-            .card {
-                @include flexDirection;
-                height: 380px;
-                padding: 25px;
-                border: 1px solid $main-card-border;
-                border-radius: 15px;
-                background-color: #fff;
-                &:nth-child(2) .pet-img {
-                    background-image: url(../IMAGES/home-page/cat.jpg);
+            .card_container {
+                @include responsive("laptop") {
+                    
                 }
-                &:nth-child(3) .pet-img {
-                    background-image: url(../IMAGES/home-page/bird.jpg);
-                }
-                &:nth-child(4) .pet-img {
-                    background-image: url(../IMAGES/home-page/rabbit.png);
-                }
-                .pet-img {
-                    display: flex;
-                    height: 45%;
-                    width: 100%;
-                    background-image: url(../IMAGES/home-page/dog.png);
-                    @include backgroundImage;
-                    background-position: center;
-                    border-radius: 15px;
-                }
-                .pet-content {
-                    padding-top: 20px;
-                    height: 55%;
-                    font-size: 15px;
-                    gap: 15px;
+                @include flexeEvenly;
+                gap: 20px;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                .card {
                     @include flexDirection;
-                    .Btn {
-                        padding-top: 20px;
-                        button {
-                            @include flexCenter;
-                            color: white;
-                            background-color: $main-text-color;
-                            cursor: pointer;
-                            transition: 0.3s;
-                        }
-                        button:hover{
-                            background: black;
-                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                        }
+                    height: 380px;
+                    padding: 25px;
+                    border: 1px solid $main-card-border;
+                    border-radius: 15px;
+                    background-color: #fff;
+                    &:nth-child(2) .pet-img {
+                        background-image: url(../IMAGES/home-page/cat.jpg);
                     }
-    
-                    ul {
+                    &:nth-child(3) .pet-img {
+                        background-image: url(../IMAGES/home-page/bird.jpg);
+                    }
+                    &:nth-child(4) .pet-img {
+                        background-image: url(../IMAGES/home-page/rabbit.png);
+                    }
+                    .pet-img {
                         display: flex;
+                        height: 45%;
                         width: 100%;
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                        gap: 15%;
+                        background-image: url(../IMAGES/home-page/dog.png);
+                        @include backgroundImage;
+                        background-position: center;
+                        border-radius: 15px;
+                    }
+                    .pet-content {
+                        padding-top: 20px;
+                        height: 55%;
+                        font-size: 15px;
+                        gap: 15px;
+                        @include flexDirection;
+                        .Btn {
+                            padding-top: 20px;
+                            button {
+                                @include flexCenter;
+                                color: white;
+                                background-color: $main-text-color;
+                                cursor: pointer;
+                                transition: 0.3s;
+                            }
+                            button:hover{
+                                background: black;
+                                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            }
+                        }
+        
+                        ul {
+                            display: flex;
+                            width: 100%;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            gap: 15%;
+                        }
                     }
                 }
             }
@@ -153,6 +155,9 @@ body{
     // new-product
     .our-new-product {
         padding: 30px $standard-padding;
+        @include responsive("laptop"){
+           
+        }
         .title {
             display: flex;
             justify-content: center;
@@ -296,189 +301,3 @@ body{
         }
     }
 }
-
-// // responsive
-// @media(max-width:1024px){
-
-// }
-// @media (max-width:820px) {
-//     header{
-//         .content{
-//             width: 100%;
-//         }
-//     }
-//     .category {
-//         .card_container {
-//             .card {
-//                 height: 270px;
-
-//                 .pet-content {
-//                     h3 {
-//                         font-size: 15px;
-//                     }
-
-//                     ul {
-//                         li {
-//                             font-size: 10px;
-//                         }
-//                     }
-
-//                     .Btn {
-//                         button {
-//                             font-size: 6px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-
-//         .product {
-//             .group-card {
-//                 .card {
-//                     height: 270px;
-
-//                     .product-content {
-//                         p {
-//                             font-size: 10px;
-//                         }
-
-//                         .more {
-//                             .price {
-//                                 font-size: 10px;
-//                             }
-
-//                             .tag {
-//                                 font-size: 10px;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-//     // our-new-product
-//     .our-new-product {
-//         .class-card {
-//             .card {
-//                 height: 270px;
-
-//                 .new-content {
-//                     p {
-//                         font-size: 10px;
-//                     }
-
-//                     .more {
-//                         .price {
-//                             font-size: 10px;
-//                         }
-
-//                         .tag {
-//                             font-size: 10px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//     // top-sell-product
-//     .top-sell-product {
-//         h2 {
-//             padding-bottom: 100px;
-//             padding-top: 50px;
-//         }
-//         .selling-product {
-//             .card {
-//                 height: 190px;
-
-//                 .more {
-//                     p {
-//                         font-size: 10px;
-//                     }
-
-//                     .check {
-//                         .price {
-//                             font-size: 10px;
-//                         }
-
-//                         button {
-//                             font-size: 10px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }
-
-// @media (max-width:390px) {
-//     header{
-//         .content{
-//             width: 100%;
-//         }
-//     }
-//     .category {
-//         .card_container {
-//             .card {
-//                 height: 230px;
-//                 padding-right: 20px;
-//                 .pet-content {
-//                     h3 {
-//                         font-size: 14px;
-//                     }
-
-//                     ul {
-//                         li {
-//                             font-size: 8px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         .product {
-//             .group-card {
-//                 .card {
-//                     height: 230px;
-//                     .product-content {
-//                         p {
-//                             font-size: 8px;
-//                         }
-//                         .more {
-//                             .price {
-//                                 font-size: 12px;
-//                             }
-
-//                             .tag {
-//                                 font-size: 8px;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-//     // our-new-product
-//     .our-new-product {
-//         .class-card {
-//             .card {
-//                 height: 230px;
-//                 .new-content {
-//                     p{
-//                         font-size: 7px;
-//                     }
-//                     .more {
-//                         .price {
-//                             font-size: 8px;
-//                         }
-//                         .tag {
-//                             font-size: 6px;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }
