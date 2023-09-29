@@ -28,17 +28,14 @@ body {
             }
 
             .card_container {
-                @include responsive("laptop") {}
-
                 @include flexeEvenly;
-                gap: 20px;
                 padding-bottom: 30px;
                 padding-top: 30px;
-
                 .card {
                     @include flexDirection;
                     height: 380px;
                     padding: 25px;
+                    width: 23%;
                     border: 1px solid $main-card-border;
                     border-radius: 15px;
                     background-color: #fff;
@@ -64,14 +61,12 @@ body {
                         background-position: center;
                         border-radius: 15px;
                     }
-
                     .pet-content {
                         padding-top: 20px;
                         height: 55%;
                         font-size: 15px;
                         gap: 15px;
                         @include flexDirection;
-
                         .Btn {
                             padding-top: 20px;
 
@@ -96,6 +91,15 @@ body {
                             flex-wrap: wrap;
                             gap: 15%;
                         }
+                    }
+                }
+                
+                @include  responsive("laptop"){
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    .card {
+                        width: 48%;
                     }
                 }
             }
@@ -202,8 +206,6 @@ body {
     // new-product
     .our-new-product {
         padding: 30px $standard-padding;
-
-        @include responsive("laptop") {}
 
         .title {
             font-size: 20px;

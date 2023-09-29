@@ -20,17 +20,17 @@ body {
 body .container {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 100%;
+  width: 100%;
+  font-size: 40px;
   color: white;
   text-align: center;
   background: linear-gradient(155deg, blue, rgba(242, 175, 186, 0.908), rgba(128, 0, 128, 0.874));
-  border-radius: 15px;
   align-items: center;
-  width: 30%;
   cursor: pointer;
   justify-content: center;
 }
 body .container .icon {
-  font-size: 60px;
+  font-size: 80px;
   color: rgb(145, 104, 212);
 }/*# sourceMappingURL=thanks.css.map */
