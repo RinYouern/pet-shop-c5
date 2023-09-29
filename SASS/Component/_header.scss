@@ -10,9 +10,6 @@ header {
     display: flex;
 
 
-    @include responsive('phoneA') {
-        padding: 30px;
-    }
 
     .blur {
         @include absolutePosition;
@@ -31,14 +28,6 @@ header {
             color: rgb(255, 255, 255);
             font-family: $main-font-header;
 
-            @include responsive('tablet') {
-                font-size: 25px;
-            }
-
-            @include responsive('phoneA') {
-                font-size: 15px;
-                width: 300px;
-            }
 
             span {
                 font-family: $main-font-header;
@@ -51,20 +40,8 @@ header {
             color: white;
 
 
-            @include responsive('tablet') {
-                font-size: 15px;
-                width: 500px;
-            }
-
-            @include responsive('phoneA') {
-                font-size: 10px;
-                width: 300px;
-            }
-
         }
     }
-<<<<<<< HEAD
-=======
     @include responsive("laptop") {
         padding: 120px 80px;
         .content {
@@ -76,18 +53,7 @@ header {
         padding: 100px 50px;
     }
 }
->>>>>>> e73ad1a324556e9c08632ab2f84caed28dc0d761
 
 
 
-    p {
-        @include responsive('tablet') {
-            font-size: 15px;
-            width: 500px;
-        }
-
-        @include responsive('phoneA') {
-            font-size: 10px;
-        }
-    }
-}
+ 

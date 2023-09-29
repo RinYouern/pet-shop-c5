@@ -434,11 +434,6 @@ footer ul li {
   background-image: url(https://www.iata.org/contentassets/d7c512eb9a704ba2a8056e3186a31921/cargo_live_animals_parrot.jpg?width=330&height=200&rmode=crop&v=20191213012337);
 }
 .container .categories .group-card:nth-child(4) .card:nth-child(4) .image {
-<<<<<<< HEAD
-  background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
-}
-=======
   background-image: url(/PAGES/Service_page/Images/photo_2023-09-29_09-35-38.jpg);
   background-position: center 0;
-}/*# sourceMappingURL=other.css.map */
->>>>>>> e73ad1a324556e9c08632ab2f84caed28dc0d761
+}

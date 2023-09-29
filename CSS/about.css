@@ -258,11 +258,6 @@ header {
   padding: 150px 80px;
   display: flex;
 }
-@media screen and (max-width: 360px) {
-  header {
-    padding: 30px;
-  }
-}
 header .blur {
   position: absolute;
   top: 0;
@@ -282,17 +277,6 @@ header .content h1 {
   color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
-@media screen and (max-width: 730px) {
-  header .content h1 {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 360px) {
-  header .content h1 {
-    font-size: 15px;
-    width: 300px;
-  }
-}
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
   color: #0D99FF;
@@ -301,29 +285,6 @@ header .content h1 span {
 header .content p {
   color: white;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 730px) {
-  header .content p {
-    font-size: 15px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 360px) {
-  header .content p {
-    font-size: 10px;
-    width: 300px;
-  }
-}
-@media screen and (max-width: 730px) {
-  header p {
-    font-size: 15px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 360px) {
-  header p {
-    font-size: 10px;
-=======
 @media screen and (max-width: 1024px) {
   header {
     padding: 120px 80px;
@@ -336,7 +297,6 @@ header .content p {
 @media screen and (max-width: 730px) {
   header {
     padding: 100px 50px;
->>>>>>> e73ad1a324556e9c08632ab2f84caed28dc0d761
   }
 }
 
@@ -382,6 +342,12 @@ header .content p {
     height: 20rem;
   }
 }
+@media screen and (max-width: 360px) {
+  #ceo .card-client {
+    width: 20rem;
+    height: 12rem;
+  }
+}
 #ceo .card-client p {
   color: #0D99FF;
   font-size: 30px;
@@ -389,6 +355,11 @@ header .content p {
 @media screen and (max-width: 730px) {
   #ceo .card-client p {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #ceo .card-client p {
+    font-size: 10px;
   }
 }
 #ceo .card-client p span {
@@ -399,12 +370,22 @@ header .content p {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 360px) {
+  #ceo .card-client p span {
+    font-size: 10px;
+  }
+}
 #ceo .card-client h5 {
   font-size: 16px;
 }
 @media screen and (max-width: 730px) {
   #ceo .card-client h5 {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #ceo .card-client h5 {
+    font-size: 6px;
   }
 }
 #ceo .user-picture {
@@ -432,6 +413,12 @@ header .content p {
     height: 5rem;
   }
 }
+@media screen and (max-width: 360px) {
+  #ceo .user-picture {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 #ceo .user-picture img {
   width: 7rem;
 }
@@ -443,6 +430,11 @@ header .content p {
 @media screen and (max-width: 730px) {
   #ceo .user-picture img {
     width: 5rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  #ceo .user-picture img {
+    width: 2rem;
   }
 }
 #ceo .name-client {
@@ -489,6 +481,11 @@ header .content p {
 #ceo .social-media a svg {
   width: 1.1rem;
   fill: currentColor;
+}
+@media screen and (max-width: 360px) {
+  #ceo .social-media a svg {
+    width: 0.7rem;
+  }
 }
 #ceo .tooltip-social {
   background: #262626;
@@ -553,7 +550,7 @@ header .content p {
     gap: 30px;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 730px) {
+@media screen and (max-width: 730px) {
   #our-team .gruop-team {
     gap: 10px;
   }
@@ -574,8 +571,20 @@ header .content p {
   font-family: "Poppins", sans-serif;
   transition: all 0.3s ease;
 }
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .card-client {
+    padding-top: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
 #our-team .gruop-team .card-client p {
   color: #0D99FF;
+}
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .card-client p {
+    font-size: 10px;
+  }
 }
 @media screen and (max-width: 1024px) {
   #our-team .gruop-team .card-client {
@@ -589,6 +598,15 @@ header .content p {
     width: 13rem;
     height: 15rem;
   }
+}
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .card-client {
+    width: 6.2rem;
+    height: 10rem;
+  }
+}
+#our-team .gruop-team .card-client h5 {
+  font-size: 7px;
 }
 #our-team .gruop-team .card-client:hover {
   transform: translateY(-10px);
@@ -612,10 +630,16 @@ header .content p {
     height: 4rem;
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 730px) {
+@media screen and (max-width: 730px) {
   #our-team .gruop-team .user-picture {
     width: 3rem;
     height: 3rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .user-picture {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 #our-team .gruop-team .user-picture img {
@@ -626,11 +650,21 @@ header .content p {
     width: 4rem;
   }
 }
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .user-picture img {
+    width: 1.5rem;
+  }
+}
 #our-team .gruop-team .name-client {
   margin: 0;
   margin-top: 20px;
   font-weight: 600;
   font-size: 18px;
+}
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .name-client {
+    margin-top: 10px;
+  }
 }
 #our-team .gruop-team .name-client span {
   display: block;
@@ -640,6 +674,11 @@ header .content p {
 @media screen and (max-width: 1024px) {
   #our-team .gruop-team .name-client span {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .name-client span {
+    font-size: 10px;
   }
 }
 #our-team .gruop-team .social-media:before {
@@ -661,6 +700,11 @@ header .content p {
   text-decoration: none;
   color: inherit;
 }
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .social-media a {
+    margin-right: 5px;
+  }
+}
 #our-team .gruop-team .social-media a :hover {
   color: #0D99FF;
 }
@@ -670,6 +714,11 @@ header .content p {
 #our-team .gruop-team .social-media a svg {
   width: 1.1rem;
   fill: currentColor;
+}
+@media screen and (max-width: 360px) {
+  #our-team .gruop-team .social-media a svg {
+    width: 0.5rem;
+  }
 }
 #our-team .gruop-team .tooltip-social {
   background: #262626;

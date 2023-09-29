@@ -258,11 +258,6 @@ header {
   padding: 150px 80px;
   display: flex;
 }
-@media screen and (max-width: 360px) {
-  header {
-    padding: 30px;
-  }
-}
 header .blur {
   position: absolute;
   top: 0;
@@ -282,17 +277,6 @@ header .content h1 {
   color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
-@media screen and (max-width: 730px) {
-  header .content h1 {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 360px) {
-  header .content h1 {
-    font-size: 15px;
-    width: 300px;
-  }
-}
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
   color: #0D99FF;
@@ -301,29 +285,6 @@ header .content h1 span {
 header .content p {
   color: white;
 }
-<<<<<<< HEAD
-@media screen and (max-width: 730px) {
-  header .content p {
-    font-size: 15px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 360px) {
-  header .content p {
-    font-size: 10px;
-    width: 300px;
-  }
-}
-@media screen and (max-width: 730px) {
-  header p {
-    font-size: 15px;
-    width: 500px;
-  }
-}
-@media screen and (max-width: 360px) {
-  header p {
-    font-size: 10px;
-=======
 @media screen and (max-width: 1024px) {
   header {
     padding: 120px 80px;
@@ -336,7 +297,6 @@ header .content p {
 @media screen and (max-width: 730px) {
   header {
     padding: 100px 50px;
->>>>>>> e73ad1a324556e9c08632ab2f84caed28dc0d761
   }
 }
 

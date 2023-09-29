@@ -6,29 +6,6 @@
 
 #header {
     background-image: url(/IMAGES/Aboutpage/Header\ section.png);
-    
-    
-    // h1 {
-    //     @include responsive('tablet') {
-    //         font-size: 25px;
-    //     }
-    //     @include responsive('phoneA') {
-    //         font-size: 15px;
-    //         width: 300px;
-    //     }
-
-    // }
-    
-
-    // p {
-    //     @include responsive('tablet') {
-    //         font-size: 15px;
-    //         width: 500px;
-    //     }
-    //     @include responsive('phoneA'){
-    //         font-size:10px ;
-    //     }
-    // }
 }
 
 #ceo {
@@ -65,6 +42,11 @@
             height: 20rem;
         }
 
+        @include responsive('mobile-phone') {
+            width: 20rem;
+            height: 12rem;
+        }
+
         p {
             color: $main-text-color;
             font-size: 30px;
@@ -73,11 +55,19 @@
                 font-size: 15px;
             }
 
+            @include responsive('mobile-phone') {
+                font-size: 10px;
+            }
+
             span {
                 font-size: 25px;
 
                 @include responsive('tablet') {
                     font-size: 20px;
+                }
+
+                @include responsive('mobile-phone') {
+                    font-size: 10px;
                 }
             }
         }
@@ -87,6 +77,10 @@
 
             @include responsive('tablet') {
                 font-size: 14px;
+            }
+
+            @include responsive('mobile-phone') {
+                font-size: 6px;
             }
         }
     }
@@ -113,6 +107,11 @@
             width: 5rem;
             height: 5rem;
         }
+
+        @include responsive('mobile-phone') {
+            width: 2rem;
+            height: 2rem;
+        }
     }
 
     .user-picture img {
@@ -124,6 +123,10 @@
 
         @include responsive('tablet') {
             width: 5rem;
+        }
+
+        @include responsive('mobile-phone') {
+            width: 2rem;
         }
 
     }
@@ -164,6 +167,7 @@
         margin-right: 15px;
         text-decoration: none;
         color: inherit;
+
     }
 
     .social-media a :hover {
@@ -177,6 +181,10 @@
     .social-media a svg {
         width: 1.1rem;
         fill: currentColor;
+
+        @include responsive('mobile-phone') {
+            width: 0.7rem;
+        }
     }
 
     /*-- Tooltip Social Media --*/
@@ -246,9 +254,11 @@
             display: flex;
             gap: 30px;
 
-            @include responsive('tablet') {
-                gap: 10px;
-            }
+
+        }
+
+        @include responsive('tablet') {
+            gap: 10px;
         }
 
         .card-client {
@@ -267,8 +277,19 @@
             font-family: "Poppins", sans-serif;
             transition: all 0.3s ease;
 
+            @include responsive('mobile-phone') {
+                padding-top: 20px;
+                padding-left: 7px;
+                padding-right: 7px;
+
+            }
+
             p {
                 color: $main-text-color;
+
+                @include responsive('mobile-phone') {
+                    font-size: 10px;
+                }
             }
 
             @include responsive('laptop') {
@@ -280,6 +301,15 @@
             @include responsive('tablet') {
                 width: 13rem;
                 height: 15rem;
+            }
+
+            @include responsive('mobile-phone') {
+                width: 6.2rem;
+                height: 10rem;
+            }
+
+            h5{
+                font-size: 7px;
             }
         }
 
@@ -302,11 +332,16 @@
             @include responsive('laptop') {
                 width: 4rem;
                 height: 4rem;
+            }
 
-                @include responsive('tablet') {
-                    width: 3rem;
-                    height: 3rem;
-                }
+            @include responsive('tablet') {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            @include responsive('mobile-phone') {
+                width: 1.5rem;
+                height: 1.5rem;
             }
         }
 
@@ -317,6 +352,10 @@
                 width: 4rem;
             }
 
+            @include responsive('mobile-phone') {
+                width: 1.5rem;
+            }
+
         }
 
         .name-client {
@@ -324,6 +363,9 @@
             margin-top: 20px;
             font-weight: 600;
             font-size: 18px;
+            @include responsive('mobile-phone') {
+                margin-top: 10px;
+            }
         }
 
         .name-client span {
@@ -333,6 +375,10 @@
 
             @include responsive('laptop') {
                 font-size: 14px;
+            }
+
+            @include responsive('mobile-phone') {
+                font-size: 10px;
             }
 
         }
@@ -355,6 +401,9 @@
             margin-right: 15px;
             text-decoration: none;
             color: inherit;
+            @include responsive('mobile-phone') {
+                margin-right: 5px;
+            }
         }
 
         .social-media a :hover {
@@ -368,6 +417,9 @@
         .social-media a svg {
             width: 1.1rem;
             fill: currentColor;
+            @include responsive('mobile-phone') {
+                width: 0.5rem;
+            }
         }
 
         /*-- Tooltip Social Media --*/
@@ -466,7 +518,6 @@
                     font-size: 40px;
                     padding: 15px;
                 }
-
 
 
             }
@@ -610,20 +661,23 @@
         }
 
         padding: 80px;
+
         @include responsive('tablet') {
             padding: 50px;
         }
+
         .group-comment {
             display: flex;
             flex-direction: column;
             gap: 40px;
-            
+
 
             .comment {
                 display: flex;
                 flex-direction: column;
-                h3{
-                    @include responsive('tablet'){
+
+                h3 {
+                    @include responsive('tablet') {
                         font-size: 17px;
                     }
                 }
@@ -635,7 +689,8 @@
 
                     img {
                         width: 50px;
-                        @include responsive('tablet'){
+
+                        @include responsive('tablet') {
                             width: 30px;
                         }
                     }
@@ -644,7 +699,8 @@
 
                 p {
                     margin-left: 70px;
-                    @include responsive('tablet'){
+
+                    @include responsive('tablet') {
                         margin-left: 50px;
                         font-size: 13px;
                     }
