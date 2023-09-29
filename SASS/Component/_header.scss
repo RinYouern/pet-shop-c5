@@ -31,12 +31,15 @@ header {
             color: white;
         }
     }
-    @include responsive("tablet") {
-        padding: 80px 80px;
+    @include responsive("laptop") {
+        padding: 120px 80px;
         .content {
             width: 80%;
             gap: 10px;
         }
+    }
+    @include responsive("tablet") {
+        padding: 100px 50px;
     }
 }
 
