@@ -254,7 +254,8 @@ footer .logo-content .foot-content {
   align-items: flex-end;
   gap: 10px;
 }
-footer .our-product, footer .our-service {
+footer .our-product,
+footer .our-service {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -307,8 +308,7 @@ footer ul li {
   list-style-type: disc;
   cursor: pointer;
 }
-
-@media (min-width: 767px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   footer {
     padding: 30px 50px;
     grid-template: repeat(2, 1fr)/repeat(3, 1fr);
@@ -340,6 +340,7 @@ footer ul li {
     grid-row: 2/3;
   }
 }
+
 .categories {
   grid-template-rows: repeat(2, 1fr);
 }
@@ -366,4 +367,4 @@ footer ul li {
 }
 .categories .group-card:nth-child(2) .card:nth-child(4) .image {
   background-image: url(https://cdn.pixabay.com/photo/2014/12/30/13/41/cockatoo-583921_640.jpg);
-}
+}/*# sourceMappingURL=bird.css.map */

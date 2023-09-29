@@ -3,6 +3,7 @@
 @import "./Component/variable";
 @import "./Group-Mixin/Flex-Mixin";
 @import "./Group-Mixin/Grid-Mixin";
+@import "./Group-Mixin/group-mixin-responsive";
 * {
     @include Universal;
 }

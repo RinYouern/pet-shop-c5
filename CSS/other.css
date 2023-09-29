@@ -254,7 +254,8 @@ footer .logo-content .foot-content {
   align-items: flex-end;
   gap: 10px;
 }
-footer .our-product, footer .our-service {
+footer .our-product,
+footer .our-service {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -307,8 +308,7 @@ footer ul li {
   list-style-type: disc;
   cursor: pointer;
 }
-
-@media (min-width: 767px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   footer {
     padding: 30px 50px;
     grid-template: repeat(2, 1fr)/repeat(3, 1fr);
@@ -340,6 +340,7 @@ footer ul li {
     grid-row: 2/3;
   }
 }
+
 .container .categories .group-card:nth-child(1) .card:nth-child(1) .image {
   background-image: url(https://cdn.pixabay.com/photo/2016/02/22/10/06/hedgehog-1215140_640.jpg);
 }
@@ -388,4 +389,4 @@ footer ul li {
 }
 .container .categories .group-card:nth-child(4) .card:nth-child(4) .image {
   background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
-}
+}/*# sourceMappingURL=other.css.map */
