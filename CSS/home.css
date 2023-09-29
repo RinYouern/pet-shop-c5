@@ -205,6 +205,11 @@ header {
   padding: 150px 80px;
   display: flex;
 }
+@media screen and (max-width: 360px) {
+  header {
+    padding: 30px;
+  }
+}
 header .blur {
   position: absolute;
   top: 0;
@@ -224,6 +229,17 @@ header .content h1 {
   color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
+@media screen and (max-width: 730px) {
+  header .content h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .content h1 {
+    font-size: 15px;
+    width: 300px;
+  }
+}
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
   color: #0D99FF;
@@ -231,6 +247,29 @@ header .content h1 span {
 }
 header .content p {
   color: white;
+}
+@media screen and (max-width: 730px) {
+  header .content p {
+    font-size: 15px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .content p {
+    font-size: 10px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 730px) {
+  header p {
+    font-size: 15px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header p {
+    font-size: 10px;
+  }
 }
 
 body {
@@ -526,4 +565,4 @@ body .top-sell-product .selling-product .card .more .check button {
 body .top-sell-product .selling-product .card .more .check button:hover {
   background: #0D99FF;
   border: 1px solid #0D99FF;
-}/*# sourceMappingURL=home.css.map */
+}

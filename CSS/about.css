@@ -205,6 +205,11 @@ header {
   padding: 150px 80px;
   display: flex;
 }
+@media screen and (max-width: 360px) {
+  header {
+    padding: 30px;
+  }
+}
 header .blur {
   position: absolute;
   top: 0;
@@ -224,6 +229,17 @@ header .content h1 {
   color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
+@media screen and (max-width: 730px) {
+  header .content h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .content h1 {
+    font-size: 15px;
+    width: 300px;
+  }
+}
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
   color: #0D99FF;
@@ -232,39 +248,212 @@ header .content h1 span {
 header .content p {
   color: white;
 }
+@media screen and (max-width: 730px) {
+  header .content p {
+    font-size: 15px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header .content p {
+    font-size: 10px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 730px) {
+  header p {
+    font-size: 15px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 360px) {
+  header p {
+    font-size: 10px;
+  }
+}
 
 #header {
   background-image: url(/IMAGES/Aboutpage/Header\ section.png);
-  height: 430px;
 }
 
 #ceo {
-  margin: 80px 0 80px 100px;
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  margin: 30px;
+  /*-- Tooltip Social Media --*/
 }
-#ceo .ceo-text {
-  display: grid;
-  align-items: center;
-  grid-template-rows: repeat(3, 0.5fr);
+@media screen and (max-width: 730px) {
+  #ceo {
+    margin: 10px;
+  }
 }
-#ceo .ceo-text p {
-  margin: 0 50px 0 0;
-  font-size: 20px;
+#ceo .card-client {
+  margin: auto;
+  background: black;
+  width: 68rem;
+  height: 25rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid #0D99FF;
+  box-shadow: 0 6px 10px rgb(207, 212, 222);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
 }
-#ceo .ceo-text .media .group-icon i {
+@media screen and (max-width: 1024px) {
+  #ceo .card-client {
+    width: 50rem;
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  #ceo .card-client {
+    width: 35rem;
+    height: 20rem;
+  }
+}
+#ceo .card-client p {
   color: #0D99FF;
-  margin-left: 10px;
-  font-size: 20px;
+  font-size: 30px;
 }
-#ceo .ceo-text .media .group-icon i:hover {
-  color: black;
+@media screen and (max-width: 730px) {
+  #ceo .card-client p {
+    font-size: 15px;
+  }
 }
-#ceo .member-img {
-  display: grid;
-  align-items: center;
+#ceo .card-client p span {
+  font-size: 25px;
+}
+@media screen and (max-width: 730px) {
+  #ceo .card-client p span {
+    font-size: 20px;
+  }
+}
+#ceo .card-client h5 {
+  font-size: 16px;
+}
+@media screen and (max-width: 730px) {
+  #ceo .card-client h5 {
+    font-size: 14px;
+  }
+}
+#ceo .user-picture {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 7rem;
+  height: 7rem;
+  border: 2px solid #0D99FF;
+  border-radius: 999px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media screen and (max-width: 1024px) {
+  #ceo .user-picture {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  #ceo .user-picture {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+#ceo .user-picture img {
+  width: 7rem;
+}
+@media screen and (max-width: 1024px) {
+  #ceo .user-picture img {
+    width: 6rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  #ceo .user-picture img {
+    width: 5rem;
+  }
+}
+#ceo .name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+#ceo .name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  #ceo .name-client span {
+    font-size: 14px;
+  }
+}
+#ceo .social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background: #0D99FF;
+}
+@media screen and (max-width: 1024px) {
+  #ceo .social-media:before {
+    margin: 10px 0;
+  }
+}
+#ceo .social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+#ceo .social-media a :hover {
+  color: #0D99FF;
+}
+#ceo .social-media a:last-child {
+  margin-right: 0;
+}
+#ceo .social-media a svg {
+  width: 1.1rem;
+  fill: currentColor;
+}
+#ceo .tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+#ceo .tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+#ceo .social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+#ceo .social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
 }
 
 #our-team {
@@ -273,17 +462,33 @@ header .content p {
   justify-content: center;
   grid-template-rows: 0.2fr 1.4fr;
   padding-bottom: 10px;
-  background: #919092;
   padding: 0 80px 20px 80px;
 }
 #our-team h2 {
   margin: 20px;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  #our-team h2 {
+    margin: 10px;
+    text-align: center;
+  }
+}
 #our-team .gruop-team {
   display: flex;
   gap: 65px;
   /*-- Tooltip Social Media --*/
+}
+@media screen and (max-width: 1024px) {
+  #our-team .gruop-team {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 730px) {
+  #our-team .gruop-team {
+    gap: 10px;
+  }
 }
 #our-team .gruop-team .card-client {
   background: black;
@@ -304,6 +509,19 @@ header .content p {
 #our-team .gruop-team .card-client p {
   color: #0D99FF;
 }
+@media screen and (max-width: 1024px) {
+  #our-team .gruop-team .card-client {
+    background: black;
+    width: 16rem;
+    height: 17rem;
+  }
+}
+@media screen and (max-width: 730px) {
+  #our-team .gruop-team .card-client {
+    width: 13rem;
+    height: 15rem;
+  }
+}
 #our-team .gruop-team .card-client:hover {
   transform: translateY(-10px);
 }
@@ -320,8 +538,25 @@ header .content p {
   align-items: center;
   margin: auto;
 }
+@media screen and (max-width: 1024px) {
+  #our-team .gruop-team .user-picture {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media screen and (max-width: 1024px) and (max-width: 730px) {
+  #our-team .gruop-team .user-picture {
+    width: 3rem;
+    height: 3rem;
+  }
+}
 #our-team .gruop-team .user-picture img {
   width: 5rem;
+}
+@media screen and (max-width: 1024px) {
+  #our-team .gruop-team .user-picture img {
+    width: 4rem;
+  }
 }
 #our-team .gruop-team .name-client {
   margin: 0;
@@ -334,6 +569,11 @@ header .content p {
   font-weight: 200;
   font-size: 16px;
 }
+@media screen and (max-width: 1024px) {
+  #our-team .gruop-team .name-client span {
+    font-size: 14px;
+  }
+}
 #our-team .gruop-team .social-media:before {
   content: " ";
   display: block;
@@ -341,6 +581,11 @@ header .content p {
   height: 1px;
   margin: 20px 0;
   background: #0D99FF;
+}
+@media screen and (max-width: 1024px) {
+  #our-team .gruop-team .social-media:before {
+    margin: 10px 0;
+  }
 }
 #our-team .gruop-team .social-media a {
   position: relative;
@@ -402,12 +647,27 @@ header .content p {
   margin-top: 10px;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  #values {
+    padding: 10px 50px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #values {
+    padding: 10px 30px;
+  }
+}
 #values .group-values {
   display: grid;
   align-items: center;
   gap: 40px;
   grid-template-columns: 1fr 1fr;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 1024px) {
+  #values .group-values {
+    gap: 20px;
+  }
 }
 #values .group-values .value {
   display: grid;
@@ -423,75 +683,169 @@ header .content p {
   background: #F0EEF0;
   color: #0D99FF;
 }
+@media screen and (max-width: 1024px) {
+  #values .group-values .value span {
+    font-size: 45px;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 730px) {
+  #values .group-values .value span {
+    font-size: 40px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #values .group-values .maining h3 {
+    font-size: 17px;
+  }
+  #values .group-values .maining p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 730px) {
+  #values .group-values .maining h3 {
+    font-size: 15px;
+  }
+  #values .group-values .maining p {
+    font-size: 10px;
+  }
+}
 
 #mission {
   background-image: url(/IMAGES/Aboutpage/Mission.png);
   height: 400px;
 }
+@media screen and (max-width: 1024px) {
+  #mission {
+    height: 350px;
+    display: flex;
+    align-items: center;
+  }
+}
 #mission h1 {
   color: #B68C3F;
+}
+@media screen and (max-width: 730px) {
+  #mission h1 {
+    font-size: 25px;
+  }
 }
 #mission p {
   font-size: 20px;
 }
-
-#community {
-  background: #F0EEF0;
+@media screen and (max-width: 730px) {
+  #mission p {
+    font-size: 15px;
+    width: 500px;
+  }
 }
+
 #community h2 {
-  margin-bottom: 30px;
   text-align: center;
   color: #B68C3F;
   padding-top: 20px;
 }
-#community .group .card-community {
-  margin: 0 80px;
+#community .group-card {
   display: flex;
-  gap: 80px;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin: 30px 80px;
 }
-#community .group .card-community img {
-  width: 400px;
-}
-#community .group .card-community .meaning h3 {
-  font-size: 25px;
-  margin: 0;
-  color: #0D99FF;
-}
-#community .group .card-community .meaning p {
-  font-size: 20px;
-}
-#community .group #revers {
+#community .group-card .card {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
   display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
-#customer {
+#community .group-card .card .card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#community .group-card .card .card__content .card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+#community .group-card .card .card__content .card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+#community .card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+#community .card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+#community .card:hover .card:hover svg {
+  scale: 0;
+}
+#community #customer {
   padding: 80px;
 }
-#customer h2 {
+#community #customer h2 {
   margin-top: -50px;
   margin-bottom: 30px;
   color: #B68C3F;
 }
-#customer .group-comment {
+@media screen and (max-width: 730px) {
+  #community #customer {
+    padding: 50px;
+  }
+}
+#community #customer .group-comment {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-#customer .group-comment .comment {
+#community #customer .group-comment .comment {
   display: flex;
   flex-direction: column;
 }
-#customer .group-comment .comment .feedback {
+@media screen and (max-width: 730px) {
+  #community #customer .group-comment .comment h3 {
+    font-size: 17px;
+  }
+}
+#community #customer .group-comment .comment .feedback {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-#customer .group-comment .comment .feedback img {
+#community #customer .group-comment .comment .feedback img {
   width: 50px;
 }
-#customer .group-comment .comment p {
+@media screen and (max-width: 730px) {
+  #community #customer .group-comment .comment .feedback img {
+    width: 30px;
+  }
+}
+#community #customer .group-comment .comment p {
   margin-left: 70px;
-}/*# sourceMappingURL=about.css.map */
+}
+@media screen and (max-width: 730px) {
+  #community #customer .group-comment .comment p {
+    margin-left: 50px;
+    font-size: 13px;
+  }
+}
