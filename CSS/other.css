@@ -15,7 +15,6 @@
 body {
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
 
 nav {
@@ -88,48 +87,61 @@ p {
   font-weight: 300;
 }
 
+menu {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: linear-gradient(-45deg, #B68C3F, #6b042b, #024e6a, #026e55);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 menu ul {
   width: 75%;
   display: flex;
   align-items: center;
   margin: auto;
   justify-content: space-between;
-  background-color: #fff;
   border-radius: 20px;
 }
 menu ul a {
   flex: 1;
-  height: 130px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #F0EEF0;
-  padding: 20px;
-  font-weight: 600;
-  color: black;
+  padding: 10px;
 }
 menu ul a p {
   font-size: 18px;
   font-weight: 600;
-  color: #B68C3F;
+  color: white;
 }
 menu ul a .image i, menu ul a .image span {
-  font-size: 3rem;
-  color: rgb(13, 167, 194);
+  font-size: 2.5rem;
+  color: white;
   transition: color 0.3s;
 }
 menu ul a .image:hover i, menu ul a .image:hover span {
   color: #B68C3F;
 }
-menu ul a:nth-child(1) {
-  border-radius: 20px 0px 0px 20px;
-}
-menu ul a:nth-child(6) {
-  border-radius: 0px 20px 20px 0px;
-}
 menu ul .active {
   background-color: #D9D9D9;
+  color: #B68C3F;
+}
+menu ul .active p {
   color: #B68C3F;
 }
 menu ul .active .image i, menu ul .active .image span {
@@ -376,17 +388,18 @@ footer ul li {
   background-position: center top;
 }
 .container .categories .group-card:nth-child(3) .card:nth-child(4) .image {
-  background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/29/09/43/koi-fish-1868779_640.jpg);
 }
 .container .categories .group-card:nth-child(4) .card:nth-child(1) .image {
-  background-image: url(https://cdn.pixabay.com/photo/2016/02/22/10/06/hedgehog-1215140_640.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2021/01/14/20/32/fish-5917864_640.jpg);
 }
 .container .categories .group-card:nth-child(4) .card:nth-child(2) .image {
-  background-image: url(https://cdn.pixabay.com/photo/2017/02/28/23/00/swan-2107052_640.jpg);
+  background-image: url(https://cdn.pixabay.com/photo/2019/10/31/12/53/hedgehog-child-4591852_640.jpg);
 }
 .container .categories .group-card:nth-child(4) .card:nth-child(3) .image {
-  background-image: url(https://cdn.pixabay.com/photo/2016/12/31/21/22/discus-fish-1943755_640.jpg);
+  background-image: url(https://www.iata.org/contentassets/d7c512eb9a704ba2a8056e3186a31921/cargo_live_animals_parrot.jpg?width=330&height=200&rmode=crop&v=20191213012337);
 }
 .container .categories .group-card:nth-child(4) .card:nth-child(4) .image {
-  background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
+  background-image: url(/PAGES/Service_page/Images/photo_2023-09-29_09-35-38.jpg);
+  background-position: center 0;
 }/*# sourceMappingURL=other.css.map */
