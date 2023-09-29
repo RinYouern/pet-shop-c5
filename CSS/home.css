@@ -305,7 +305,6 @@ body .category .pet .card_container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 20px;
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -314,6 +313,7 @@ body .category .pet .card_container .card {
   flex-direction: column;
   height: 380px;
   padding: 25px;
+  width: 23%;
   border: 1px solid #919092;
   border-radius: 15px;
   background-color: #fff;
@@ -367,6 +367,16 @@ body .category .pet .card_container .card .pet-content ul {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 15%;
+}
+@media screen and (max-width: 1024px) {
+  body .category .pet .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  body .category .pet .card_container .card {
+    width: 48%;
+  }
 }
 @keyframes mymove {
   0% {
