@@ -1,35 +1,40 @@
 @import "./main";
 @import "./Component/header";
 @import "./Component/variable";
-body{
+
+body {
     background: #F0EEF0;
+
     header {
         background-image: url(https://animalmedicinesaustralia.org.au/wp-content/uploads/2022/11/Pet-report-2022-website-image-cropped-2-1120x630.jpg);
         background-position: center;
     }
-    
     .category {
-        text-align: center;
         padding: 30px $standard-padding;
         h3,
         h2 {
             font-family: $main-font-header;
         }
-    
         .pet {
+            padding-top: 60px;
             .title {
-                h2 {
+                font-size: 20px;
+                padding: 0 15px;
+                border-left: 5px solid $main-bg-color;
+                h4{
+                    text-decoration: underline;
                     color: $main-text-color;
                 }
             }
+
             .card_container {
-                @include responsive("laptop") {
-                    
-                }
+                @include responsive("laptop") {}
+
                 @include flexeEvenly;
                 gap: 20px;
                 padding-bottom: 30px;
                 padding-top: 30px;
+
                 .card {
                     @include flexDirection;
                     height: 380px;
@@ -37,15 +42,19 @@ body{
                     border: 1px solid $main-card-border;
                     border-radius: 15px;
                     background-color: #fff;
+
                     &:nth-child(2) .pet-img {
                         background-image: url(../IMAGES/home-page/cat.jpg);
                     }
+
                     &:nth-child(3) .pet-img {
                         background-image: url(../IMAGES/home-page/bird.jpg);
                     }
+
                     &:nth-child(4) .pet-img {
                         background-image: url(../IMAGES/home-page/rabbit.png);
                     }
+
                     .pet-img {
                         display: flex;
                         height: 45%;
@@ -55,14 +64,17 @@ body{
                         background-position: center;
                         border-radius: 15px;
                     }
+
                     .pet-content {
                         padding-top: 20px;
                         height: 55%;
                         font-size: 15px;
                         gap: 15px;
                         @include flexDirection;
+
                         .Btn {
                             padding-top: 20px;
+
                             button {
                                 @include flexCenter;
                                 color: white;
@@ -70,12 +82,13 @@ body{
                                 cursor: pointer;
                                 transition: 0.3s;
                             }
-                            button:hover{
+
+                            button:hover {
                                 background: black;
                                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                             }
                         }
-        
+
                         ul {
                             display: flex;
                             width: 100%;
@@ -87,26 +100,52 @@ body{
                 }
             }
         }
+
         @keyframes mymove {
-            0%   { background: #000000; }
-            20%  { background: #190031; }
-            40%  { background: #00253f; }
-            60%  { background: #00323f; }
-            80%  { background: #011e33; }
-            100% { background: #000000; }
+            0% {
+                background: #000000;
+            }
+
+            20% {
+                background: #190031;
+            }
+
+            40% {
+                background: #00253f;
+            }
+
+            60% {
+                background: #00323f;
+            }
+
+            80% {
+                background: #011e33;
+            }
+
+            100% {
+                background: #000000;
+            }
         }
+
         .product {
             padding-bottom: 30px;
+            padding-top: 60px;
             .title {
-                h2 {
+                font-size: 20px;
+                padding: 0 15px;
+                border-left: 5px solid $main-bg-color;
+                h4{
+                    text-decoration: underline;
                     color: $main-text-color;
                 }
             }
-        } 
+        }
+
         .group-card {
             @include flexeEvenly;
             gap: 20px;
             padding-top: 30px;
+
             .card {
                 @include flexDirection;
                 height: 400px;
@@ -117,32 +156,40 @@ body{
                 animation: mymove 6s infinite linear;
                 padding: 30px;
                 gap: 25px;
-                &:nth-child(2) .product-img{
+
+                &:nth-child(2) .product-img {
                     background-image: url(/IMAGES/home-page/feed-pro.jpg);
                 }
-                &:nth-child(1) .product-img{
+
+                &:nth-child(1) .product-img {
                     background-image: url(/IMAGES/home-page/compjpg.jpg);
                 }
-                &:nth-child(3) .product-img{
+
+                &:nth-child(3) .product-img {
                     background-image: url(/IMAGES/home-page/sarang-pro.jpg);
                 }
+
                 .product-img {
                     flex: 1;
                     background-image: url(/IMAGES/home-page/pro-cat.jpg);
                     background-size: cover;
                     border-radius: 15px;
                 }
+
                 .product-content {
                     flex: 1;
                     @include flexDirection;
                     justify-content: space-between;
+
                     p {
                         text-align: start;
                         color: white;
                     }
+
                     .more {
                         display: flex;
                         justify-content: space-between;
+
                         .price {
                             color: $main-bg-color;
                         }
@@ -151,27 +198,30 @@ body{
             }
         }
     }
-    
+
     // new-product
     .our-new-product {
         padding: 30px $standard-padding;
-        @include responsive("laptop"){
-           
-        }
+
+        @include responsive("laptop") {}
+
         .title {
-            display: flex;
-            justify-content: center;
-            h2 {
+            font-size: 20px;
+            padding: 0 15px;
+            border-left: 5px solid $main-bg-color;
+            h4 {
+                text-decoration: underline;
                 color: $main-text-color;
-                align-items: center
             }
         }
+
         .class-card {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 20px;
             padding-top: 30px;
+
             .card {
                 padding: 30px;
                 height: 380px;
@@ -180,27 +230,35 @@ body{
                 border: 1px solid $main-card-border;
                 border-radius: 15px;
                 background-color: #fff;
-                &:nth-child(2) .new-img{
+
+                &:nth-child(2) .new-img {
                     background-image: url(/IMAGES/home-page/cat-new.jpg);
                 }
-                &:nth-child(3) .new-img{
+
+                &:nth-child(3) .new-img {
                     background-image: url(/IMAGES/home-page/new-pro.png);
                 }
-                &:nth-child(4) .new-img{
+
+                &:nth-child(4) .new-img {
                     background-image: url(/IMAGES/home-page/sukina.jpg);
                 }
-                &:nth-child(5) .new-img{
+
+                &:nth-child(5) .new-img {
                     background-image: url(/IMAGES/home-page/little-dog.png);
                 }
-                &:nth-child(6) .new-img{
+
+                &:nth-child(6) .new-img {
                     background-image: url(/IMAGES/home-page/big\ cat.png);
                 }
-                &:nth-child(7) .new-img{
+
+                &:nth-child(7) .new-img {
                     background-image: url(/IMAGES/home-page/big-rabbit.jpg);
                 }
-                &:nth-child(8) .new-img{
+
+                &:nth-child(8) .new-img {
                     background-image: url(/IMAGES/home-page/red-bird.jpg);
                 }
+
                 .new-img {
                     flex: 1;
                     display: flex;
@@ -208,18 +266,20 @@ body{
                     background-size: cover;
                     border-radius: 15px;
                 }
+
                 .new-content {
                     @include flexDirection;
                     justify-content: space-between;
                     flex: 1;
+
                     .more {
                         display: flex;
                         justify-content: space-between;
-    
+
                         .price {
                             color: $main-bg-color;
                         }
-    
+
                         .tag {
                             color: $main-text-color;
                             text-decoration: underline;
@@ -229,21 +289,26 @@ body{
             }
         }
     }
-    
+
     // selling-product
     .top-sell-product {
-        h2 {
-            padding-top: 30px;
-            text-align: center;
-            color: $main-text-color;
+        padding-top: 70px;
+        .tittle{
+            font-size: 20px;
+            padding: 0 15px;
+            border-left: 5px solid $main-bg-color;
+            h4{
+                text-decoration: underline;
+                color: $main-text-color;
+            }
         }
-    
         .selling-product {
             padding-top: 100px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
             gap: 15px;
+
             .card {
                 position: relative;
                 display: flex;
@@ -251,38 +316,38 @@ body{
                 height: 300px;
                 border: none;
                 background: #000;
-    
+
                 .sell-img {
                     position: absolute;
                     top: -30%;
                     flex: 1;
                     display: flex;
-    
+
                     img {
                         width: 70%;
                         margin: auto;
                     }
                 }
-    
+
                 .more {
                     border-radius: 15px;
                     padding-top: 30px;
                     margin-top: auto;
-    
+
                     p {
                         color: white;
                         padding: 20px;
                     }
-    
+
                     .check {
                         display: flex;
                         justify-content: space-between;
                         padding: 20px;
-    
+
                         .price {
                             color: white;
                         }
-    
+
                         button {
                             color: white;
                             background: #000;
@@ -291,7 +356,8 @@ body{
                             transition: 0.5s;
                             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px;
                         }
-                        button:hover{
+
+                        button:hover {
                             background: $main-text-color;
                             border: 1px solid $main-text-color;
                         }
