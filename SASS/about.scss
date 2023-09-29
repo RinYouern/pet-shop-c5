@@ -42,7 +42,7 @@
             height: 20rem;
         }
 
-        @include responsive('mobile-phone') {
+        @include responsive('phone') {
             width: 20rem;
             height: 12rem;
         }
@@ -55,7 +55,7 @@
                 font-size: 15px;
             }
 
-            @include responsive('mobile-phone') {
+            @include responsive('phone') {
                 font-size: 10px;
             }
 
@@ -66,7 +66,7 @@
                     font-size: 20px;
                 }
 
-                @include responsive('mobile-phone') {
+                @include responsive('phone') {
                     font-size: 10px;
                 }
             }
@@ -79,7 +79,7 @@
                 font-size: 14px;
             }
 
-            @include responsive('mobile-phone') {
+            @include responsive('phone') {
                 font-size: 6px;
             }
         }
@@ -108,7 +108,7 @@
             height: 5rem;
         }
 
-        @include responsive('mobile-phone') {
+        @include responsive('phone') {
             width: 2rem;
             height: 2rem;
         }
@@ -125,7 +125,7 @@
             width: 5rem;
         }
 
-        @include responsive('mobile-phone') {
+        @include responsive('phone') {
             width: 2rem;
         }
 
@@ -182,7 +182,7 @@
         width: 1.1rem;
         fill: currentColor;
 
-        @include responsive('mobile-phone') {
+        @include responsive('phone') {
             width: 0.7rem;
         }
     }
@@ -277,7 +277,7 @@
             font-family: "Poppins", sans-serif;
             transition: all 0.3s ease;
 
-            @include responsive('mobile-phone') {
+            @include responsive('phone') {
                 padding-top: 20px;
                 padding-left: 7px;
                 padding-right: 7px;
@@ -287,7 +287,7 @@
             p {
                 color: $main-text-color;
 
-                @include responsive('mobile-phone') {
+                @include responsive('phone') {
                     font-size: 10px;
                 }
             }
@@ -303,12 +303,12 @@
                 height: 15rem;
             }
 
-            @include responsive('mobile-phone') {
-                width: 6.2rem;
+            @include responsive('phone') {
+                width: 6.5rem;
                 height: 10rem;
             }
 
-            h5{
+            h5 {
                 font-size: 7px;
             }
         }
@@ -339,7 +339,7 @@
                 height: 3rem;
             }
 
-            @include responsive('mobile-phone') {
+            @include responsive('phone') {
                 width: 1.5rem;
                 height: 1.5rem;
             }
@@ -352,7 +352,7 @@
                 width: 4rem;
             }
 
-            @include responsive('mobile-phone') {
+            @include responsive('phone') {
                 width: 1.5rem;
             }
 
@@ -363,7 +363,8 @@
             margin-top: 20px;
             font-weight: 600;
             font-size: 18px;
-            @include responsive('mobile-phone') {
+
+            @include responsive('phone') {
                 margin-top: 10px;
             }
         }
@@ -377,7 +378,7 @@
                 font-size: 14px;
             }
 
-            @include responsive('mobile-phone') {
+            @include responsive('phone') {
                 font-size: 10px;
             }
 
@@ -401,7 +402,8 @@
             margin-right: 15px;
             text-decoration: none;
             color: inherit;
-            @include responsive('mobile-phone') {
+
+            @include responsive('phone') {
                 margin-right: 5px;
             }
         }
@@ -417,7 +419,8 @@
         .social-media a svg {
             width: 1.1rem;
             fill: currentColor;
-            @include responsive('mobile-phone') {
+
+            @include responsive('phone') {
                 width: 0.5rem;
             }
         }
@@ -480,8 +483,8 @@
         padding: 10px 50px;
     }
 
-    @include responsive('laptop') {
-        padding: 10px 30px;
+    @include responsive('phone') {
+        padding: 10px 20px;
     }
 
 
@@ -495,11 +498,20 @@
             gap: 20px;
         }
 
+        @include responsive('phone') {
+            gap: 10px;
+        }
+
+
         .value {
             @include gridCenter;
             gap: 20px;
             grid-template-columns: 0.1fr 0.8fr;
             justify-content: center;
+
+            @include responsive('phone') {
+                gap: 10px;
+            }
 
             span {
                 border-radius: 50%;
@@ -519,31 +531,42 @@
                     padding: 15px;
                 }
 
+                @include responsive('phone') {
+                    font-size: 25px;
+                    padding: 10px;
+                }
 
             }
         }
 
         .maining {
-            @include responsive('laptop') {
-                h3 {
+            h3 {
+
+                @include responsive('laptop') {
                     font-size: 17px;
                 }
 
-                p {
-                    font-size: 14px;
-                }
-            }
-
-            @include responsive('tablet') {
-                h3 {
+                @include responsive('tablet') {
                     font-size: 15px;
                 }
 
-                p {
-                    font-size: 10px;
+                @include responsive('phone') {
+                    font-size: 8px;
+                }
+            }
+
+            p {
+
+                @include responsive('laptop') {
+                    font-size: 14px;
                 }
 
+                @include responsive('phone') {
+                    font-size: 6px;
+                    width: 100px;
+                }
             }
+
 
         }
     }
@@ -566,6 +589,10 @@
         @include responsive('tablet') {
             font-size: 25px;
         }
+
+        @include responsive('phone') {
+            font-size: 20px;
+        }
     }
 
     p {
@@ -574,6 +601,11 @@
         @include responsive('tablet') {
             font-size: 15px;
             width: 500px;
+        }
+
+        @include responsive('phone') {
+            font-size: 12px;
+            width: 300px;
         }
     }
 }
@@ -593,6 +625,11 @@
         flex-wrap: wrap;
         gap: 70px;
         margin: 30px 80px;
+
+        @include responsive('phone') {
+            gap: 30px;
+            margin: 0 30px;
+        }
 
         .card {
             position: relative;
@@ -655,7 +692,7 @@
 
     #customer {
         h2 {
-            margin-top: -50px;
+            margin-top: -20px;
             margin-bottom: 30px;
             color: $main-bg-color;
         }
@@ -666,11 +703,14 @@
             padding: 50px;
         }
 
+        @include responsive('phone') {
+            padding: 20px;
+        }
+
         .group-comment {
             display: flex;
             flex-direction: column;
             gap: 40px;
-
 
             .comment {
                 display: flex;
@@ -680,6 +720,10 @@
                     @include responsive('tablet') {
                         font-size: 17px;
                     }
+
+                    @include responsive('phone') {
+                        font-size: 13px;
+                    }
                 }
 
                 .feedback {
@@ -687,11 +731,19 @@
                     align-items: center;
                     gap: 20px;
 
+                    @include responsive('phone') {
+                        gap: 10px;
+                    }
+
                     img {
                         width: 50px;
 
                         @include responsive('tablet') {
                             width: 30px;
+                        }
+
+                        @include responsive('phone') {
+                            width: 20px;
                         }
                     }
 
@@ -703,6 +755,11 @@
                     @include responsive('tablet') {
                         margin-left: 50px;
                         font-size: 13px;
+                    }
+
+                    @include responsive('phone') {
+                        margin-left: 30px;
+                        font-size: 7px;
                     }
                 }
             }

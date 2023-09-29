@@ -601,7 +601,7 @@ header .content p {
 }
 @media screen and (max-width: 620px) {
   #our-team .gruop-team .card-client {
-    width: 6.2rem;
+    width: 6.5rem;
     height: 10rem;
   }
 }
@@ -769,9 +769,9 @@ header .content p {
     padding: 10px 50px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 620px) {
   #values {
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 }
 #values .group-values {
@@ -786,12 +786,22 @@ header .content p {
     gap: 20px;
   }
 }
+@media screen and (max-width: 620px) {
+  #values .group-values {
+    gap: 10px;
+  }
+}
 #values .group-values .value {
   display: grid;
   align-items: center;
   gap: 20px;
   grid-template-columns: 0.1fr 0.8fr;
   justify-content: center;
+}
+@media screen and (max-width: 620px) {
+  #values .group-values .value {
+    gap: 10px;
+  }
 }
 #values .group-values .value span {
   border-radius: 50%;
@@ -812,20 +822,36 @@ header .content p {
     padding: 15px;
   }
 }
+@media screen and (max-width: 620px) {
+  #values .group-values .value span {
+    font-size: 25px;
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 1024px) {
   #values .group-values .maining h3 {
     font-size: 17px;
-  }
-  #values .group-values .maining p {
-    font-size: 14px;
   }
 }
 @media screen and (max-width: 730px) {
   #values .group-values .maining h3 {
     font-size: 15px;
   }
+}
+@media screen and (max-width: 620px) {
+  #values .group-values .maining h3 {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 1024px) {
   #values .group-values .maining p {
-    font-size: 10px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #values .group-values .maining p {
+    font-size: 6px;
+    width: 100px;
   }
 }
 
@@ -848,6 +874,11 @@ header .content p {
     font-size: 25px;
   }
 }
+@media screen and (max-width: 620px) {
+  #mission h1 {
+    font-size: 20px;
+  }
+}
 #mission p {
   font-size: 20px;
 }
@@ -855,6 +886,12 @@ header .content p {
   #mission p {
     font-size: 15px;
     width: 500px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #mission p {
+    font-size: 12px;
+    width: 300px;
   }
 }
 
@@ -870,6 +907,12 @@ header .content p {
   flex-wrap: wrap;
   gap: 70px;
   margin: 30px 80px;
+}
+@media screen and (max-width: 620px) {
+  #community .group-card {
+    gap: 30px;
+    margin: 0 30px;
+  }
 }
 #community .group-card .card {
   position: relative;
@@ -921,13 +964,18 @@ header .content p {
   padding: 80px;
 }
 #community #customer h2 {
-  margin-top: -50px;
+  margin-top: -20px;
   margin-bottom: 30px;
   color: #B68C3F;
 }
 @media screen and (max-width: 730px) {
   #community #customer {
     padding: 50px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community #customer {
+    padding: 20px;
   }
 }
 #community #customer .group-comment {
@@ -944,10 +992,20 @@ header .content p {
     font-size: 17px;
   }
 }
+@media screen and (max-width: 620px) {
+  #community #customer .group-comment .comment h3 {
+    font-size: 13px;
+  }
+}
 #community #customer .group-comment .comment .feedback {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+@media screen and (max-width: 620px) {
+  #community #customer .group-comment .comment .feedback {
+    gap: 10px;
+  }
 }
 #community #customer .group-comment .comment .feedback img {
   width: 50px;
@@ -957,6 +1015,11 @@ header .content p {
     width: 30px;
   }
 }
+@media screen and (max-width: 620px) {
+  #community #customer .group-comment .comment .feedback img {
+    width: 20px;
+  }
+}
 #community #customer .group-comment .comment p {
   margin-left: 70px;
 }
@@ -964,5 +1027,11 @@ header .content p {
   #community #customer .group-comment .comment p {
     margin-left: 50px;
     font-size: 13px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community #customer .group-comment .comment p {
+    margin-left: 30px;
+    font-size: 7px;
   }
 }
