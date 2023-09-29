@@ -339,9 +339,6 @@ footer ul li {
   footer .contact {
     grid-row: 2/3;
   }
-<<<<<<< HEAD
-}
-=======
 }
 .container .categories {
   grid-template-rows: repeat(2, 1fr);
@@ -369,5 +366,4 @@ footer ul li {
 }
 .container .categories .group-card:nth-child(2) .card:nth-child(4) .image {
   background-image: url(https://cdn.pixabay.com/photo/2016/06/06/21/19/rabbit-1440432_640.jpg);
-}/*# sourceMappingURL=rabbit.css.map */
->>>>>>> 6e2a9aec62b286f0be728cf9dcfd41ab170d1b17
+}

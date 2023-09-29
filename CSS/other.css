@@ -339,9 +339,6 @@ footer ul li {
   footer .contact {
     grid-row: 2/3;
   }
-<<<<<<< HEAD
-}
-=======
 }
 .container .categories .group-card:nth-child(1) .card:nth-child(1) .image {
   background-image: url(https://cdn.pixabay.com/photo/2016/02/22/10/06/hedgehog-1215140_640.jpg);
@@ -391,5 +388,4 @@ footer ul li {
 }
 .container .categories .group-card:nth-child(4) .card:nth-child(4) .image {
   background-image: url(https://cdn.pixabay.com/photo/2020/10/12/20/57/aquarium-5650174_1280.jpg);
-}/*# sourceMappingURL=other.css.map */
->>>>>>> 6e2a9aec62b286f0be728cf9dcfd41ab170d1b17
+}
