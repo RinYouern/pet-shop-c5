@@ -67,6 +67,9 @@ body form button {
   color: white;
   cursor: pointer;
 }
+body form button:hover {
+  background: rgb(233, 45, 76);
+}
 @keyframes gradient {
   0% {
     background-position: 0% 50%;

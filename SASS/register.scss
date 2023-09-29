@@ -45,6 +45,9 @@ body {
             color: white;
             cursor: pointer;
         }
+        button:hover{
+            background: rgb(233, 45, 76);
+        }
     }
     @keyframes gradient {
         0% {
