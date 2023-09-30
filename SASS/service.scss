@@ -305,11 +305,11 @@ p {
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
-        gap: 50px;
+        gap: 30px;
         .content {
             width: 50%;
             @include flexDirection;
-            gap: 25px;
+            gap: 20px;
             .accessories-content {
                 @include flexDirection;
             }
@@ -331,7 +331,6 @@ p {
             @include Four;
             grid-template: repeat(2, 1fr) / repeat(4, 1fr);
             gap: 20px;
-
             .card {
                 @include flexDirection;
                 height: 400px;
@@ -421,6 +420,9 @@ p {
                 gap: 15px;
                 .contents {
                     @include flexDirection;
+                    h4 {
+                        color: white;
+                    }
                 }
                 p {
                     font-size: 18px;
@@ -519,6 +521,146 @@ p {
         }
     }
     @include responsive("laptop") {
+        #our-product {
+            .group-card {
+                grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+                .card {
+                    .content {
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+        #feed {
+            .feed-content {
+                position: relative;
+                background-image: url(../IMAGES/service_page/feed\ pet.jpg);
+                @include backgroundImage;
+                background-position: center;
+                .image {
+                    display: none;
+                }
+                .content {
+                    width: 100%;
+                    color: white;
+                    z-index: 1;
+                    .contents {
+                        h4 {
+                            color: $main-text-color;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .blur {
+                    position: absolute;
+                    top: 0;right: 0;
+                    width: 100%;height: 100%;
+                    background: linear-gradient(135deg, rgba(0, 43, 43, 0.582), rgba(43, 64, 0, 0.565));
+                }
+            }
+            .group-feed {
+                grid-template: 1fr 1fr 30px / repeat(2, 11fr);
+            }
+        }
+    }
+    @include responsive("middle") {
+        #accessories {
+            justify-content: center;
+            flex-wrap: wrap;
+            .content {
+                position: relative;
+                width: 100%;
+                padding: 20px;
+                background-image: url(../IMAGES/service_page/Bg-accessory.png);
+                @include backgroundImage;
+                background-position: center;
+                .blur {
+                    position: absolute;
+                    top: 0;right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(135deg, rgba(0, 43, 43, 0.582), rgba(43, 64, 0, 0.565));
+                }
+                .accessories-content,p, a {
+                    z-index: 1;
+                }
+                h2 {
+                    color: white;
+                }
+                p {
+                    color: white;
+                }
+                a {
+                    button {
+                        background-color: #ffffff00;
+                        border: 1px solid #fff;
+                        &:hover {
+                            box-shadow: 0 0 10px $main-text-color;
+                        }
+                        &:active {
+                            color: $main-text-color;
+                            background: #000;
+                        }
+                    }
+                }
+            }
+            .accessories-img {
+                display: none;
+            }
+        }
+        #our-product {
+            .group-card {
+                grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+                .card {
+                    .image {
+                        height: 60%;
+                    }
+                    .content {
+                        height: 40%;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("phone") {
+        #accessories {
+            .content {
+                p {
+                    font-size: 14px;
+                }
+                a {
+                    button {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        #our-product {
+            p {
+                font-size: 14px;
+            }
+            .group-card {
+                grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+                .card {
+                    height: 300px;
+                    .image {
+                        height: 60%;
+                    }
+                    .content {
+                        padding: 10px;
+                        height: 40%;
+                        p {
+                            font-size: 12px;
+                        }
+                        .price {
+                            span {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -577,7 +719,6 @@ header .group_btn button,
         color: $main-text-color;
         text-decoration: underline;
     }
-
     h2 {
         font-family: $main-font;
         text-decoration: none;
@@ -602,6 +743,12 @@ header .group_btn button,
     }
     @include responsive("phone") {
         padding: 30px 30px;
+        button {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 20px;
+        }
     }
 }
 

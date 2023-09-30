@@ -695,13 +695,13 @@ p {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
-  gap: 50px;
+  gap: 30px;
 }
 #products #accessories .content {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 #products #accessories .content .accessories-content {
   display: flex;
@@ -812,6 +812,9 @@ p {
   display: flex;
   flex-direction: column;
 }
+#products #feed .feed-content .content .contents h4 {
+  color: white;
+}
 #products #feed .feed-content .content p {
   font-size: 18px;
 }
@@ -898,6 +901,132 @@ p {
 #products #feed .group-feed a {
   grid-column: 1/5;
 }
+@media screen and (max-width: 1024px) {
+  #products #our-product .group-card {
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  }
+  #products #our-product .group-card .card .content {
+    padding: 15px;
+  }
+  #products #feed .feed-content {
+    position: relative;
+    background-image: url(../IMAGES/service_page/feed\ pet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-position: center;
+  }
+  #products #feed .feed-content .image {
+    display: none;
+  }
+  #products #feed .feed-content .content {
+    width: 100%;
+    color: white;
+    z-index: 1;
+  }
+  #products #feed .feed-content .content .contents h4 {
+    color: #0D99FF;
+    text-decoration: underline;
+  }
+  #products #feed .feed-content .blur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 43, 43, 0.582), rgba(43, 64, 0, 0.565));
+  }
+  #products #feed .group-feed {
+    grid-template: 1fr 1fr 30px/repeat(2, 11fr);
+  }
+}
+@media screen and (max-width: 850px) {
+  #products #accessories {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #products #accessories .content {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-image: url(../IMAGES/service_page/Bg-accessory.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-position: center;
+  }
+  #products #accessories .content .blur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 43, 43, 0.582), rgba(43, 64, 0, 0.565));
+  }
+  #products #accessories .content .accessories-content, #products #accessories .content p, #products #accessories .content a {
+    z-index: 1;
+  }
+  #products #accessories .content h2 {
+    color: white;
+  }
+  #products #accessories .content p {
+    color: white;
+  }
+  #products #accessories .content a button {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #fff;
+  }
+  #products #accessories .content a button:hover {
+    box-shadow: 0 0 10px #0D99FF;
+  }
+  #products #accessories .content a button:active {
+    color: #0D99FF;
+    background: #000;
+  }
+  #products #accessories .accessories-img {
+    display: none;
+  }
+  #products #our-product .group-card {
+    grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+  }
+  #products #our-product .group-card .card .image {
+    height: 60%;
+  }
+  #products #our-product .group-card .card .content {
+    height: 40%;
+  }
+}
+@media screen and (max-width: 620px) {
+  #products #accessories .content p {
+    font-size: 14px;
+  }
+  #products #accessories .content a button {
+    font-size: 14px;
+  }
+  #products #our-product p {
+    font-size: 14px;
+  }
+  #products #our-product .group-card {
+    grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+  }
+  #products #our-product .group-card .card {
+    height: 300px;
+  }
+  #products #our-product .group-card .card .image {
+    height: 60%;
+  }
+  #products #our-product .group-card .card .content {
+    padding: 10px;
+    height: 40%;
+  }
+  #products #our-product .group-card .card .content p {
+    font-size: 12px;
+  }
+  #products #our-product .group-card .card .content .price span {
+    font-size: 14px;
+  }
+}
+
 header .group_btn button,
 #pets .group-card .card button {
   gap: 5px;
@@ -991,6 +1120,16 @@ header .group_btn button span,
   #pets,
   #products {
     padding: 30px 30px;
+  }
+  #service button,
+  #pets button,
+  #products button {
+    font-size: 14px;
+  }
+  #service h2,
+  #pets h2,
+  #products h2 {
+    font-size: 20px;
   }
 }
 
