@@ -58,6 +58,47 @@ nav ul li a:hover {
   text-decoration: underline;
   color: #B68C3F;
 }
+nav .dropdown {
+  display: none;
+  position: relative;
+}
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+nav .dropdown .dropbtn {
+  background-color: #fff;
+  color: #B68C3F;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: auto;
+}
+nav .dropdown .dropbtn:hover {
+  color: #edb141;
+}
+nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: -30px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+nav .dropdown .dropdown-content li {
+  padding: 15px;
+  transition: 0.3s;
+  font-size: 16px;
+  background-color: #B68C3F;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav .dropdown .dropdown-content li a {
+  color: white;
+}
+nav .dropdown .dropdown-content li:hover {
+  background-color: #edb141;
+}
 nav .nav-right {
   grid-column: 3/4;
   display: flex;
@@ -70,11 +111,14 @@ nav .nav-right .search {
 }
 nav .nav-right .search input[type=search] {
   border-radius: 25px;
-  border: 1px solid #919092;
+  border: 1px solid #F0EEF0;
   outline-color: #F0EEF0;
   font-size: 17px;
   width: 100%;
   padding: 10px 15px 10px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  outline-color: rgb(223, 223, 223);
 }
 nav .nav-right .search span {
   position: absolute;
@@ -84,17 +128,41 @@ nav .nav-right .search span {
 @media screen and (max-width: 1024px) {
   nav {
     grid-template: 1fr/20% 45% 35%;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   nav .nav-right {
-    grid-row: 1/3;
+    grid-row: 1/2;
     grid-column: 2/3;
     justify-content: center;
   }
   nav .nav-right .search {
     margin-left: auto;
   }
-  nav ul {
+  nav ul, nav .dropdown {
+    grid-row: 1/2;
     grid-column: 3/4;
+  }
+}
+@media screen and (max-width: 730px) {
+  nav {
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-columns: 20% 60% 20%;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .dropdown {
+    display: block;
+    grid-column: 2/4;
+  }
+}
+@media screen and (max-width: 620px) {
+  nav {
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-template-columns: 25% 60% 15%;
   }
 }
 
@@ -311,58 +379,8 @@ header .content p {
 }
 @media screen and (max-width: 620px) {
   header {
-    padding: 80px 30px;
+    padding: 80px 20px;
   }
-}
-
-nav .dropdown {
-  position: relative;
-  right: 0;
-  width: 100%;
-}
-nav .dropdown-btn {
-  background: #1d1f24;
-  padding: 0.7em 0.5em;
-  border-radius: 0.5em;
-  cursor: pointer;
-}
-nav i {
-  font-size: 30px;
-  color: white;
-}
-nav .dropdown-content {
-  position: absolute;
-  top: 3.2em;
-  width: 100%;
-  visibility: hidden;
-  overflow: hidden;
-}
-nav .dropdown-content li {
-  background: #2f3238;
-  border-radius: 0.5em;
-  position: relative;
-  left: 100%;
-  transition: 0.5s;
-  transition-delay: calc(60ms * var(--delay));
-}
-nav .dropdown-btn:focus + .dropdown-content li {
-  left: 0;
-}
-nav .dropdown-btn:focus + .dropdown-content {
-  visibility: visible;
-}
-nav .dropdown-btn:focus > .i {
-  transform: rotate(180deg);
-}
-nav .dropdown-content li:hover {
-  background: #1d1f24;
-}
-nav .dropdown-content li a {
-  display: block;
-  padding: 0.7em 0.5em;
-  color: #fff;
-  margin: 0.1em 0;
-  text-decoration: none;
 }
 
 header {
@@ -392,11 +410,14 @@ header .search {
 }
 header .search input[type=search] {
   border-radius: 25px;
-  border: 1px solid #919092;
+  border: 1px solid #F0EEF0;
   outline-color: #F0EEF0;
   font-size: 17px;
   width: 100%;
   padding: 10px 15px 10px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  outline-color: rgb(223, 223, 223);
   background-color: rgba(255, 255, 255, 0.9098039216);
   outline: 1px solid rgba(255, 255, 255, 0.627);
 }
@@ -422,11 +443,14 @@ header .group_btn {
   }
   header .search input[type=search] {
     border-radius: 25px;
-    border: 1px solid #919092;
+    border: 1px solid #F0EEF0;
     outline-color: #F0EEF0;
     font-size: 17px;
     width: 100%;
     padding: 10px 15px 10px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f6f6;
+    outline-color: rgb(223, 223, 223);
     background-color: rgba(255, 255, 255, 0.9098039216);
     outline: 1px solid rgba(255, 255, 255, 0.627);
   }
@@ -481,17 +505,15 @@ p {
   background-color: #F0EEF0;
 }
 #service .group_card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 #service .group_card .card {
+  position: relative;
+  min-height: 350px;
+  max-height: 400px;
   text-align: start;
-  display: flex;
-  justify-content: flex-end;
-  height: 350px;
-  width: 400px;
   gap: 10px;
   border: none;
   background-image: url(../IMAGES/service_page/Veterinarian.jpg);
@@ -502,6 +524,9 @@ p {
   background-position: center bottom;
 }
 #service .group_card .card .blur {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -509,7 +534,7 @@ p {
   border-radius: 0px 0px 10px 10px;
   padding: 15px;
   background: linear-gradient(rgba(12, 3, 51, 0.5), rgba(12, 3, 51, 0.5));
-  height: 50%;
+  height: 55%;
 }
 #service .group_card .card .blur h3 {
   color: #0D99FF;
@@ -527,6 +552,37 @@ p {
 }
 #service .group_card .card:nth-child(4) {
   background-image: url(../IMAGES/service_page/Delivery.jpg);
+}
+@media screen and (max-width: 1024px) {
+  #service .group_card {
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  }
+  #service .group_card .card {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 730px) {
+  #service .group_card .card .blur {
+    height: 50%;
+  }
+}
+@media screen and (max-width: 620px) {
+  #service .group_card {
+    grid-template: repeat(4, 1fr)/1fr;
+  }
+  #service .group_card .card .blur {
+    height: 40%;
+    padding: 30px;
+  }
+  #service p {
+    font-size: 14px;
+  }
+  #service h2 {
+    font-size: 18px;
+  }
+  #service h4 {
+    font-size: 14px;
+  }
 }
 
 #pets,
@@ -557,8 +613,6 @@ p {
   height: 400px;
   background-color: #B68C3F;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 70% 20px 30px 20px;
   border: none;
 }
@@ -571,14 +625,18 @@ p {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black 70%);
   border-radius: 10px;
 }
-#pets .group-card .card .content {
+#pets .group-card .card .card-content {
   z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-#pets .group-card .card h3 {
+#pets .group-card .card .card-content .content h3 {
   color: #0D99FF;
 }
-#pets .group-card .card p,
-#pets .group-card .card h3 {
+#pets .group-card .card .card-content .content p,
+#pets .group-card .card .card-content .content h3 {
   text-align: start;
 }
 #pets .group-card .card:nth-child(2) {
@@ -590,6 +648,41 @@ p {
 #pets .group-card .card:nth-child(4) {
   background-image: url(../IMAGES/service_page/pet_rabbit.jpg);
 }
+@media screen and (max-width: 1024px) {
+  #pets {
+    grid-template-rows: 12% 80%;
+  }
+  #pets .group-card {
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  }
+  #pets .group-card .card {
+    height: auto;
+  }
+  #pets .group-card .card .card-content {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #pets {
+    grid-template-rows: 4% 80%;
+  }
+  #pets .group-card {
+    grid-template: repeat(4, 1fr)/1fr;
+  }
+  #pets .group-card .card .card-content {
+    padding: 20px;
+  }
+  #pets p,
+  #pets span {
+    font-size: 15px;
+  }
+  #pets h2 {
+    font-size: 18px;
+  }
+  #pets h4 {
+    font-size: 14px;
+  }
+}
 
 #products {
   display: flex;
@@ -600,25 +693,30 @@ p {
 #products #accessories {
   padding-top: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
   gap: 50px;
 }
 #products #accessories .content {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
+}
+#products #accessories .content .accessories-content {
+  display: flex;
+  flex-direction: column;
 }
 #products #accessories .content p {
   font-size: 18px;
 }
 #products #accessories .accessories-img {
-  width: 40%;
-  display: flex;
-  align-items: center;
-}
-#products #accessories .accessories-img img {
-  width: 90%;
+  width: 50%;
+  background-image: url(../IMAGES/service_page/bg-accessory.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-position: center;
 }
 #products #our-product .group-card {
   display: grid;
@@ -633,14 +731,14 @@ p {
   border: none;
 }
 #products #our-product .group-card .card .image {
-  flex: 2;
+  height: 45%;
   background-image: url(../IMAGES/service_page/Summer-Cactus-Sisal-Climbing-FrameJumping-Platform-Cat-Claw-Grinding-min-450x450.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 #products #our-product .group-card .card .content {
-  flex: 1;
+  height: 55%;
   padding: 25px;
   background: #B68C3F;
   display: flex;
@@ -686,6 +784,8 @@ p {
 #products #feed {
   display: flex;
   flex-direction: column;
+  background-color: #B68C3F;
+  margin-top: 50px;
 }
 #products #feed .feed-content {
   padding: 80px 50px;
@@ -695,19 +795,22 @@ p {
   border-radius: 0px 25px 0px 25px;
 }
 #products #feed .feed-content .image {
-  flex: 1;
+  width: 40%;
   background-image: url(../IMAGES/service_page/feed\ pet.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 #products #feed .feed-content .content {
-  border-left: 5px solid #B68C3F;
   padding-left: 15px;
-  flex: 1;
+  width: 40%;
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+#products #feed .feed-content .content .contents {
+  display: flex;
+  flex-direction: column;
 }
 #products #feed .feed-content .content p {
   font-size: 18px;
@@ -749,7 +852,7 @@ p {
   bottom: 0;
   width: 100%;
   height: 55%;
-  padding: 25px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -795,7 +898,6 @@ p {
 #products #feed .group-feed a {
   grid-column: 1/5;
 }
-
 header .group_btn button,
 #pets .group-card .card button {
   gap: 5px;
@@ -870,7 +972,28 @@ header .group_btn button span,
 #products {
   padding: 30px 80px 50px 80px;
 }
+@media screen and (max-width: 1024px) {
+  #service,
+  #pets,
+  #products {
+    padding: 30px 50px;
+  }
+}
+@media screen and (max-width: 730px) {
+  #service,
+  #pets,
+  #products {
+    padding: 30px 40px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #service,
+  #pets,
+  #products {
+    padding: 30px 30px;
+  }
+}
 
 h2 {
   text-decoration: underline;
-}
+}/*# sourceMappingURL=service.css.map */
