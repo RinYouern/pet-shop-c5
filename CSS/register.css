@@ -50,11 +50,14 @@ body form .complete {
 body form .complete input {
   outline: none;
   border-radius: 25px;
-  border: 1px solid #919092;
+  border: 1px solid #F0EEF0;
   outline-color: #F0EEF0;
   font-size: 17px;
   width: 100%;
   padding: 10px 15px 10px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+  outline-color: rgb(223, 223, 223);
   border-radius: 5px;
   padding: 9px;
 }
