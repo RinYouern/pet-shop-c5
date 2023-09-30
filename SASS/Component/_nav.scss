@@ -49,6 +49,58 @@ nav {
             }
         }
     }
+    .dropdown {
+        display: none;
+        position: relative;
+        &:hover .dropdown-content {
+            display: block;
+        }
+        .dropbtn {
+            background-color: #fff;
+            color: $main-bg-color;
+            font-size: 30px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: $main-bg-color;
+            width: 60%;
+            text-align: center;
+            color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            li {
+                padding: 15px;
+                transition: 0.3s;
+                font-size: 16px;
+                background-color: #f1f1f1;
+                cursor: pointer;
+                a {
+                    color: $main-bg-color;
+                }
+                &:hover {
+                    background-color: #fff;
+                }
+                &:active {
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive("tablet") {
+        ul {
+            display: none;
+        }
+        .dropdown {
+            display: block;
+            grid-column: 2/4;
+        }
+    }
     .nav-right {
         grid-column: 3/4;
         display: flex;

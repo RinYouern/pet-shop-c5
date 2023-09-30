@@ -64,6 +64,56 @@ nav ul li a:hover {
   text-decoration: underline;
   color: #B68C3F;
 }
+nav .dropdown {
+  display: none;
+  position: relative;
+}
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+nav .dropdown .dropbtn {
+  background-color: #fff;
+  color: #B68C3F;
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: auto;
+}
+nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #B68C3F;
+  width: 60%;
+  text-align: center;
+  color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+nav .dropdown .dropdown-content li {
+  padding: 15px;
+  transition: 0.3s;
+  font-size: 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+nav .dropdown .dropdown-content li a {
+  color: #B68C3F;
+}
+nav .dropdown .dropdown-content li:hover {
+  background-color: #fff;
+}
+nav .dropdown .dropdown-content li:active a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 730px) {
+  nav ul {
+    display: none;
+  }
+  nav .dropdown {
+    display: block;
+    grid-column: 2/4;
+  }
+}
 nav .nav-right {
   grid-column: 3/4;
   display: flex;
