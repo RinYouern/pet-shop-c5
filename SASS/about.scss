@@ -495,9 +495,11 @@
         @include responsive('laptop') {
             margin-left: 25px;
         }
+
         @include responsive('phone') {
             margin-left: -4px;
         }
+
         h2 {
             @include responsive('laptop') {
                 font-size: 25px;
@@ -653,12 +655,15 @@
         padding: 0 15px;
         margin-bottom: 20px;
         border-left: 5px solid $main-bg-color;
+
         @include responsive('laptop') {
             margin-left: 75px;
         }
+
         @include responsive('phone') {
             margin-left: 20px;
         }
+
         h2 {
             @include responsive('laptop') {
                 font-size: 25px;
@@ -749,25 +754,28 @@
             padding: 0 15px;
             margin-bottom: 20px;
             border-left: 5px solid $main-bg-color;
+
             @include responsive('laptop') {
                 margin-left: 5px;
             }
+
             @include responsive('phone') {
                 margin-left: 5px;
                 margin-top: 5px;
             }
+
             h2 {
                 @include responsive('laptop') {
                     font-size: 25px;
                 }
-    
+
                 @include responsive('phone') {
                     font-size: 15px;
                 }
             }
         }
 
-        padding: 80px;
+        padding: 80px 80px 30px 80px;
 
         @include responsive('tablet') {
             padding: 50px;
@@ -780,11 +788,14 @@
         .group-comment {
             display: flex;
             flex-direction: column;
-            gap: 40px;
+            gap: 20px;
 
             .comment {
                 display: flex;
                 flex-direction: column;
+                padding: 10px;
+                background-color: $main-bg-color;
+
 
                 h3 {
                     @include responsive('tablet') {
@@ -800,6 +811,7 @@
                     display: flex;
                     align-items: center;
                     gap: 20px;
+
 
                     @include responsive('phone') {
                         gap: 10px;
@@ -833,6 +845,86 @@
                     }
                 }
             }
+
         }
+    }
+
+    .input__container {
+        margin-left: 80px;
+        margin-bottom: 30px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.3);
+        padding: 15px;
+        border-radius: 20px;
+        position: relative;
+        @include responsive('tablet') {
+            max-width: 400px;
+            margin-left: 50px;
+        }
+        @include responsive('phone') {
+            max-width: 320px;
+            margin-left: 20px;
+        }
+    }
+
+    .input__container::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: blur(25px);
+        border-radius: 20px;
+        background-color: $main-bg-color;
+    }
+
+    .input__label {
+        display: block;
+        margin-left: 0.4em;
+        color: #000;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: bold;
+        @include responsive('tablet') {
+            font-size: 0.8rem;
+        }
+        @include responsive('phone') {
+            
+        }
+    }
+
+    button {
+        margin: auto;
+        font-size: 0.6em;
+        font-weight: bold;
+        text-align: center;
+        color: $main-text-color;
+        background:black;
+    }
+    button:hover{
+        background: $main-text-color;
+        color: white;
+    }
+
+    .input {
+        border: none;
+        outline: none;
+        width: 100%;
+        padding: 0.6em;
+        padding-left: 0.9em;
+        border-radius: 20px;
+        background: #fff;
+        transition: background 300ms, color 300ms;
+    }
+
+    .input:hover,
+    .input:focus {
+        background: rgb(0, 0, 0);
+        color: $main-text-color;
     }
 }
