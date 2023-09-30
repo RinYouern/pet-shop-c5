@@ -117,14 +117,12 @@ nav .nav-right .search {
 }
 nav .nav-right .search input[type=search] {
   border-radius: 25px;
-  border: 1px solid #F0EEF0;
-  outline-color: #F0EEF0;
+  border: 1px solid gray;
   font-size: 17px;
   width: 100%;
   padding: 10px 15px 10px 40px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f6f6f6;
-  outline-color: rgb(223, 223, 223);
+  outline-color: rgb(181, 181, 181);
 }
 nav .nav-right .search span {
   position: absolute;
@@ -169,6 +167,9 @@ nav .nav-right .search span {
     padding-left: 30px;
     padding-right: 30px;
     grid-template-columns: 25% 60% 15%;
+  }
+  nav .nav-left a h1 {
+    font-size: 20px;
   }
 }
 
