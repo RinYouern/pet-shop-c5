@@ -277,10 +277,20 @@ header .content h1 {
   color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
+@media screen and (max-width: 620px) {
+  header .content h1 {
+    font-size: 20px;
+  }
+}
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
   color: #0D99FF;
   text-shadow: rgba(13, 154, 255, 0.4549019608) 0px 1px 20px;
+}
+@media screen and (max-width: 620px) {
+  header .content h1 span {
+    font-size: 15px;
+  }
 }
 header .content p {
   color: white;
@@ -297,6 +307,11 @@ header .content p {
 @media screen and (max-width: 730px) {
   header {
     padding: 100px 50px;
+  }
+}
+@media screen and (max-width: 620px) {
+  header {
+    padding: 80px 30px;
   }
 }
 

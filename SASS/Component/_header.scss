@@ -27,12 +27,18 @@ header {
         h1 {
             color: rgb(255, 255, 255);
             font-family: $main-font-header;
+            @include responsive("phone") {
+                font-size: 20px;
+            }
 
 
             span {
                 font-family: $main-font-header;
                 color: $main-text-color;
                 text-shadow: #0d9aff74 0px 1px 20px;
+                @include responsive("phone") {
+                    font-size: 15px;
+                }
             }
         }
 
@@ -51,6 +57,9 @@ header {
     }
     @include responsive("tablet") {
         padding: 100px 50px;
+    }
+    @include responsive("phone") {
+        padding: 80px 30px;
     }
 }
 
