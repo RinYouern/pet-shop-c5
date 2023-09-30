@@ -33,7 +33,7 @@
         transition: all 0.3s ease;
 
         @include responsive('laptop') {
-            width: 50rem;
+            width: 43rem;
             height: 22rem;
         }
 
@@ -310,7 +310,7 @@
 
         @include responsive('laptop') {
             background: black;
-            width: 16rem;
+            width: 13rem;
             height: 17rem;
         }
 
@@ -515,7 +515,7 @@
     padding:30px 50px;
 
     @include responsive('laptop') {
-        padding: 10px 50px;
+        padding: 10px 20px;
     }
 
     @include responsive('phone') {
