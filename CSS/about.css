@@ -415,7 +415,7 @@ header .content p {
 }
 @media screen and (max-width: 1024px) {
   #ceo .card-client {
-    width: 50rem;
+    width: 43rem;
     height: 22rem;
   }
 }
@@ -686,7 +686,7 @@ header .content p {
 @media screen and (max-width: 1024px) {
   .gruop-team .card-client {
     background: black;
-    width: 16rem;
+    width: 13rem;
     height: 17rem;
   }
 }
@@ -886,7 +886,7 @@ header .content p {
 }
 @media screen and (max-width: 1024px) {
   #values {
-    padding: 10px 50px;
+    padding: 10px 20px;
   }
 }
 @media screen and (max-width: 620px) {
