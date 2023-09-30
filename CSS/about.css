@@ -278,10 +278,20 @@ header .content h1 {
   color: rgb(255, 255, 255);
   font-family: "Ubuntu", sans-serif;
 }
+@media screen and (max-width: 620px) {
+  header .content h1 {
+    font-size: 20px;
+  }
+}
 header .content h1 span {
   font-family: "Ubuntu", sans-serif;
   color: #0D99FF;
   text-shadow: rgba(13, 154, 255, 0.4549019608) 0px 1px 20px;
+}
+@media screen and (max-width: 620px) {
+  header .content h1 span {
+    font-size: 15px;
+  }
 }
 header .content p {
   color: white;
@@ -298,6 +308,11 @@ header .content p {
 @media screen and (max-width: 730px) {
   header {
     padding: 100px 50px;
+  }
+}
+@media screen and (max-width: 620px) {
+  header {
+    padding: 80px 30px;
   }
 }
 
@@ -530,33 +545,47 @@ header .content p {
   padding-bottom: 10px;
   padding: 0 80px 20px 80px;
 }
-#our-team h2 {
-  margin: 20px;
-  text-align: center;
+#our-team .title {
+  font-size: 20px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #B68C3F;
 }
 @media screen and (max-width: 1024px) {
-  #our-team h2 {
-    margin: 10px;
-    text-align: center;
+  #our-team .title {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border-left: 5px solid #B68C3F;
   }
 }
-#our-team .gruop-team {
+@media screen and (max-width: 1024px) {
+  #our-team .title h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #our-team .title h2 {
+    font-size: 15px;
+  }
+}
+
+.gruop-team {
   display: flex;
   gap: 65px;
   /*-- Tooltip Social Media --*/
 }
 @media screen and (max-width: 1024px) {
-  #our-team .gruop-team {
+  .gruop-team {
     display: flex;
     gap: 30px;
   }
 }
 @media screen and (max-width: 730px) {
-  #our-team .gruop-team {
+  .gruop-team {
     gap: 10px;
   }
 }
-#our-team .gruop-team .card-client {
+.gruop-team .card-client {
   background: black;
   width: 20rem;
   height: 20rem;
@@ -573,46 +602,46 @@ header .content p {
   transition: all 0.3s ease;
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .card-client {
+  .gruop-team .card-client {
     padding-top: 20px;
     padding-left: 7px;
     padding-right: 7px;
   }
 }
-#our-team .gruop-team .card-client p {
+.gruop-team .card-client p {
   color: #0D99FF;
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .card-client p {
+  .gruop-team .card-client p {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
-  #our-team .gruop-team .card-client {
+  .gruop-team .card-client {
     background: black;
     width: 16rem;
     height: 17rem;
   }
 }
 @media screen and (max-width: 730px) {
-  #our-team .gruop-team .card-client {
+  .gruop-team .card-client {
     width: 13rem;
     height: 15rem;
   }
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .card-client {
+  .gruop-team .card-client {
     width: 6.5rem;
     height: 10rem;
   }
 }
-#our-team .gruop-team .card-client h5 {
+.gruop-team .card-client h5 {
   font-size: 7px;
 }
-#our-team .gruop-team .card-client:hover {
+.gruop-team .card-client:hover {
   transform: translateY(-10px);
 }
-#our-team .gruop-team .user-picture {
+.gruop-team .user-picture {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
@@ -626,63 +655,63 @@ header .content p {
   margin: auto;
 }
 @media screen and (max-width: 1024px) {
-  #our-team .gruop-team .user-picture {
+  .gruop-team .user-picture {
     width: 4rem;
     height: 4rem;
   }
 }
 @media screen and (max-width: 730px) {
-  #our-team .gruop-team .user-picture {
+  .gruop-team .user-picture {
     width: 3rem;
     height: 3rem;
   }
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .user-picture {
+  .gruop-team .user-picture {
     width: 1.5rem;
     height: 1.5rem;
   }
 }
-#our-team .gruop-team .user-picture img {
+.gruop-team .user-picture img {
   width: 5rem;
 }
 @media screen and (max-width: 1024px) {
-  #our-team .gruop-team .user-picture img {
+  .gruop-team .user-picture img {
     width: 4rem;
   }
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .user-picture img {
+  .gruop-team .user-picture img {
     width: 1.5rem;
   }
 }
-#our-team .gruop-team .name-client {
+.gruop-team .name-client {
   margin: 0;
   margin-top: 20px;
   font-weight: 600;
   font-size: 18px;
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .name-client {
+  .gruop-team .name-client {
     margin-top: 10px;
   }
 }
-#our-team .gruop-team .name-client span {
+.gruop-team .name-client span {
   display: block;
   font-weight: 200;
   font-size: 16px;
 }
 @media screen and (max-width: 1024px) {
-  #our-team .gruop-team .name-client span {
+  .gruop-team .name-client span {
     font-size: 14px;
   }
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .name-client span {
+  .gruop-team .name-client span {
     font-size: 10px;
   }
 }
-#our-team .gruop-team .social-media:before {
+.gruop-team .social-media:before {
   content: " ";
   display: block;
   width: 100%;
@@ -691,37 +720,37 @@ header .content p {
   background: #0D99FF;
 }
 @media screen and (max-width: 1024px) {
-  #our-team .gruop-team .social-media:before {
+  .gruop-team .social-media:before {
     margin: 10px 0;
   }
 }
-#our-team .gruop-team .social-media a {
+.gruop-team .social-media a {
   position: relative;
   margin-right: 15px;
   text-decoration: none;
   color: inherit;
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .social-media a {
+  .gruop-team .social-media a {
     margin-right: 5px;
   }
 }
-#our-team .gruop-team .social-media a :hover {
+.gruop-team .social-media a :hover {
   color: #0D99FF;
 }
-#our-team .gruop-team .social-media a:last-child {
+.gruop-team .social-media a:last-child {
   margin-right: 0;
 }
-#our-team .gruop-team .social-media a svg {
+.gruop-team .social-media a svg {
   width: 1.1rem;
   fill: currentColor;
 }
 @media screen and (max-width: 620px) {
-  #our-team .gruop-team .social-media a svg {
+  .gruop-team .social-media a svg {
     width: 0.5rem;
   }
 }
-#our-team .gruop-team .tooltip-social {
+.gruop-team .tooltip-social {
   background: #262626;
   display: block;
   position: absolute;
@@ -737,7 +766,7 @@ header .content p {
   transition: all 0.2s ease;
   z-index: 1;
 }
-#our-team .gruop-team .tooltip-social:after {
+.gruop-team .tooltip-social:after {
   content: " ";
   position: absolute;
   bottom: 1px;
@@ -747,10 +776,10 @@ header .content p {
   border-color: transparent;
   transform: translate(-50%, 100%);
 }
-#our-team .gruop-team .social-media a .tooltip-social:after {
+.gruop-team .social-media a .tooltip-social:after {
   border-top-color: #262626;
 }
-#our-team .gruop-team .social-media a:hover .tooltip-social {
+.gruop-team .social-media a:hover .tooltip-social {
   opacity: 1;
   transform: translate(-50%, -130%);
 }
@@ -761,9 +790,32 @@ header .content p {
   grid-template-rows: 0.1fr 1fr;
   padding: 30px 50px;
 }
-#values h2 {
-  margin-top: 10px;
-  text-align: center;
+#values .title {
+  font-size: 20px;
+  margin-left: 40px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #B68C3F;
+}
+@media screen and (max-width: 1024px) {
+  #values .title {
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #values .title {
+    margin-left: -4px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #values .title h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #values .title h2 {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 1024px) {
   #values {
@@ -896,10 +948,33 @@ header .content p {
   }
 }
 
-#community h2 {
-  text-align: center;
-  color: #B68C3F;
-  padding-top: 20px;
+#community .title {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 90px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #B68C3F;
+}
+@media screen and (max-width: 1024px) {
+  #community .title {
+    margin-left: 75px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community .title {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #community .title h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community .title h2 {
+    font-size: 15px;
+  }
 }
 #community .group-card {
   display: flex;
@@ -964,10 +1039,34 @@ header .content p {
 #community #customer {
   padding: 80px;
 }
-#community #customer h2 {
-  margin-top: -20px;
-  margin-bottom: 30px;
-  color: #B68C3F;
+#community #customer .title {
+  font-size: 20px;
+  margin-top: -80px;
+  margin-left: 15px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+  border-left: 5px solid #B68C3F;
+}
+@media screen and (max-width: 1024px) {
+  #community #customer .title {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community #customer .title {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #community #customer .title h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community #customer .title h2 {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 730px) {
   #community #customer {
