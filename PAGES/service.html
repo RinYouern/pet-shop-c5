@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Page</title>
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../CSS/service.css">
     <link rel="icon" href="/IMAGES/logo.png">
 </head>
@@ -22,11 +25,20 @@
         </div>
         <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../PAGES/about.html">About</a></li>
             <li class="after"><a href="#">Service</a></li>
+            <li><a href="../PAGES/about.html">About</a></li>
         </ul>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="../PAGES/about.html">About</a></li>
+            </div>
+        </div>
+        <div class="nav-right">
+        </div>
     </nav>
-
     <!-- header -->
     <header>
         <div class="background"></div>
@@ -59,8 +71,10 @@
         <div class="group_card">
             <div class="card">
                 <div class="blur">
-                    <h3>Veterinarian</h3>
-                    <p>Is a highly trained medical professional who specializes in the care of animals.</p>
+                    <div class="content">
+                        <h3>Veterinarian</h3>
+                        <p>Is a highly trained medical professional who specializes in the care of animals.</p>
+                    </div>
                     <a href="#">
                         Find out more
                         <span class="material-symbols-outlined">
@@ -71,8 +85,10 @@
             </div>
             <div class="card">
                 <div class="blur">
-                    <h3>Pet care professional</h3>
-                    <p>someone who works in the field of pet care and provides various services to pet owners. </p>
+                    <div class="content">
+                        <h3>Pet care professional</h3>
+                        <p>someone who works in the field of pet care and provides various services to pet owners. </p>
+                    </div>
                     <a href="#">
                         Find out more
                         <span class="material-symbols-outlined">
@@ -83,8 +99,10 @@
             </div>
             <div class="card">
                 <div class="blur">
-                    <h3>Pet adoption</h3>
-                    <p>Process of taking responsibility for a pet that has been abandoned by its previous owner.</p>
+                    <div class="content">
+                        <h3>Pet adoption</h3>
+                        <p>Process of taking responsibility for a pet that has been abandoned by its previous owner.</p>
+                    </div>
                     <a href="#">
                         Find out more
                         <span class="material-symbols-outlined">
@@ -95,8 +113,10 @@
             </div>
             <div class="card">
                 <div class="blur">
-                    <h3>Delivery</h3>
-                    <p>This service is provided to make it easier for pet owners who may have a busy schedule .</p>
+                    <div class="content">
+                        <h3>Delivery</h3>
+                        <p>This service is provided to make it easier for pet owners who may have a busy schedule .</p>
+                    </div>
                     <a href="#">
                         Find out more
                         <span class="material-symbols-outlined">
@@ -137,7 +157,7 @@
                 <div class="blur"></div>
                 <div class="content">
                     <h3>Dogs</h3>
-                    <p>can reduce stress and depression  and even improve your cardiovascular health.</p>
+                    <p>can reduce stress and depression and even improve your cardiovascular health.</p>
                 </div>
                 <a href="./Service_page/dog.html">
                     <button>
@@ -152,7 +172,8 @@
                 <div class="blur"></div>
                 <div class="content">
                     <h3>Birds</h3>
-                    <p>Birds in general, aside from being visually impressive, are important components of jungle life.</p>
+                    <p>Birds in general, aside from being visually impressive, are important components of jungle life.
+                    </p>
                 </div>
                 <a href="./Service_page/bird.html">
                     <button>
@@ -185,19 +206,23 @@
     <section id="products">
         <section id="accessories">
             <div class="accessories-img">
-                <img src="https://www.cozytoesies.shop/cdn/shop/files/666c9543-3a18-40e8-bd64-77ce5589e279.jpg?v=1695002923&width=750" alt="">
+                <img src="https://www.cozytoesies.shop/cdn/shop/files/666c9543-3a18-40e8-bd64-77ce5589e279.jpg?v=1695002923&width=750"
+                    alt="">
             </div>
             <div class="content">
                 <h4>Our products</h4>
                 <h2>Our Accessories</h2>
                 <p>
-                    At PetZoo, we take pride in using only the finest materials for our pet products. We believe in providing long-lasting wearability and ultimate comfort for your furry friends. Our products are carefully crafted with high-quality materials that are not only durable but also gentle on your pets' skin. We understand the importance of ensuring your pets' comfort and happiness.
+                    At PetZoo, we take pride in using only the finest materials for our pet products. We believe in
+                    providing long-lasting wearability and ultimate comfort for your furry friends. Our products are
+                    carefully crafted with high-quality materials that are not only durable but also gentle on your
+                    pets' skin. We understand the importance of ensuring your pets' comfort and happiness.
                 </p>
                 <a href="#our-product"><button>View Categories</button></a>
             </div>
         </section>
         <section id="our-product">
-            <div class="group-card"> 
+            <div class="group-card">
                 <div class="card">
                     <div class="image"></div>
                     <div class="content">
@@ -210,7 +235,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        
+
                     </div>
                     <div class="content">
                         <p>Stuffed Animal Squeaker Plush Chewing Toy Supports Active Biting, Various Style</p>
@@ -222,7 +247,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        
+
                     </div>
                     <div class="content">
                         <p>Squishy Marshmallow Ultra Soft Plush Pet Bed 40cm, Various Style </p>
@@ -234,7 +259,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        
+
                     </div>
                     <div class="content">
                         <p>Upgrade Detachable Pet Hammock Lounge Bed, Various Style</p>
@@ -246,10 +271,11 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        
+
                     </div>
                     <div class="content">
-                        <p>Male Dog Physiological Pants Belly Wrap Band Cotton Diaper for Pet Washable, Various Style</p>
+                        <p>Male Dog Physiological Pants Belly Wrap Band Cotton Diaper for Pet Washable, Various Style
+                        </p>
                         <div class="price">
                             <span class="original">$5.00</span>
                             <span class="discount">$4.00</span>
@@ -258,7 +284,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        
+
                     </div>
                     <div class="content">
                         <p>Bohemian Ceramic Extra Wide Raised Cat Dog Food Bowl, Various Style</p>
@@ -270,7 +296,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        
+
                     </div>
                     <div class="content">
                         <p>Green Cloud Meow Style Cat Dog Soft Bed House Removable~Washable.</p>
@@ -282,7 +308,7 @@
                 </div>
                 <div class="card">
                     <div class="image">
-                        
+
                     </div>
                     <div class="content">
                         <p>Sparrow material makes sleeping easier and more entertaining</p>
@@ -302,7 +328,10 @@
                 </div>
                 <div class="content">
                     <h2>Our Feeds</h2>
-                    <p>Our wide range of products includes high-quality pet food, treats, and supplements to ensure your pets receive the nutrition they need. We understand that each pet has unique dietary requirements, so we offer a variety of options for different ages, breeds, and health conditions.</p>
+                    <p>Our wide range of products includes high-quality pet food, treats, and supplements to ensure your
+                        pets receive the nutrition they need. We understand that each pet has unique dietary
+                        requirements, so we offer a variety of options for different ages, breeds, and health
+                        conditions.</p>
                     <a href="#"><button>View Categories</button></a>
                 </div>
             </div>
@@ -315,7 +344,7 @@
                             <p style="color: white;">Happy Dog Supreme Fit and Vital Maxi Adult, 1kg~14kg</p>
                         </div>
                         <div class="price">
-                            <button>Buy now</button>
+                            <a href="./register/register.html"><button>Buy now</button></a>
                             <span style="color: #0D99FF; text-decoration: underline;">40% OFF</span>
                         </div>
                     </div>
@@ -328,7 +357,7 @@
                             <p style="color: white;">Happy Dog Supreme Fit and Vital Medium Adult, 1kg~12kg</p>
                         </div>
                         <div class="price">
-                            <button>Buy now</button>
+                            <a href="./register/register.html"><button>Buy now</button></a>
                             <span style="color: #0D99FF; text-decoration: underline;">30% OFF</span>
                         </div>
                     </div>
@@ -341,7 +370,7 @@
                             <p style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                         <div class="price">
-                            <button>Buy now</button>
+                            <a href="./register/register.html"><button>Buy now</button></a>
                             <span style="color: #0D99FF; text-decoration: underline;">45% OFF</span>
                         </div>
                     </div>
@@ -354,7 +383,7 @@
                             <p style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         </div>
                         <div class="price">
-                            <button>Buy now</button>
+                            <a href="./register/register.html"><button>Buy now</button></a>
                             <span style="color: #0D99FF; text-decoration: underline;">40% OFF</span>
                         </div>
                     </div>
@@ -372,10 +401,13 @@
                     <h3 style="color: white;">PetZoo</h3>
                 </a>
             </div>
-            <p style="color: white;">Thank you for visiting our pet shop website. We hope you find everything you need to provide the best care for your beloved pets. </p>
+            <p style="color: white;">Thank you for visiting our pet shop website. We hope you find everything you need
+                to provide the best care for your beloved pets. </p>
         </div>
         <div class="our-product">
-            <a href="#products"><h4 style="color: white; text-decoration: underline;">Our Products</h4></a>
+            <a href="#products">
+                <h4 style="color: white; text-decoration: underline;">Our Products</h4>
+            </a>
             <ul style="color: white;">
                 <li>Pets</li>
                 <li>Accessories</li>
@@ -383,7 +415,9 @@
             </ul>
         </div>
         <div class="our-service">
-            <a href="#service"><h4 style="color: white; text-decoration: underline;">Our Services</h4></a>
+            <a href="#service">
+                <h4 style="color: white; text-decoration: underline;">Our Services</h4>
+            </a>
             <ul style="color: white;">
                 <li>Veterinarian</li>
                 <li>Pet care professional</li>
