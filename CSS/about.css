@@ -1109,7 +1109,7 @@ header .content p {
   scale: 0;
 }
 #community #customer {
-  padding: 80px;
+  padding: 80px 80px 30px 80px;
 }
 #community #customer .title {
   font-size: 20px;
@@ -1153,11 +1153,13 @@ header .content p {
 #community #customer .group-comment {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 #community #customer .group-comment .comment {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  background-color: #B68C3F;
 }
 @media screen and (max-width: 730px) {
   #community #customer .group-comment .comment h3 {
@@ -1206,4 +1208,84 @@ header .content p {
     margin-left: 30px;
     font-size: 7px;
   }
+<<<<<<< HEAD
+}
+#community .input__container {
+  margin-left: 80px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+}
+@media screen and (max-width: 730px) {
+  #community .input__container {
+    max-width: 400px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community .input__container {
+    max-width: 320px;
+    margin-left: 20px;
+  }
+}
+#community .input__container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(25px);
+  border-radius: 20px;
+  background-color: #B68C3F;
+}
+#community .input__label {
+  display: block;
+  margin-left: 0.4em;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+@media screen and (max-width: 730px) {
+  #community .input__label {
+    font-size: 0.8rem;
+  }
+}
+#community button {
+  margin: auto;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-align: center;
+  color: #0D99FF;
+  background: black;
+}
+#community button:hover {
+  background: #0D99FF;
+  color: white;
+}
+#community .input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.6em;
+  padding-left: 0.9em;
+  border-radius: 20px;
+  background: #fff;
+  transition: background 300ms, color 300ms;
+}
+#community .input:hover,
+#community .input:focus {
+  background: rgb(0, 0, 0);
+  color: #0D99FF;
+}
+=======
 }/*# sourceMappingURL=about.css.map */
+>>>>>>> 0298003aa672caccaae2b092871ae6a563c17fd7
