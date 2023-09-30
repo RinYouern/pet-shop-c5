@@ -9,19 +9,24 @@ body {
         background-image: url(https://animalmedicinesaustralia.org.au/wp-content/uploads/2022/11/Pet-report-2022-website-image-cropped-2-1120x630.jpg);
         background-position: center;
     }
+
     .category {
         padding: 30px $standard-padding;
+
         h3,
         h2 {
             font-family: $main-font-header;
         }
+
         .pet {
             padding-top: 60px;
+
             .title {
                 font-size: 20px;
                 padding: 0 15px;
                 border-left: 5px solid $main-bg-color;
-                h4{
+
+                h4 {
                     text-decoration: underline;
                     color: $main-text-color;
                 }
@@ -31,6 +36,7 @@ body {
                 @include flexeEvenly;
                 padding-bottom: 30px;
                 padding-top: 30px;
+
                 .card {
                     @include flexDirection;
                     height: 380px;
@@ -63,6 +69,7 @@ body {
                         background-position: center;
                         border-radius: 15px;
                     }
+
                     .pet-content {
                         padding-top: 20px;
                         height: 55%;
@@ -70,6 +77,7 @@ body {
                         gap: 15px;
                         color: white;
                         @include flexDirection;
+
                         .Btn {
                             padding-top: 20px;
 
@@ -96,24 +104,44 @@ body {
                         }
                     }
                 }
-                
-                @include  responsive("laptop"){
+
+                @include responsive("laptop") {
                     display: flex;
                     flex-wrap: wrap;
                     gap: 20px;
+
                     .card {
                         width: 48%;
                         display: flex;
-                        .pet-img{
+
+                        .pet-img {
                             flex: 3;
                         }
-                        .pet-content{
+
+                        .pet-content {
                             flex: 1;
                         }
                     }
                 }
+
+                @include responsive("tablet") {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .card {
+                        width: 47%;
+                    }
+                }
+
+                @include responsive("phone"){
+                    
+                    display: flex;
+                    .card{
+                        width: 100%;  
+                    }
+                }
             }
-            
+
         }
 
         @keyframes mymove {
@@ -145,20 +173,23 @@ body {
         .product {
             padding-bottom: 30px;
             padding-top: 60px;
+
             .title {
                 font-size: 20px;
                 padding: 0 15px;
                 border-left: 5px solid $main-bg-color;
-                h4{
+
+                h4 {
                     text-decoration: underline;
                     color: $main-text-color;
                 }
             }
+
             .group-card {
                 @include flexeEvenly;
                 gap: 20px;
                 padding-top: 30px;
-    
+
                 .card {
                     @include flexDirection;
                     height: 400px;
@@ -169,58 +200,77 @@ body {
                     animation: mymove 6s infinite linear;
                     padding: 30px;
                     gap: 25px;
-    
+
                     &:nth-child(2) .product-img {
                         background-image: url(/IMAGES/home-page/feed-pro.jpg);
                     }
-    
+
                     &:nth-child(1) .product-img {
                         background-image: url(/IMAGES/home-page/compjpg.jpg);
                     }
-    
+
                     &:nth-child(3) .product-img {
                         background-image: url(/IMAGES/home-page/sarang-pro.jpg);
                     }
-    
+
                     .product-img {
                         flex: 1;
                         background-image: url(/IMAGES/home-page/pro-cat.jpg);
                         background-size: cover;
                         border-radius: 15px;
                     }
-    
+
                     .product-content {
                         flex: 1;
                         @include flexDirection;
                         justify-content: space-between;
-    
+
                         p {
                             text-align: start;
                             color: white;
                         }
-    
+
                         .more {
                             display: flex;
                             justify-content: space-between;
-    
+
                             .price {
                                 color: $main-bg-color;
                             }
                         }
                     }
                 }
-                @include responsive("laptop"){
+
+                @include responsive("laptop") {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .card {
+                        width: 48%;
+                        display: flex;
+
+                        .product-img {
+                            flex: 3;
+                        }
+
+                        .product-content {
+                            flex: 1;
+                        }
+                    }
+                }
+
+                @include responsive("tablet"){
                     display: flex;
                     flex-wrap: wrap;
                     .card{
-                        width: 48%;
-                        display: flex;
-                        .product-img{
-                            flex: 3;
-                        }
-                        .product-content{
-                            flex: 1;
-                        }
+                        width: 47%;
+                    }
+                }
+
+                @include responsive("phone"){
+                    display: flex;
+                    .card{
+                        width: 100%;
                     }
                 }
             }
@@ -236,6 +286,7 @@ body {
             font-size: 20px;
             padding: 0 15px;
             border-left: 5px solid $main-bg-color;
+
             h4 {
                 text-decoration: underline;
                 color: $main-text-color;
@@ -314,17 +365,36 @@ body {
                     }
                 }
             }
-            @include responsive("laptop"){
+
+            @include responsive("laptop") {
+                display: flex;
+                flex-wrap: wrap;
+
+                .card {
+                    width: 48%;
+
+                    .new-img {
+                        flex: 4;
+                    }
+
+                    .new-content {
+                        flex: 1;
+                    }
+                }
+            }
+
+            @include responsive("tablet"){
                 display: flex;
                 flex-wrap: wrap;
                 .card{
-                    width: 48%;
-                    .new-img{
-                        flex: 4;
-                    }
-                    .new-content{
-                        flex: 1;
-                    }
+                    width: 47%;
+                }
+            }
+
+            @include responsive("phone"){
+                display: flex;
+                .card{
+                    width: 100%;
                 }
             }
         }
@@ -333,15 +403,18 @@ body {
     // selling-product
     .top-sell-product {
         padding-top: 70px;
-        .tittle{
+
+        .tittle {
             font-size: 20px;
             padding: 0 15px;
             border-left: 5px solid $main-bg-color;
-            h4{
+
+            h4 {
                 text-decoration: underline;
                 color: $main-text-color;
             }
         }
+
         .selling-product {
             padding-top: 100px;
             display: grid;
@@ -404,26 +477,42 @@ body {
                     }
                 }
             }
-            @include responsive("laptop"){
+
+            @include responsive("laptop") {
                 gap: 120px;
                 display: grid;
                 grid-template-rows: repeat(3, 1fr);
                 grid-template-columns: 20% 60% 20%;
                 justify-content: center;
-                .card{
+
+                .card {
                     grid-column: 2/3;
                 }
             }
+
             @include responsive("tablet") {
                 grid-template-columns: 1fr;
+
                 .card {
                     grid-column: 1/2;
+
                     .sell-img {
                         img {
                             width: 50%;
                         }
                     }
                 }
+            }
+
+            @include responsive("phone"){
+               .card{
+                    height: 250px;
+                    .sell-img{
+                        img{
+                            width: 60%;
+                        }
+                    }
+               }
             }
         }
     }
