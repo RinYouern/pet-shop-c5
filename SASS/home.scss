@@ -39,6 +39,8 @@ body {
                     border: 1px solid $main-card-border;
                     border-radius: 15px;
                     background-color: #fff;
+                    background: #000000;
+                    animation: mymove 6s infinite linear;
 
                     &:nth-child(2) .pet-img {
                         background-image: url(../IMAGES/home-page/cat.jpg);
@@ -66,6 +68,7 @@ body {
                         height: 55%;
                         font-size: 15px;
                         gap: 15px;
+                        color: white;
                         @include flexDirection;
                         .Btn {
                             padding-top: 20px;
@@ -100,9 +103,17 @@ body {
                     gap: 20px;
                     .card {
                         width: 48%;
+                        display: flex;
+                        .pet-img{
+                            flex: 3;
+                        }
+                        .pet-content{
+                            flex: 1;
+                        }
                     }
                 }
             }
+            
         }
 
         @keyframes mymove {
@@ -143,63 +154,77 @@ body {
                     color: $main-text-color;
                 }
             }
-        }
-
-        .group-card {
-            @include flexeEvenly;
-            gap: 20px;
-            padding-top: 30px;
-
-            .card {
-                @include flexDirection;
-                height: 400px;
-                width: 100%;
-                border: 1px solid $main-card-border;
-                border-radius: 15px;
-                background: #000000;
-                animation: mymove 6s infinite linear;
-                padding: 30px;
-                gap: 25px;
-
-                &:nth-child(2) .product-img {
-                    background-image: url(/IMAGES/home-page/feed-pro.jpg);
-                }
-
-                &:nth-child(1) .product-img {
-                    background-image: url(/IMAGES/home-page/compjpg.jpg);
-                }
-
-                &:nth-child(3) .product-img {
-                    background-image: url(/IMAGES/home-page/sarang-pro.jpg);
-                }
-
-                .product-img {
-                    flex: 1;
-                    background-image: url(/IMAGES/home-page/pro-cat.jpg);
-                    background-size: cover;
-                    border-radius: 15px;
-                }
-
-                .product-content {
-                    flex: 1;
+            .group-card {
+                @include flexeEvenly;
+                gap: 20px;
+                padding-top: 30px;
+    
+                .card {
                     @include flexDirection;
-                    justify-content: space-between;
-
-                    p {
-                        text-align: start;
-                        color: white;
+                    height: 400px;
+                    width: 100%;
+                    border: 1px solid $main-card-border;
+                    border-radius: 15px;
+                    background: #000000;
+                    animation: mymove 6s infinite linear;
+                    padding: 30px;
+                    gap: 25px;
+    
+                    &:nth-child(2) .product-img {
+                        background-image: url(/IMAGES/home-page/feed-pro.jpg);
                     }
-
-                    .more {
-                        display: flex;
+    
+                    &:nth-child(1) .product-img {
+                        background-image: url(/IMAGES/home-page/compjpg.jpg);
+                    }
+    
+                    &:nth-child(3) .product-img {
+                        background-image: url(/IMAGES/home-page/sarang-pro.jpg);
+                    }
+    
+                    .product-img {
+                        flex: 1;
+                        background-image: url(/IMAGES/home-page/pro-cat.jpg);
+                        background-size: cover;
+                        border-radius: 15px;
+                    }
+    
+                    .product-content {
+                        flex: 1;
+                        @include flexDirection;
                         justify-content: space-between;
-
-                        .price {
-                            color: $main-bg-color;
+    
+                        p {
+                            text-align: start;
+                            color: white;
+                        }
+    
+                        .more {
+                            display: flex;
+                            justify-content: space-between;
+    
+                            .price {
+                                color: $main-bg-color;
+                            }
+                        }
+                    }
+                }
+                @include responsive("laptop"){
+                    display: flex;
+                    flex-wrap: wrap;
+                    .card{
+                        width: 48%;
+                        display: flex;
+                        .product-img{
+                            flex: 3;
+                        }
+                        .product-content{
+                            flex: 1;
                         }
                     }
                 }
             }
+
         }
     }
 
@@ -289,6 +314,19 @@ body {
                     }
                 }
             }
+            @include responsive("laptop"){
+                display: flex;
+                flex-wrap: wrap;
+                .card{
+                    width: 48%;
+                    .new-img{
+                        flex: 4;
+                    }
+                    .new-content{
+                        flex: 1;
+                    }
+                }
+            }
         }
     }
 
@@ -362,6 +400,27 @@ body {
                         button:hover {
                             background: $main-text-color;
                             border: 1px solid $main-text-color;
+                        }
+                    }
+                }
+            }
+            @include responsive("laptop"){
+                gap: 120px;
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: 20% 60% 20%;
+                justify-content: center;
+                .card{
+                    grid-column: 2/3;
+                }
+            }
+            @include responsive("tablet") {
+                grid-template-columns: 1fr;
+                .card {
+                    grid-column: 1/2;
+                    .sell-img {
+                        img {
+                            width: 50%;
                         }
                     }
                 }
