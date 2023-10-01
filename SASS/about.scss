@@ -497,7 +497,7 @@
         }
 
         @include responsive('phone') {
-            margin-left: -4px;
+            margin-left: -5px;
         }
 
         h2 {
@@ -795,6 +795,7 @@
                 flex-direction: column;
                 padding: 10px;
                 background-color: $main-bg-color;
+                border-radius: 10px;
 
 
                 h3 {
@@ -818,7 +819,7 @@
                     }
 
                     img {
-                        width: 50px;
+                        width: 40px;
 
                         @include responsive('tablet') {
                             width: 30px;
@@ -832,7 +833,7 @@
                 }
 
                 p {
-                    margin-left: 70px;
+                    margin-left: 50px;
 
                     @include responsive('tablet') {
                         margin-left: 50px;
@@ -903,7 +904,7 @@
         font-size: 0.6em;
         font-weight: bold;
         text-align: center;
-        color: $main-text-color;
+        color: $main-background;
         background:black;
     }
     button:hover{

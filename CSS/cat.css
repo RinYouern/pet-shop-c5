@@ -130,6 +130,11 @@ nav .nav-right .search span {
   left: 15px;
   top: 11px;
 }
+@media screen and (max-width: 620px) {
+  nav .nav-right {
+    display: none;
+  }
+}
 @media screen and (max-width: 1024px) {
   nav {
     grid-template: 1fr/20% 45% 35%;
@@ -587,4 +592,4 @@ footer ul li {
 }
 .categories .group-card:nth-child(2) .card:nth-child(4) .image {
   background-image: url(https://images.pexels.com/photos/1687831/pexels-photo-1687831.jpeg?auto=compress&cs=tinysrgb&w=600);
-}/*# sourceMappingURL=cat.css.map */
+}
