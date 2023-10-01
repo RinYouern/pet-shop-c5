@@ -111,19 +111,22 @@ nav .nav-right .search {
 }
 nav .nav-right .search input[type=search] {
   border-radius: 25px;
-  border: 1px solid #F0EEF0;
-  outline-color: #F0EEF0;
+  border: 1px solid gray;
   font-size: 17px;
   width: 100%;
   padding: 10px 15px 10px 40px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f6f6f6;
-  outline-color: rgb(223, 223, 223);
+  outline-color: rgb(181, 181, 181);
 }
 nav .nav-right .search span {
   position: absolute;
   left: 15px;
   top: 11px;
+}
+@media screen and (max-width: 620px) {
+  nav .nav-right {
+    display: none;
+  }
 }
 @media screen and (max-width: 1024px) {
   nav {
@@ -163,6 +166,9 @@ nav .nav-right .search span {
     padding-left: 30px;
     padding-right: 30px;
     grid-template-columns: 25% 60% 15%;
+  }
+  nav .nav-left a h1 {
+    font-size: 20px;
   }
 }
 
@@ -381,6 +387,10 @@ header .content p {
   header {
     padding: 80px 20px;
   }
+}
+
+.material-symbols-outlined {
+  color: #0D99FF;
 }
 
 #header {
@@ -871,7 +881,7 @@ header .content p {
 }
 @media screen and (max-width: 620px) {
   #values .title {
-    margin-left: -4px;
+    margin-left: -5px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1104,7 +1114,7 @@ header .content p {
   scale: 0;
 }
 #community #customer {
-  padding: 80px;
+  padding: 80px 80px 30px 80px;
 }
 #community #customer .title {
   font-size: 20px;
@@ -1148,11 +1158,14 @@ header .content p {
 #community #customer .group-comment {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 #community #customer .group-comment .comment {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  background-color: #B68C3F;
+  border-radius: 10px;
 }
 @media screen and (max-width: 730px) {
   #community #customer .group-comment .comment h3 {
@@ -1175,7 +1188,7 @@ header .content p {
   }
 }
 #community #customer .group-comment .comment .feedback img {
-  width: 50px;
+  width: 40px;
 }
 @media screen and (max-width: 730px) {
   #community #customer .group-comment .comment .feedback img {
@@ -1188,7 +1201,7 @@ header .content p {
   }
 }
 #community #customer .group-comment .comment p {
-  margin-left: 70px;
+  margin-left: 50px;
 }
 @media screen and (max-width: 730px) {
   #community #customer .group-comment .comment p {
@@ -1201,4 +1214,80 @@ header .content p {
     margin-left: 30px;
     font-size: 7px;
   }
-}/*# sourceMappingURL=about.css.map */
+}
+#community .input__container {
+  margin-left: 80px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 15px;
+  border-radius: 20px;
+  position: relative;
+}
+@media screen and (max-width: 730px) {
+  #community .input__container {
+    max-width: 400px;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 620px) {
+  #community .input__container {
+    max-width: 320px;
+    margin-left: 20px;
+  }
+}
+#community .input__container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(25px);
+  border-radius: 20px;
+  background-color: #B68C3F;
+}
+#community .input__label {
+  display: block;
+  margin-left: 0.4em;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+@media screen and (max-width: 730px) {
+  #community .input__label {
+    font-size: 0.8rem;
+  }
+}
+#community button {
+  margin: auto;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-align: center;
+  color: #F0EEF0;
+  background: black;
+}
+#community button:hover {
+  background: #0D99FF;
+  color: white;
+}
+#community .input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.6em;
+  padding-left: 0.9em;
+  border-radius: 20px;
+  background: #fff;
+  transition: background 300ms, color 300ms;
+}
+#community .input:hover,
+#community .input:focus {
+  background: rgb(0, 0, 0);
+  color: #0D99FF;
+}

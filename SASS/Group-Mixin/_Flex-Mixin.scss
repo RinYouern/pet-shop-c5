@@ -33,14 +33,12 @@
 }
 @mixin inputStyle {
     border-radius: 25px;
-    border: 1px solid $main-background;
-    outline-color: $main-background;
+    border: 1px solid gray;
     font-size: 17px;
     width: 100%;
     padding: 10px 15px 10px 40px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f6f6f6;
-    outline-color: rgb(223, 223, 223);
+    outline-color: rgb(181, 181, 181);
 }
 @mixin backgroundImage {
     background-size: cover;

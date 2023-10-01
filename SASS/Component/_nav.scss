@@ -107,6 +107,9 @@ nav {
                 top: 11px;
             }
         }
+        @include responsive("phone"){
+            display: none;
+        }
     }
     @include responsive("laptop") {
         grid-template: 1fr / 20% 45% 35%;
@@ -141,5 +144,12 @@ nav {
         padding-left: 30px;
         padding-right: 30px;
         grid-template-columns: 25% 60% 15%;
+        .nav-left {
+            a {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 }

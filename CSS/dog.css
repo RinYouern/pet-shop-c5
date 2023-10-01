@@ -117,19 +117,22 @@ nav .nav-right .search {
 }
 nav .nav-right .search input[type=search] {
   border-radius: 25px;
-  border: 1px solid #F0EEF0;
-  outline-color: #F0EEF0;
+  border: 1px solid gray;
   font-size: 17px;
   width: 100%;
   padding: 10px 15px 10px 40px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f6f6f6;
-  outline-color: rgb(223, 223, 223);
+  outline-color: rgb(181, 181, 181);
 }
 nav .nav-right .search span {
   position: absolute;
   left: 15px;
   top: 11px;
+}
+@media screen and (max-width: 620px) {
+  nav .nav-right {
+    display: none;
+  }
 }
 @media screen and (max-width: 1024px) {
   nav {
@@ -169,6 +172,9 @@ nav .nav-right .search span {
     padding-left: 30px;
     padding-right: 30px;
     grid-template-columns: 25% 60% 15%;
+  }
+  nav .nav-left a h1 {
+    font-size: 20px;
   }
 }
 
@@ -496,4 +502,4 @@ footer ul li {
 }
 .container .categories:nth-child(1) .group-card:nth-child(3) .card:nth-child(4) .image {
   background-image: url(/PAGES/Service_page/Images/dog-3389729_1280\ \(1\).jpg);
-}/*# sourceMappingURL=dog.css.map */
+}
