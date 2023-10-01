@@ -107,6 +107,9 @@ nav {
                 top: 11px;
             }
         }
+        @include responsive("phone"){
+            display: none;
+        }
     }
     @include responsive("laptop") {
         grid-template: 1fr / 20% 45% 35%;

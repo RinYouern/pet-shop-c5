@@ -125,6 +125,11 @@ nav .nav-right .search span {
   left: 15px;
   top: 11px;
 }
+@media screen and (max-width: 620px) {
+  nav .nav-right {
+    display: none;
+  }
+}
 @media screen and (max-width: 1024px) {
   nav {
     grid-template: 1fr/20% 45% 35%;
@@ -871,7 +876,7 @@ header .content p {
 }
 @media screen and (max-width: 620px) {
   #values .title {
-    margin-left: -4px;
+    margin-left: -5px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1155,6 +1160,7 @@ header .content p {
   flex-direction: column;
   padding: 10px;
   background-color: #B68C3F;
+  border-radius: 10px;
 }
 @media screen and (max-width: 730px) {
   #community #customer .group-comment .comment h3 {
@@ -1177,7 +1183,7 @@ header .content p {
   }
 }
 #community #customer .group-comment .comment .feedback img {
-  width: 50px;
+  width: 40px;
 }
 @media screen and (max-width: 730px) {
   #community #customer .group-comment .comment .feedback img {
@@ -1190,7 +1196,7 @@ header .content p {
   }
 }
 #community #customer .group-comment .comment p {
-  margin-left: 70px;
+  margin-left: 50px;
 }
 @media screen and (max-width: 730px) {
   #community #customer .group-comment .comment p {
@@ -1258,7 +1264,7 @@ header .content p {
   font-size: 0.6em;
   font-weight: bold;
   text-align: center;
-  color: #0D99FF;
+  color: #F0EEF0;
   background: black;
 }
 #community button:hover {
