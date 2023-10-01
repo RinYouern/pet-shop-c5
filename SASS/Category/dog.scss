@@ -1,7 +1,6 @@
 @import "../Component/main-categories";
 
 .container {
-    padding: 50px $standard-padding;
     .categories:nth-child(1) {
         grid-template-columns: repeat(3, 1fr) / repeat(4, 1fr);
         .group-card:nth-child(1) {

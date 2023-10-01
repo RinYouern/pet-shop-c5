@@ -18,7 +18,7 @@ nav {
   z-index: 50;
   background-color: #fff;
   padding: 0px 80px;
-  height: 80px;
+  height: 85px;
   display: grid;
   grid-template-columns: 35% 30% 35%;
   display: grid;
@@ -76,6 +76,7 @@ nav .dropdown .dropbtn:hover {
   color: #edb141;
 }
 nav .dropdown .dropdown-content {
+  z-index: 5000;
   display: none;
   position: absolute;
   top: 40px;
@@ -254,7 +255,7 @@ footer ul li {
 }
 @media screen and (max-width: 1024px) {
   footer {
-    padding: 30px 50px;
+    padding: 30px 100px;
     grid-template: repeat(2, 1fr)/repeat(6, 1fr);
     gap: 0;
   }
@@ -290,6 +291,12 @@ footer ul li {
     grid-template-rows: repeat(4, 1fr);
     text-align: center;
   }
+  footer .logo-content {
+    gap: 0px;
+  }
+  footer .logo-content p {
+    font-size: 14px;
+  }
   footer .our-product {
     grid-row: 2/3;
     margin-top: 20px;
@@ -303,8 +310,8 @@ footer ul li {
   footer .our-product,
   footer .our-service,
   footer .contact {
-    gap: 5px;
-    grid-column: 1/7;
+    gap: 0px;
+    grid-column: 2/6;
   }
   footer .our-product .info, footer .our-product .media,
   footer .our-service .info,
@@ -313,8 +320,28 @@ footer ul li {
   footer .contact .media {
     margin: auto;
   }
-  footer .our-product li, footer .our-service li {
-    list-style-type: none;
+  footer .our-product .info p a, footer .our-product .media p a,
+  footer .our-service .info p a,
+  footer .our-service .media p a,
+  footer .contact .info p a,
+  footer .contact .media p a {
+    font-size: 12px;
+  }
+  footer .our-product .media,
+  footer .our-service .media,
+  footer .contact .media {
+    display: flex;
+    gap: 20px;
+  }
+  footer .our-product, footer .our-service {
+    grid-column: 3/5;
+  }
+  footer .our-product ul, footer .our-service ul {
+    text-align: start;
+  }
+  footer .our-product ul li, footer .our-service ul li {
+    list-style-type: disc;
+    font-size: 12px;
   }
 }
 

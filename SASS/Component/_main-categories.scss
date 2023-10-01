@@ -3,81 +3,140 @@
 @import "../Group-Mixin/Flex-Mixin";
 @import "../Group-Mixin/Grid-Mixin";
 @import "./variable";
+
 * {
     @include Universal;
 }
+
 body {
     @include flexDirection;
     background-color: $main-background;
 }
+
 @import "./nav";
+
 p {
     font-weight: 300;
+}
+.material-symbols-outlined {
+    color: $main-text-color
 }
 menu {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 100;
-    background-color: #fff;
+    z-index: 49;
     border-bottom: 1px solid $main-background;
-    ul{
+    background: linear-gradient(-45deg, #B68C3F, #20010d, #013244, #003a2c);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    border-bottom: 1px solid #D9D9D9;
+
+    ul {
         width: 75%;
         @include flexCenter;
         margin: auto;
         justify-content: space-between;
         border-radius: 20px;
+
         a {
             flex: 1;
-            height: 100px;
+            height: 80px;
             @include flexDirection;
             align-items: center;
             justify-content: space-between;
             padding: 10px;
+
             p {
                 font-size: 18px;
                 font-weight: 600;
                 color: $main-text-color;
             }
+
             .image {
-                i,span {
-                    font-size: 2.5rem;
-                    color: #024e6a;
+
+                i,
+                span {
+                    font-size: 2rem;
+                    color: #fff;
                     transition: color 0.3s;
                 }
+
                 &:hover {
-                    i, span{
-                    color: $main-bg-color;
+
+                    i,
+                    span {
+                        color: $main-bg-color;
                     }
                 }
             }
         }
+
         .active {
             background-color: #D9D9D9;
             color: $main-bg-color;
+
             p {
                 color: $main-bg-color;
             }
+
             .image {
-                i, span{
+
+                i,
+                span {
                     color: $main-bg-color;
+                }
+            }
+        }
+
+        @include responsive("laptop") {
+            width: 80%;
+        }
+    }
+
+    @include responsive("middle") {
+        ul {
+            width: 87%;
+        }
+    }
+
+    @include responsive("tablet") {
+        ul {
+            width: 90%;
+
+            a {
+                .image {
+
+                    i,
+                    span {
+                        font-size: 2rem;
+                        transition: color 0.3s;
+                    }
+                }
+
+                p {
+                    font-size: 14px;
                 }
             }
         }
     }
 }
+
 .container {
     padding: 50px $standard-padding;
     @include flexDirection;
     gap: 50px;
+
     .categories {
         display: grid;
         grid: template 50px auto / repeat(4, 1fr);
         gap: 25px;
+
         .group-card {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 15px;
+
             .card {
                 @include flexDirection;
                 padding: 15px 15px 30px 15px;
@@ -86,50 +145,61 @@ menu {
                 border: none;
                 background: linear-gradient(-45deg, #B68C3F, #20010d, #013244, #003a2c);
                 background-size: 400% 400%;
-                animation: gradient 15s ease infinite; // Main Animation
+                animation: gradient 10s ease infinite; // Main Animation
+
                 @keyframes gradient {
                     0% {
                         background-position: 0% 50%;
                     }
+
                     50% {
                         background-position: 100% 50%;
                     }
+
                     100% {
                         background-position: 0% 50%;
                     }
                 }
-                .image{
+
+                .image {
                     display: flex;
                     height: 50%;
                     border-radius: 10px;
                     @include backgroundImage;
                     background-position: center;
+
                     img {
                         width: 100%;
                         border-radius: 10px;
                     }
                 }
+
                 .content {
                     flex: 1;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+
                     p {
                         color: white;
                     }
+
                     .Btn {
                         display: flex;
                         justify-content: space-between;
                         align-items: flex-end;
+
                         button {
                             background-color: rgba(255, 255, 255, 0);
                             cursor: pointer;
                             color: white;
                             border: 1px solid #fff;
                             transition: 0.3s;
+
                             &:hover {
-                                box-shadow:  0px 54px 55px, #0D99FF 0px -12px 30px, #0D99FF 0px 4px 6px, #0D99FF 0px 12px 13px, #0D99FF 0px -3px 5px;
+                                box-shadow: 0px 54px 55px, #0D99FF 0px -12px 30px, #0D99FF 0px 4px 6px, #0D99FF 0px 12px 13px, #0D99FF 0px -3px 5px;
                             }
+
                             &:active {
                                 background: #0000007f;
                             }
@@ -139,7 +209,62 @@ menu {
             }
         }
     }
+
+    @include responsive("laptop") {
+        .categories {
+            .group-card {
+                grid-template: 1fr 1fr / repeat(2, 1fr);
+                gap: 25px;
+            }
+        }
+    }
+
+    @include responsive("middle") {
+        padding: 50px;
+    }
+
+    @include responsive("tablet") {
+        padding: 50px 30px;
+        .categories {
+            .group-card {
+                .card {
+                    height: 350px;
+                }
+            }
+        }
+    }
+    @include responsive("phone") {
+        padding: 50px 20px;
+        .categories {
+            .group-card {
+                gap: 15px;
+                .card {
+                    height: 250px;
+                    padding-bottom: 15px;
+                    gap: 10px;
+                    .image {
+                        height: 45%;
+                    }
+                    .content {
+                        p {
+                            font-size: 12px;
+                        }
+                        .Btn {
+                            button {
+                                font-size: 12px;
+                                padding: 5px 10px;
+                            }
+                            h4 {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
 @import "./card";
 @import "./button";
 @import "./footer";

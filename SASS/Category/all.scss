@@ -1,7 +1,6 @@
 @import "../Component/main-categories";
 
 .container {
-    padding: 50px $standard-padding;
     .categories {
         grid-template-columns: repeat(3, 1fr) / repeat(4, 1fr);
     }
@@ -18,6 +17,9 @@
             }
             .card:nth-child(4) .image {
                 background-image: url(/PAGES/Service_page/Images/puppy-2785074_1280.jpg);
+            }
+            @include responsive("laptop") {
+
             }
         }
     }

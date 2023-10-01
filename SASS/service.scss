@@ -32,7 +32,7 @@ header {
         span {
             position: absolute;
             left: 15px;
-            color: #4d4d4d;
+            color: $main-text-color;
         }
     }
 
@@ -75,11 +75,16 @@ header {
                 font-size: 14px;
             }
         }
+        .search {
+            input {
+                padding: 5px 15px 5px 40px;
+            }
+        }
         .group_btn {
             margin-top: 5px;
             gap: 10px;
             button {
-                font-size: 14px;
+                font-size: 12px;
             }
         }
     }
@@ -190,16 +195,19 @@ p {
     }
     @include responsive("phone") { // 620px
         .group_card {
-            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            grid-template: repeat(4, 1fr) / 1fr;
+            padding: 0px 10px;
             .card {
-                min-height: 300px;
+                min-height: 250px;
+                max-height: 350px;
                 .blur {
+                    padding: 10px;
                     .content {
                         h3 {
                             font-size: 16px;
                         }
                         p {
-                            font-size: 14px;
+                            font-size: 12px;
                         }
                         a {
                             font-size: 14px;
@@ -286,7 +294,7 @@ p {
         }
     }
     @include responsive("laptop") { // 1024px
-        grid-template-rows: 12% 80%;
+        grid-template-rows: 10% 90%;
         .group-card {
             grid-template: repeat(2, 1fr) / repeat(2, 1fr);
             .card {
@@ -298,11 +306,12 @@ p {
         }
     }
     @include responsive("phone") {
-        grid-template-rows: 14% 80%;
+        grid-template-rows: 100px 90%;
         .group-card {
-            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            padding: 0px 10px;
+            grid-template: repeat(4, 1fr) / 1fr;
             .card {
-                padding: 40% 20px 30px 20px;
+                padding: 50% 20px 30px 20px;
             }
         }
         p,
@@ -323,7 +332,6 @@ p {
     gap: 50px;
     background-color: $main-background;
     #accessories {
-        padding-top: 30px;
         display: flex;
         justify-content: space-between;
         flex-direction: row-reverse;
@@ -458,7 +466,6 @@ p {
             grid-template: 90% 10% / repeat(4, 1fr);
             gap: 20px;
             padding: 50px 0px;
-
             .card {
                 position: relative;
                 height: 400px;
@@ -603,7 +610,7 @@ p {
             .content {
                 position: relative;
                 width: 100%;
-                padding: 20px;
+                padding: 30px;
                 background-image: url(../IMAGES/service_page/Bg-accessory.png);
                 @include backgroundImage;
                 background-position: center;
@@ -623,17 +630,16 @@ p {
                 p {
                     color: white;
                 }
-                a {
-                    button {
-                        background-color: #ffffff00;
-                        border: 1px solid #fff;
-                        &:hover {
-                            box-shadow: 0 0 10px $main-text-color;
-                        }
-                        &:active {
-                            color: $main-text-color;
-                            background: #000;
-                        }
+                a button {
+                    background-color: #ffffff00;
+                    border: 1px solid #fff;
+                    &:hover {
+                        background-color: $main-text-color;
+                        border: 1px solid $main-text-color;
+                    }
+                    &:active {
+                        box-shadow: 0 0 10px $main-text-color;
+                        background: #000;
                     }
                 }
             }
@@ -691,10 +697,11 @@ p {
                         background-color: #ffffff00;
                         border: 1px solid #fff;
                         &:hover {
-                            box-shadow: 0 0 10px $main-text-color;
+                            background-color: $main-text-color;
+                            border: 1px solid $main-text-color;
                         }
                         &:active {
-                            color: $main-text-color;
+                            box-shadow: 0 0 10px $main-text-color;
                             background: #000;
                         }
                     }
@@ -713,10 +720,20 @@ p {
         }
     }
     @include responsive("phone") {
+        p {
+            font-size: 14px;
+        }
         #accessories {
             .content {
+                padding: 40px 30px;
+                .accessories-content {
+                    h2 {
+                        font-size: 16px;
+                    }
+                }
                 p {
                     font-size: 14px;
+                    display: none;
                 }
                 a {
                     button {
@@ -730,8 +747,9 @@ p {
                 font-size: 14px;
             }
             .group-card {
-                grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+                grid-template: repeat(4, 1fr) / 1fr;
                 .card {
+                    background-position: center bottom;
                     height: 300px;
                     .image {
                         height: 60%;
@@ -749,18 +767,66 @@ p {
                         }
                     }
                 }
+                .card:nth-child(2),
+                .card:nth-child(3),
+                .card:nth-child(5),
+                .card:nth-child(6) {
+                    display: none;
+                }
+
             }
         }
         #feed {
+            margin-top: 0;
+            .feed-content {
+                padding: 50px 20px;
+                .content {
+                    .contents {
+                        h4 {
+                            font-size: 14px;
+                        }
+                        h2 {
+                            font-size: 16px;
+                        }
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
             .group-feed {
-                padding: 60px 20% 0px 20%;
-                grid-template: repeat(4, 1fr) / 1fr;
+                column-gap: 10px;
+                grid-template: 1fr 1fr 30px / 1fr 1fr;
+                padding: 40px 0px;
                 .card {
-                    grid-column: 1/2;
+                    height: 250px;
+                    padding: 10px;
+                    .card-content {
+                        height: 65%;
+                        .content {
+                            h4 {
+                                font-size: 12px;
+                            }
+                            p {
+                                font-size: 12px;
+                            }
+                        }
+                        .price {
+                            a {
+                                button {
+                                    font-size: 12px;
+                                    padding: 5px 10px;
+                                }
+                            }
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+                    }
                 }
                 a {
-                    grid-row: 5/6;
-                    grid-column: 1/2;
+                    grid-column: 1/3;
+                    grid-row: 3/4;
                 }
             }
         }
@@ -847,10 +913,18 @@ header .group_btn button,
     @include responsive("phone") {
         padding: 30px 30px;
         button {
-            font-size: 14px;
+            font-size: 12px;
         }
         h2 {
             font-size: 20px;
+        }
+    }
+}
+header {
+    @include responsive("phone") {
+        button {
+            font-size: 12px;
+            padding: 5px 10px;
         }
     }
 }
