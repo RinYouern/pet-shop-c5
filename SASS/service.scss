@@ -12,7 +12,6 @@ header {
     background-position: center;
     flex-direction: column;
     gap: 15px;
-
     .background {
         background: linear-gradient(rgba(10, 1, 50, 0.387), rgba(3, 29, 51, 0.415));
         width: 100%;
@@ -21,18 +20,15 @@ header {
         top: 0;
         right: 0;
     }
-
     .search {
         position: relative;
         @include flexCenter;
         width: 50%;
-
         input[type=search] {
             @include inputStyle;
             background-color: #ffffffe8;
             outline: 1px solid rgba(255, 255, 255, 0.627);
         }
-
         span {
             position: absolute;
             left: 15px;
@@ -48,15 +44,12 @@ header {
         justify-content: center;
         gap: 20px;
     }
-
     @include responsive("laptop") {
-
         // responsive
         .search {
             position: relative;
             @include flexCenter;
             width: 80%;
-
             input[type=search] {
                 @include inputStyle;
                 background-color: #ffffffe8;
@@ -66,6 +59,27 @@ header {
                 position: absolute;
                 left: 15px;
                 color: #4d4d4d;
+            }
+        }
+    }
+    @include responsive("phone") {
+        padding: 30px 0px;
+        .content {
+            h1 {
+                font-size: 20px;
+                span {
+                    font-size: 20px;
+                }
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        .group_btn {
+            margin-top: 5px;
+            gap: 10px;
+            button {
+                font-size: 14px;
             }
         }
     }
@@ -176,11 +190,21 @@ p {
     }
     @include responsive("phone") { // 620px
         .group_card {
-            grid-template: repeat(4, 1fr) / 1fr;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
             .card {
+                min-height: 300px;
                 .blur {
-                    height: 40%;
-                    padding: 30px;
+                    .content {
+                        h3 {
+                            font-size: 16px;
+                        }
+                        p {
+                            font-size: 14px;
+                        }
+                        a {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }
@@ -274,13 +298,11 @@ p {
         }
     }
     @include responsive("phone") {
-        grid-template-rows: 4% 80%;
+        grid-template-rows: 14% 80%;
         .group-card {
-            grid-template: repeat(4, 1fr) / 1fr;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
             .card {
-                .card-content {
-                    padding: 20px;
-                }
+                padding: 40% 20px 30px 20px;
             }
         }
         p,
@@ -560,6 +582,17 @@ p {
             }
             .group-feed {
                 grid-template: 1fr 1fr 30px / repeat(2, 11fr);
+                row-gap: 40px;
+                .card {
+                    height: 350px;
+                    .card-content {
+                        padding: 20px;
+                    }
+                }
+                a {
+                    grid-row: 3/4;
+                    grid-column: 1/3;
+                }
             }
         }
     }
@@ -621,6 +654,63 @@ p {
                 }
             }
         }
+        #feed {
+            .group-feed {
+                grid-template: 1fr 1fr 30px / repeat(2, 11fr);
+                row-gap: 40px;
+                .card {
+                    height: 290px;
+                    .card-content {
+                        padding: 15px;
+                        .content {
+                            gap: 5px;
+                        }
+                    }
+                }
+                a {
+                    grid-row: 3/4;
+                    grid-column: 1/3;
+                }
+            }
+        }
+    }
+    @include responsive("tablet") {
+        #feed {
+            .feed-content {
+                padding: 20px;
+                .content {
+                    .contents {
+                        h2 {
+                            font-size: 20px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                    a button {
+                        background-color: #ffffff00;
+                        border: 1px solid #fff;
+                        &:hover {
+                            box-shadow: 0 0 10px $main-text-color;
+                        }
+                        &:active {
+                            color: $main-text-color;
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+        #accessories {
+            .content {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        button {
+            font-size: 14px;
+        }
     }
     @include responsive("phone") {
         #accessories {
@@ -658,6 +748,19 @@ p {
                             }
                         }
                     }
+                }
+            }
+        }
+        #feed {
+            .group-feed {
+                padding: 60px 20% 0px 20%;
+                grid-template: repeat(4, 1fr) / 1fr;
+                .card {
+                    grid-column: 1/2;
+                }
+                a {
+                    grid-row: 5/6;
+                    grid-column: 1/2;
                 }
             }
         }

@@ -8,9 +8,6 @@ header {
     @include backgroundImage;
     padding: 150px 80px;
     display: flex;
-
-
-
     .blur {
         @include absolutePosition;
         width: 100%;
@@ -60,9 +57,12 @@ header {
     }
     @include responsive("phone") {
         padding: 80px 20px;
+
     }
 }
-
+.material-symbols-outlined {
+    color: $main-text-color;
+}
 
 
  
